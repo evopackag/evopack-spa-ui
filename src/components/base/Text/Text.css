@@ -1,0 +1,15 @@
+p {
+  font-size: 1.5rem;
+}
+
+.text--bold {
+  font-weight: bold !important;
+}
+
+.text--light {
+  color: var(--primary-blue);
+}
+
+.text--dark {
+  color: var(--off-white);
+}

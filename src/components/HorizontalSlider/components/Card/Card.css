@@ -1,0 +1,57 @@
+.card {
+  min-height: 100%;
+  margin-left: 2rem;
+  min-width: 500px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: url(/public/assets/carbon_email.svg);
+  padding: 4rem 2rem;
+  border-radius: 2.5rem;
+  background: center center no-repeat;
+  text-align: center;
+  /* white-space: pre-wrap; */
+  word-wrap: break-word;
+}
+
+.card:last-of-type {
+  margin-right: 2rem;
+}
+
+.card--blue {
+  color: white;
+  background: var(--primary-blue) center center no-repeat;
+}
+
+.card--green {
+  color: white;
+  background: var(--primary-green) center center no-repeat;
+}
+
+.card--white {
+  color: var(--primary-blue);
+  background: white center center no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    min-width: unset;
+    max-width: 90vw;
+    padding: 4rem 1rem;
+    margin-left: 0;
+    min-height: 500px;
+    background-size: 50%;
+    background-position-y: 20%;
+  }
+  .card__content {
+    flex-direction: column;
+    max-height: auto;
+  }
+  .card:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .card:last-of-type {
+    margin-right: 0rem;
+  }
+}

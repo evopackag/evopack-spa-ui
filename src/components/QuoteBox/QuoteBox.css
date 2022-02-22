@@ -1,0 +1,93 @@
+.quoteBox {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--primary-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quoteBox__text {
+  color: var(--white);
+  text-align: center;
+  position: relative;
+  max-width: 1300px;
+}
+
+.quoteBox__author {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+.startQuote h4,
+.endQuote h4 {
+  display: inline;
+}
+
+.startQuote::before {
+  content: url(/public/assets/start-quotes.svg);
+  display: inline-block;
+  position: absolute;
+  top: -1.5rem;
+  left: -2rem;
+}
+
+.endQuote::after {
+  content: url(/public/assets/end-quotes.svg);
+  display: inline-block;
+  position: absolute;
+  bottom: 0rem;
+  right: -2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .startQuote::before {
+    content: url(/public/assets/start-quote--mobile.svg);
+    display: inline-block;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+  }
+
+  .endQuote::after {
+    content: url(/public/assets/end-quote--mobile.svg);
+    display: inline-block;
+    position: absolute;
+    bottom: 0rem;
+    right: -1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .quoteBox {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+}
+/* .quoteBox__text::before {
+  content: url(/public/assets/start-quotes.svg);
+  position: absolute;
+  top: -1rem;
+  left: 0;
+}
+
+.quoteBox__text::after {
+  content: url(/public/assets/end-quotes.svg);
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+} */
+/* .startQuote::before {
+  content: url(/public/assets/start-quotes.svg);
+  position: absolute;
+  top: -1rem;
+  left: 0;
+}
+
+.endQuote::after {
+  content: url(/public/assets/end-quotes.svg);
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+} */

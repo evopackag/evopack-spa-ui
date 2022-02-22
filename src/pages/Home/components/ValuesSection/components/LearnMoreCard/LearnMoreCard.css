@@ -1,0 +1,85 @@
+.learnMoreCard {
+  height: 600px;
+  margin-left: 2rem;
+  width: auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/public/assets/carbon_email.svg);
+  padding: 4rem;
+  border-radius: 2.5rem;
+  background: center center no-repeat;
+  text-align: center;
+  box-shadow: 0 0.125rem 0.25rem 0 #d8d8d9;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.learnMoreCard:nth-of-type(even) {
+  align-self: flex-end;
+}
+
+.learnMoreCard:hover {
+  animation: all 250ms ease-in-out;
+  box-shadow: 0 0.25rem 0.75rem 0 rgb(0, 0, 0, 0.35);
+  transform: translateY(-0.25rem);
+}
+
+/* @keyframes hoverUp {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 0.125rem 0.25rem 0 #d8d8d9;
+  }
+  100% {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.25rem 0.75rem 0 rgb(0, 0, 0, 0.25);
+  }
+} */
+
+.learnMoreCard--blue {
+  color: white;
+  background: var(--primary-blue) center center no-repeat;
+}
+
+.learnMoreCard--green {
+  color: white;
+  background: var(--primary-green) center center no-repeat;
+}
+
+.learnMoreCard--white {
+  color: var(--primary-blue);
+  background: white center center no-repeat;
+}
+
+@media screen and (max-width: 1200px) {
+  .learnMoreCard {
+    height: 600px;
+    margin: 1rem 0.5rem;
+    width: auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-image: url(/public/assets/carbon_email.svg); */
+    padding: 2rem;
+    border-radius: 2.5rem;
+    /* background: center center no-repeat; */
+    text-align: center;
+    box-shadow: 0 0.125rem 0.25rem 0 #d8d8d9;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+  }
+
+  .learnMoreCard:nth-of-type(even) {
+    align-self: center;
+  }
+
+  .learnMoreCard:hover {
+    animation: all 250ms ease-in-out;
+    box-shadow: 0 0.25rem 0.75rem 0 rgb(0, 0, 0, 0.35);
+    transform: translateY(0);
+  }
+}

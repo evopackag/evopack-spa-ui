@@ -1,0 +1,116 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100%; */
+  height: 50px;
+  background: rgba(245, 245, 247, 0.5);
+  backdrop-filter: blur(20px);
+  padding: 0 2.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+}
+
+.header__mobileMenu {
+  position: relative;
+  height: auto;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__mobileMenuLinks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  // background: var(--off-white);
+  background: rgba(245, 245, 247, 0.95);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  animation: slideInFromRight 600ms ease-in-out both;
+  box-shadow: -0.5rem 0 1rem rgba(10, 10, 10, 0.5);
+  border-radius: 2rem;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    display: none;
+  }
+  5% {
+    display: flex;
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(20vw);
+    opacity: 1;
+  }
+}
+
+.header__mobileMenu::before {
+  content: "";
+  position: absolute;
+  /* top: 0px; */
+  bottom: 5px;
+  width: 40px;
+  height: 3px;
+  background: var(--primary-blue);
+  border-radius: 1px;
+  z-index: 5;
+}
+
+.header__mobileMenu::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  width: 40px;
+  height: 3px;
+  background: var(--primary-blue);
+  border-radius: 1px;
+  z-index: 5;
+}
+
+.header__mobileMenuCloseButton .header__mobileMenu::after {
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  top: 5px;
+  width: 40px;
+  height: 3px;
+  background: var(--primary-blue);
+  border-radius: 1px;
+}
+
+.header__mobileMenuCloseButton .header__mobileMenu::before {
+  content: "";
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 5px;
+  width: 40px;
+  height: 3px;
+  background: var(--primary-blue);
+  border-radius: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0 1rem;
+    // justify-content: spac;
+  }
+}

@@ -1,0 +1,101 @@
+import "./Heading.css";
+
+interface IProps {
+  type: string;
+  text: string;
+  weight?: string | null;
+  theme?: string;
+  accent?: boolean | string;
+  spacing?: string;
+  alignment?: string;
+}
+
+const Heading = ({
+  type,
+  text,
+  theme,
+  accent,
+  weight,
+  spacing,
+  alignment,
+}: IProps) => {
+  if (type === "h1") {
+    return (
+      <h1
+        className={theme ? `heading--${theme}` : "heading"}
+        style={{ wordSpacing: `${spacing}` }}
+      >
+        {text}
+      </h1>
+    );
+  }
+
+  if (type === "h2") {
+    const allWords = text?.split(" ");
+    const titleLength = allWords?.length > 0 ? allWords.length : 0;
+    const lastWord = allWords[titleLength - 1];
+    const textMinusLastWord = text.slice(0, text.length - lastWord.length);
+
+    return (
+      <h2
+        // className={
+        //   theme
+        //     ? `heading--${theme} ${alignment}`
+        //     : `heading ${alignment} padding-horizontal-4`
+        // }
+        className={` ${theme ? `heading--${theme}` : `heading ${alignment}`}`}
+        style={{ wordSpacing: `${spacing}` }}
+      >
+        {accent ? textMinusLastWord : text}
+        {accent ? <span className="underlineAccent">{lastWord}</span> : null}
+        {/* {accent ? (
+          <img
+            className="heading__accent"
+            src={`${process.env.PUBLIC_URL}/assets/heading-underline.svg`}
+          />
+        ) : null} */}
+      </h2>
+    );
+  }
+
+  if (type === "h3") {
+    return (
+      <h3 className={theme ? `heading--${theme}` : "heading"}>
+        {/* <img src={`${BASE_IMG_URL}${accent}`} /> */}
+        {text}
+      </h3>
+    );
+  }
+
+  if (type === "h4") {
+    return (
+      <h4
+        className={`${theme ? `heading--${theme}` : "heading"} ${
+          accent ? accent : null
+        }`}
+      >
+        {/* {accent ? <span className="startQuote"></span> : null} */}
+        {text}
+        {/* {accent ? <span className="endQuote"></span> : null} */}
+      </h4>
+    );
+  }
+
+  if (type === "h5") {
+    return <h5 className={theme ? `heading--${theme}` : "heading"}>{text}</h5>;
+  }
+
+  if (type === "h6") {
+    return (
+      <h6
+        className={theme ? `heading--${theme} ${weight}` : `heading ${weight}`}
+      >
+        {text}
+      </h6>
+    );
+  } else {
+    return null;
+  }
+};
+
+export default Heading;

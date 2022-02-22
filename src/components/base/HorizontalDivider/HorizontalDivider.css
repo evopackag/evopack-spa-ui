@@ -1,0 +1,11 @@
+.horizontalDivider {
+  height: 3px;
+  border-radius: 3px;
+  width: 100%;
+  background: var(--primary-blue);
+  padding: 0rem 2.5rem;
+}
+
+/* .horizontalDividerContainer {
+  padding: 0 40px;
+} */
