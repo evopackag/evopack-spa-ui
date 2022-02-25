@@ -24,7 +24,7 @@ const Imprint = () => {
                 <>
                   <Heading theme={theme} text={item.sectionTitle} type="h4" />
                   <Spacing size="sm" />
-                  <Text theme={theme} text={item.text} />
+                  <Text theme={theme}>{item.text}</Text>
                   <Spacing size="xs" />
                   {item.bullets && item.bullets.length > 0
                     ? item.bullets.map((bullet: any) => {

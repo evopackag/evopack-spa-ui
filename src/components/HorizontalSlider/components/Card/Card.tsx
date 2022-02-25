@@ -19,7 +19,7 @@ const Card = ({ title, text, background, theme }: IProps) => {
       }}
     >
       {title ? <Heading text={title} type="h3" /> : null}
-      <Text text={text} bold />
+      <Text bold>{text}</Text>
     </div>
   );
 };

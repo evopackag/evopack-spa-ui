@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import Link from "../../components/base/Link/Link";
+import Button from "../base/Buttons/Button";
+import Text, { TextSize, TextWeight } from "../base/Text/Text";
 
 import "./Header.css";
 
 interface IProps {
-  data: string[];
+  data: any[];
   scrollToFunction?: any;
   refs?: any;
 }
@@ -66,10 +69,16 @@ const Header = ({ data, refs }: IProps) => {
 
   return (
     <header className="header col-xs-12">
-      <img
-        src={`${process.env.PUBLIC_URL}/assets/Evopack_GreenLogoBlueWritingHorizontal.svg`}
-        alt=""
-      />
+      <NavLink
+        to={`/`}
+        // className={({ isActive }) => (isActive ? "link link--active" : "link")}
+        key={"homepageLink"}
+      >
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/Evopack_GreenLogoBlueWritingHorizontal.svg`}
+          alt=""
+        />
+      </NavLink>
 
       {isMobile ? (
         <nav
@@ -81,15 +90,60 @@ const Header = ({ data, refs }: IProps) => {
           {mobileMenu ? (
             <ul className="header__mobileMenuLinks">
               {data.map((link) => {
-                return <Link label={link} />;
+                return (
+                  <li
+                    className="navlink__container row align-center justify-center"
+                    key={link}
+                  >
+                    <NavLink
+                      to={`${link.urlPath}`}
+                      className={({ isActive }) =>
+                        isActive ? "link link--active" : "link"
+                      }
+                      key={link.label}
+                    >
+                      <Text size={TextSize.sm} weight={TextWeight.medium}>
+                        {link.label}
+                      </Text>
+                    </NavLink>
+                  </li>
+                );
               })}
+              <li className="navlink__container row" key="closeMobileMenu">
+                <Button
+                  label="Close Menu"
+                  handleClick={() => setMobileMenu(!mobileMenu)}
+                  type="primary-green"
+                />
+              </li>
             </ul>
           ) : null}
         </nav>
       ) : (
         <nav className="header__links">
           {data.map((link) => {
-            return <Link label={link} />;
+            return (
+              <>
+                <NavLink
+                  to={`${link.urlPath}`}
+                  className={({ isActive }) =>
+                    isActive ? "link link--active" : "link"
+                  }
+                  key={link.label}
+                >
+                  <Text size={TextSize.sm} weight={TextWeight.medium}>
+                    {link.label}
+                  </Text>
+                  <div className="link__underline">
+                    <img
+                      className="link__underlineImage"
+                      src={`${process.env.PUBLIC_URL}link-underline.svg`}
+                      alt=""
+                    />
+                  </div>
+                </NavLink>
+              </>
+            );
           })}
         </nav>
       )}

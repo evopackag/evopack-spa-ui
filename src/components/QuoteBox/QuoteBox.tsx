@@ -31,12 +31,12 @@ const QuoteBox = ({ text, theme, author, authorTitle }: IProps) => {
         <Heading type="h4" text={lastWord} theme="dark" accent="endQuote" />
       </div>
       <div className="quoteBox__author col align-center center-xs">
-        <Text text={author ? author : "Testing"} theme="dark" bold />
-        <Text
-          text={authorTitle ? authorTitle : "test"}
-          theme="dark"
-          opacity="0.5"
-        />
+        <Text theme="dark" bold>
+          {author ? author : "Testing"}
+        </Text>
+        <Text theme="dark" opacity="0.5">
+          {authorTitle ? authorTitle : "test"}
+        </Text>
       </div>
     </section>
   );

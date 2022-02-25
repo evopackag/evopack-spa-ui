@@ -8,6 +8,10 @@
   font-size: 1.125rem;
   cursor: pointer;
   transition: all ease-in-out 250ms;
+  text-align: center;
+  /* display: flex; */
+  align-items: center;
+  justify-self: center;
 }
 
 .button--primary-green {
@@ -17,6 +21,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .button--primary-green::after {
@@ -92,5 +97,24 @@
 @media screen and (max-width: 450px) {
   .button--secondary-white {
     margin-top: 2rem;
+  }
+
+  .button--secondary-blue,
+  .button--secondary-white,
+  .button--secondary-green-fill,
+  .button--primary-green {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button {
+    padding: 0.625rem 0;
+  }
+
+  .button--primary-green::after {
+    display: none;
   }
 }

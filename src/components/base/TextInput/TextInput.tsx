@@ -72,6 +72,7 @@ const TextInput = ({ label, theme, icon, type }: IProps) => {
           onInput={(e: React.FormEvent<HTMLInputElement>) =>
             checkInputValue(e.currentTarget.value)
           }
+          type="text"
         />
         {/* <Text text={label} bold={false} /> */}
         <button
@@ -100,6 +101,7 @@ const TextInput = ({ label, theme, icon, type }: IProps) => {
         onInput={(e: React.FormEvent<HTMLInputElement>) =>
           checkInputValue(e.currentTarget.value)
         }
+        type="text"
       />
       {/* <Text text={label} bold={false} /> */}
       {icon ? (

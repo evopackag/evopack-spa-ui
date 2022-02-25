@@ -4,7 +4,7 @@
       "title": "Next Generation Packaging",
       "subTitle": "Sustainable solutions for enhanced product integrity",
       "CTA": "Contact Us",
-      "navigationLinks": [{"label": "Services", "urlPath": "/services"}, {"label": "Mission", "urlPath": "/mission"}, {"label": "Careers", "urlPath": "/careers"}, {"label": "About Us", "urlPath": "/about"}],
+      "navigationLinks": ["Services", "Mission", "Careers", "About Us"],
       "productAreas": ["Paints and Coatings", "Adhesives", "Polymer Dispersions", "Home Products"]
     },
     "servicesSection": {

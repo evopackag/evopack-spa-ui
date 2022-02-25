@@ -1,6 +1,6 @@
-p {
+/* p {
   font-size: 1.5rem;
-}
+} */
 
 .text--bold {
   font-weight: bold !important;
@@ -12,4 +12,22 @@ p {
 
 .text--dark {
   color: var(--off-white);
+}
+.text--xxs {
+  font-size: 0.75rem;
+}
+.text--xs {
+  font-size: 0.85rem;
+}
+.text--sm {
+  font-size: 1rem;
+}
+.text--md {
+  font-size: 1.5rem;
+}
+.text--lg {
+  font-size: 2rem;
+}
+.text--xl {
+  font-size: 3rem;
 }

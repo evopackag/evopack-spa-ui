@@ -1,0 +1,35 @@
+// .underlineAccent {
+//   position: relative;
+
+//   &:nth-child(1)::after {
+//     position: absolute;
+//     content: url(/public/assets/heading-underline.svg);
+//     display: flex;
+//     justify-content: center;
+//     width: 100%;
+//     bottom: -1rem;
+//     z-index: -1;
+//     /* left: 0rem;
+//     right: 0rem; */
+//   }
+// }
+
+@media screen and (max-width: 992px) {
+  .underlinedText {
+    position: relative;
+    text-decoration: solid 3px var(--primary-green);
+    text-decoration-line: underline;
+
+    // &::after {
+    //   position: absolute;
+    //   content: url(/public/assets/heading-underline--mobile.svg);
+    //   display: flex;
+    //   justify-content: center;
+    //   width: 100%;
+    //   bottom: -0.5rem;
+    //   z-index: -1;
+    //   left: 3rem;
+    //   right: 0rem;
+    // }
+  }
+}

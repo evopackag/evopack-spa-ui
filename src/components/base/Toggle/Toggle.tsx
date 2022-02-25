@@ -15,7 +15,7 @@ const Toggle = ({ options }: IProps) => {
         return (
           <button
             className={`toggle__option ${
-              language === option.value ? "active" : null
+              language === option.value ? "activeToggle" : null
             }`}
             id={option.displayText}
             onClick={() => setLanguage(option.value)}

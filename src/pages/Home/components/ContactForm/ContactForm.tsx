@@ -23,18 +23,6 @@ const ContactForm = forwardRef((data: any, ref: any) => {
     buttonText,
   } = data.data;
 
-  console.log(data.buttonText);
-
-  // function scrollToContactSection() {
-  //   if (contact === undefined) {
-  //     throw Error;
-  //   } else {
-  //     contact.current.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // }
-  // console.log(ref.current);
-  // const contactReference = useRef<HTMLDivElement>(null)
-
   return (
     <div ref={ref}>
       <Spacing size="lg" />
@@ -43,7 +31,13 @@ const ContactForm = forwardRef((data: any, ref: any) => {
           <div className="row start-sm">
             <Heading type="h2" text={title} theme="dark" accent={false} />
           </div>
-          <form className="padding-top-8 row">
+          <form
+            className="padding-top-8 row"
+            action="mailto:contact@yourdomain.com"
+            method="POST"
+            encType="multipart/form-data"
+            name="ContactForm"
+          >
             <div className="col-xs-12 col-md-4 contactForm__details">
               <TextInput label={firstNamePlaceholder} icon="person" />
               <TextInput label={lastNamePlaceholder} icon="person" />
@@ -63,7 +57,16 @@ const ContactForm = forwardRef((data: any, ref: any) => {
               <Checkbox label={GDPRCheckboxText} />
             </div>
             <div className="col-xs-12 center-xs col-md-4 end-md">
-              <Button label={buttonText} type="secondary-white" />
+              <input
+                type="submit"
+                className={
+                  "secondary-white"
+                    ? `button button--secondary-white col-xs end-md`
+                    : "button end-md"
+                }
+                placeholder="Submit"
+              ></input>
+              {/* <Button label={buttonText} type="secondary-white" /> */}
             </div>
           </div>
         </section>

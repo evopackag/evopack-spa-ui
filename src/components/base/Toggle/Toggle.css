@@ -24,7 +24,7 @@
   margin-right: 0;
 }
 
-.active {
+.activeToggle {
   background: var(--primary-blue);
   color: var(--off-white);
 }

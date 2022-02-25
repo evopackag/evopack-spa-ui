@@ -2,7 +2,7 @@ import Bullets from "../../../base/Bullets/Bullets";
 import Heading from "../../../base/Heading/Heading";
 import HorizontalDivider from "../../../base/HorizontalDivider/HorizontalDivider";
 import Spacing from "../../../base/Spacing/Spacing";
-import Text from "../../../base/Text/Text";
+import Text, { TextSize, TextWeight } from "../../../base/Text/Text";
 
 const legalContent = require("../../FooterContent.json");
 
@@ -23,9 +23,13 @@ const DataPolicy = () => {
     <>
       <Heading theme={theme} text={title} type="h2" />
       <Spacing size="xs" />
-      <Text theme={theme} text={subTitle} bold />
+      <Text theme={theme} size={TextSize.xs} weight={TextWeight.medium} bold>
+        {subTitle}
+      </Text>
       <Spacing size="md" />
-      <Text theme={theme} text={text} />
+      <Text theme={theme} size={TextSize.xs} weight={TextWeight.medium}>
+        {text}
+      </Text>
       <Spacing size="sm" />
       <HorizontalDivider />
       <Spacing size="sm" />
@@ -38,7 +42,7 @@ const DataPolicy = () => {
               <>
                 <Heading theme={theme} text={item.sectionTitle} type="h4" />
                 <Spacing size="sm" />
-                <Text theme={theme} text={item.text} />
+                <Text theme={theme}>{item.text}</Text>
                 <Spacing size="xs" />
                 {item.bullets && item.bullets.length > 0
                   ? item.bullets.map((bullet: any) => {
@@ -63,7 +67,13 @@ const DataPolicy = () => {
               <>
                 <Heading theme={theme} text={item.sectionTitle} type="h4" />
                 <Spacing size="sm" />
-                <Text theme={theme} text={item.text} />
+                <Text
+                  theme={theme}
+                  size={TextSize.xs}
+                  weight={TextWeight.medium}
+                >
+                  {item.text}
+                </Text>
                 <Spacing size="xs" />
                 {item.bullets && item.bullets.length > 0
                   ? item.bullets.map((bullet: any) => {
@@ -88,7 +98,13 @@ const DataPolicy = () => {
               <>
                 <Heading theme={theme} text={item.sectionTitle} type="h4" />
                 <Spacing size="sm" />
-                <Text theme={theme} text={item.text} />
+                <Text
+                  theme={theme}
+                  size={TextSize.xs}
+                  weight={TextWeight.medium}
+                >
+                  {item.text}
+                </Text>
                 <Spacing size="xs" />
                 {item.bullets && item.bullets.length > 0
                   ? item.bullets.map((bullet: any) => {

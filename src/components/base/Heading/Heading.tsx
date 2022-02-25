@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import useViewportSize from "../../../hooks/useViewportSize/useViewportSize";
 import "./Heading.css";
 
 interface IProps {
@@ -7,7 +9,7 @@ interface IProps {
   theme?: string;
   accent?: boolean | string;
   spacing?: string;
-  alignment?: string;
+  alignment?: "center" | "left" | "right" | undefined;
 }
 
 const Heading = ({
@@ -19,11 +21,21 @@ const Heading = ({
   spacing,
   alignment,
 }: IProps) => {
+  const isMobileView = useViewportSize(450);
+
+  useEffect(() => {}, [isMobileView]);
+
+  useEffect(() => {}, [alignment]);
+  const headingVariableStyles = {
+    wordSpacing: `${spacing}`,
+    textAlign: `${isMobileView ? "left" : "center"}` as const,
+  };
+
   if (type === "h1") {
     return (
       <h1
         className={theme ? `heading--${theme}` : "heading"}
-        style={{ wordSpacing: `${spacing}` }}
+        style={headingVariableStyles}
       >
         {text}
       </h1>

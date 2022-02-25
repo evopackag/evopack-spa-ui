@@ -13,12 +13,24 @@ import VisitorContext, {
 } from "./contexts/VisitorContext/VisitorContext";
 import "./App.css";
 import Home from "./pages/Home/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from "./pages/About/About";
+import Careers from "./pages/Careers/Carrers";
 
 function App() {
   const [language, setLanguage] = useState(Languages.English);
   return (
     <VisitorContext.Provider value={{ language, setLanguage }}>
-      <Home />
+      {/* <Home /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/">
+            <Route index element={<Home />} />
+            <Route path="careers" element={<Careers />} />
+            <Route path="about" element={<About />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </VisitorContext.Provider>
   );
 }

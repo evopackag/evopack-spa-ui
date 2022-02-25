@@ -4,6 +4,7 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import QuoteBox from "../../components/QuoteBox/QuoteBox";
 import VisitorContext from "../../contexts/VisitorContext/VisitorContext";
+import useViewportSize from "../../hooks/useViewportSize/useViewportSize";
 import ContactForm from "./components/ContactForm/ContactForm";
 import HeroSection from "./components/HeroSection/HeroSection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
@@ -15,8 +16,6 @@ const Home = () => {
   const { language } = useContext(VisitorContext);
 
   const languageSpecificContent = websiteContent[language];
-
-  console.log(languageSpecificContent.quoteSection.quote);
 
   const contactRef = createRef<HTMLDivElement>();
   const servicesRef = createRef<HTMLDivElement>();
@@ -31,6 +30,8 @@ const Home = () => {
   }
 
   const linkRefs = [contactRef, servicesRef, missionRef];
+
+  console.log(languageSpecificContent.heroSection.navigationLinks);
 
   return (
     <PageContainer>

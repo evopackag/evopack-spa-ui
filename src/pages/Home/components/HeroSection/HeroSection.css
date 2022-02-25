@@ -16,19 +16,23 @@
   align-items: center;
   justify-content: center;
   gap: 4rem;
+  max-width: 80vw;
+}
+
+.heroSection__subtitle {
+  max-width: 600px;
 }
 
 @media screen and (max-width: 1024px) {
   .heroSection {
-    padding-top: 20vh;
-    background: url(/public/assets/mobile-hero-background.svg) 100vh 100vw;
-    background: #1b1b2d;
-    background: -moz-radial-gradient(circle, #1b1b2d 50%, #515db7 100%);
-    background: -webkit-radial-gradient(circle, #1b1b2d 50%, #515db7 100%);
-    background: radial-gradient(farthest-corner at 40px 40px circle, #1b1b2d 50%, #515db7 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b1b2d",endColorstr="#515db7",GradientType=1);
+    padding-top: 43vh;
+    background: url(/public/assets/MobileBackground.svg) center 5vh no-repeat;
+    background-size: 60vmax;
   }
-  .heroSection__CTA > h1 {
-    color: white;
+  .heroSection__CTA {
+    max-width: 100%;
+  }
+  .heroSection__subtitle {
+    text-align: left;
   }
 }

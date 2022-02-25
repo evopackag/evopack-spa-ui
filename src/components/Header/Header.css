@@ -12,6 +12,7 @@
   left: 0;
   right: 0;
   z-index: 100;
+  transition: 500ms all ease-in-out;
 }
 
 .header__links {
@@ -26,38 +27,48 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 500ms all ease-in-out;
 }
 
 .header__mobileMenuLinks {
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  height: 100vh;
+  height: 60vh;
   width: 100vw;
-  background: rgba(245, 245, 247, 0.95);
+  background: var(--primary-blue);
   backdrop-filter: blur(20px);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-evenly;
-  animation: slideInFromRight 600ms ease-in-out both;
+  animation: slideDown 600ms ease-in-out;
+  transition: 500ms all ease-in-out;
   box-shadow: -0.5rem 0 1rem rgba(10, 10, 10, 0.5);
-  border-radius: 2rem;
+  border-radius: 0rem 0rem 2rem 2rem;
 }
 
-@keyframes slideInFromRight {
+.navlink__container {
+  max-width: 100%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes slideDown {
   0% {
     display: none;
   }
   5% {
     display: flex;
-    transform: translateX(100vw);
-    opacity: 0;
+    transform: translateY(-100vw);
+    opacity: 1;
   }
   100% {
-    transform: translateX(20vw);
+    transform: translateY(0vw);
     opacity: 1;
   }
 }
@@ -109,5 +120,59 @@
 @media screen and (max-width: 768px) {
   .header {
     padding: 0 1rem;
+  }
+}
+.link {
+  color: var(--primary-blue);
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 0 1.5rem;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+
+.link:last-of-type {
+  margin-right: 0;
+}
+
+.link__underline {
+  width: 0px;
+  overflow: hidden;
+  height: 20px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: -0.5rem;
+  z-index: -1;
+  transition: 300ms ease-in all;
+}
+
+.link__underlineImage {
+  opacity: 0;
+  transition: 300ms ease-in all;
+  width: 100%;
+  height: 100%;
+}
+
+.link:hover > .link__underline,
+.link:focus > .link__underline {
+  width: 100%;
+}
+
+.link:hover > .link__underline > .link__underlineImage,
+.link:focus > .link__underline > .link__underlineImage {
+  opacity: 1;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0 1rem;
+  }
+
+  .link {
+    color: var(--off-white);
+    margin: 0;
+    padding: 2rem 1rem;
   }
 }

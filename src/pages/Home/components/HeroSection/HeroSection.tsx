@@ -7,7 +7,9 @@ import "./HeroSection.css";
 import DividingPoint from "../../../../../public/assets/dividing-point.svg";
 import Button from "../../../../components/base/Buttons/Button";
 import HeroInfoBar from "../HeroInfoBar/HeroInfoBar";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import UnderlinedText from "../../../../components/base/UnderlinedText/UnderlinedText";
+import useViewportSize from "../../../../hooks/useViewportSize/useViewportSize";
 
 interface IProps {
   data: any;
@@ -17,6 +19,10 @@ interface IProps {
 
 const HeroSection = ({ data, refs, handleCTAClick }: IProps) => {
   const { title, subTitle, CTA } = data;
+
+  const isMobileView = useViewportSize(1024);
+
+  // useEffect(() => {}, [isMobileView]);
 
   // const executeScroll = () => {
   //   if (refs !== null) {
@@ -33,14 +39,27 @@ const HeroSection = ({ data, refs, handleCTAClick }: IProps) => {
     }
   };
 
-  console.log(refs);
+  console.log(isMobileView);
 
   return (
     <div className="row">
       <section className="heroSection col-xs-12 center-xs">
         <div className="heroSection__CTA padding-horizontal-4">
-          <Heading text={title} type="h1" theme="light" spacing="100vw" />
-          <Text text={subTitle} theme="dark" />
+          <Heading
+            text={title}
+            type="h1"
+            theme="light"
+            spacing="100vw"
+            alignment={isMobileView ? "left" : "center"}
+          />
+          <span className="heroSection__subtitle">
+            <Text theme={isMobileView ? "light" : "dark"}>
+              "Reduce your costs and impact on the planet with{" "}
+              <UnderlinedText>85%&nbsp;more&nbsp;efficient</UnderlinedText>{" "}
+              packaging helping you eliminate waste and save money."
+            </Text>
+          </span>
+
           <Button
             label={CTA}
             type="primary-green"
