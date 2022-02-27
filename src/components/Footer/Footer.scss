@@ -27,9 +27,11 @@
   .footer__legals {
     align-items: center;
     justify-content: center;
+    flex-direction: column-reverse;
 
     & > h6 {
       padding-bottom: 1rem;
+      padding-top: 1rem;
     }
   }
 }

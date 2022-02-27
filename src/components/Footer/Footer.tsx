@@ -1,5 +1,6 @@
 import { text } from "node:stream/consumers";
 import { useEffect, useState } from "react";
+import Button from "../base/Buttons/Button";
 import Heading from "../base/Heading/Heading";
 import HorizontalDivider from "../base/HorizontalDivider/HorizontalDivider";
 import Link from "../base/Link/Link";
@@ -38,8 +39,6 @@ const Footer = ({ data }: IProps) => {
     dataPolicyLinkLabel,
   } = data;
 
-  console.log(overlayContent);
-
   return (
     <div className="col-xs-12 padding-horizontal-4">
       <footer className="footer row justify-between align-center">
@@ -77,11 +76,21 @@ const Footer = ({ data }: IProps) => {
       <div className="row justify-between footer__legals">
         <h6>©Evopack 2022</h6>
         <div className="row">
-          <Link
+          {/* <Link
             label={imprintLinkLabel}
             handleClick={() => toggleOverlay("imprint")}
           />
-          <Link label={dataPolicyLinkLabel} handleClick={toggleOverlay} />
+          <Link label={dataPolicyLinkLabel} handleClick={toggleOverlay} /> */}
+          <Button
+            label={imprintLinkLabel}
+            handleClick={() => toggleOverlay("imprint")}
+            isLinkStyle
+          />
+          <Button
+            label={dataPolicyLinkLabel}
+            handleClick={toggleOverlay}
+            isLinkStyle
+          />
         </div>
       </div>
       <Overlay

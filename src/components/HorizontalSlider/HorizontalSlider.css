@@ -28,6 +28,7 @@
 @media screen and (max-width: 768px) {
   .horizontalSlider {
     height: unset !important;
+    padding: 0;
   }
   .horizontalSlider__content {
     flex-direction: column;

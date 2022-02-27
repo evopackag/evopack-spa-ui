@@ -9,6 +9,7 @@ import Button from "../../../../components/base/Buttons/Button";
 import HorizontalSlider from "../../../../components/HorizontalSlider/HorizontalSlider";
 import Card from "../../../../components/HorizontalSlider/components/Card/Card";
 import Spacing from "../../../../components/base/Spacing/Spacing";
+import useViewportSize from "../../../../hooks/useViewportSize/useViewportSize";
 
 interface IProps {
   data: any;
@@ -16,9 +17,10 @@ interface IProps {
 
 const ServicesSection = ({ data }: IProps) => {
   const { title, services } = data;
+  const isMobile = useViewportSize(1024);
   return (
     <section className="servicesSection">
-      <Spacing size="lg" />
+      <Spacing size={isMobile ? "sm" : "lg"} />
       <div className="row width-100 justify-center">
         <Heading text={title} type="h2" theme="light" />
       </div>

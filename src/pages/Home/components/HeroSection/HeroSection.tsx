@@ -54,9 +54,9 @@ const HeroSection = ({ data, refs, handleCTAClick }: IProps) => {
           />
           <span className="heroSection__subtitle">
             <Text theme={isMobileView ? "light" : "dark"}>
-              "Reduce your costs and impact on the planet with{" "}
+              Reduce your costs and impact on the planet with{" "}
               <UnderlinedText>85%&nbsp;more&nbsp;efficient</UnderlinedText>{" "}
-              packaging helping you eliminate waste and save money."
+              packaging helping you eliminate waste and save money.
             </Text>
           </span>
 

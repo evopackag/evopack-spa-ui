@@ -5,11 +5,23 @@ interface IProps {
   type?: string;
   icon?: string;
   handleClick?: any;
+  isLinkStyle?: boolean;
 }
 
 const BASE_IMG_URL = "src/";
 
-const Button = ({ label, type, icon, handleClick }: IProps) => {
+const Button = ({ label, type, icon, handleClick, isLinkStyle }: IProps) => {
+  if (isLinkStyle) {
+    return (
+      <button
+        className="linkButton col-xs-12 col-sm-6 col-md-4"
+        onClick={handleClick}
+      >
+        {icon ? <img src={`${BASE_IMG_URL}${icon}`} /> : null}
+        {label}
+      </button>
+    );
+  }
   return (
     <button
       className={
