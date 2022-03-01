@@ -23,6 +23,10 @@ const Footer = ({ data }: IProps) => {
   const [showOverlay, setShowOverlay] = useState(false);
   const [overlayContent, setOverlayContent] = useState("imprint");
 
+  const [subscriptionEmail, setSubscriptionEmail] = useState({
+    email: "",
+  });
+
   const toggleOverlay = (content: string) => {
     if (showOverlay) {
       setShowOverlay(false);
@@ -69,11 +73,13 @@ const Footer = ({ data }: IProps) => {
             icon="arrow-right-circle--blue"
             theme="light"
             type="textinputSubmit"
+            handleChange={setSubscriptionEmail}
+            fieldID="subscriptionEmail"
           />
         </div>
       </footer>
       <HorizontalDivider />
-      <div className="row justify-between footer__legals">
+      <div className="row align-center justify-between footer__legals">
         <h6>©Evopack 2022</h6>
         <div className="row">
           {/* <Link

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Text from "../Text/Text";
 import "./TextInput.css";
 
@@ -7,17 +7,26 @@ interface IProps {
   type?: string;
   theme?: string;
   icon?: string;
+  handleChange: (value: any) => void;
+  fieldID: any;
 }
 
 const INPUTVALUE_REGEX_CHECK = RegExp(/^(?!^[<>[{%#:;,$%?])[A-Za-z0-9@.]+$/);
 // const INPUTVALUE_REGEX_CHECK2 = RegExp(/^[<>[\]{|\\\/^~%# :;,$%?\0-\cZ]+$/);
 const ERROR_MESSAGE = "Incorrect character detected, please review.";
 
-const TextInput = ({ label, theme, icon, type }: IProps) => {
+const TextInput = ({
+  label,
+  theme,
+  icon,
+  type,
+  handleChange,
+  fieldID,
+}: IProps) => {
   const [contextualIcon, setContextualIcon] = useState(icon);
   const [active, setActive] = useState(false);
 
-  const checkInputValue = (textFieldValue: string) => {
+  const checkInputValue = (textFieldValue: string, storageID?: string) => {
     if (
       (textFieldValue?.length &&
         !INPUTVALUE_REGEX_CHECK.test(textFieldValue)) ||
@@ -28,6 +37,9 @@ const TextInput = ({ label, theme, icon, type }: IProps) => {
       return ERROR_MESSAGE;
     }
 
+    // const input.storageID = textFieldValue;
+
+    // handleChange({`${storageID} = ${textFieldValue}`});
     setContextualIcon("check--green");
     setActive(true);
     return true;
@@ -45,8 +57,12 @@ const TextInput = ({ label, theme, icon, type }: IProps) => {
           id={label}
           placeholder={label}
           onInput={(e: React.FormEvent<HTMLTextAreaElement>) =>
-            checkInputValue(e.currentTarget.value)
+            checkInputValue(e.currentTarget.value, fieldID)
           }
+          onChange={handleChange}
+          // onChange={(e: React.FormEvent<HTMLTextAreaElement>) =>
+          //   handleChange({ fieldID: e.currentTarget.value })
+          // }
         />
         {icon ? (
           <img
@@ -70,7 +86,7 @@ const TextInput = ({ label, theme, icon, type }: IProps) => {
           id={label}
           placeholder={label}
           onInput={(e: React.FormEvent<HTMLInputElement>) =>
-            checkInputValue(e.currentTarget.value)
+            checkInputValue(e.currentTarget.value, fieldID)
           }
           type="text"
         />
@@ -99,9 +115,10 @@ const TextInput = ({ label, theme, icon, type }: IProps) => {
         id={label}
         placeholder={label}
         onInput={(e: React.FormEvent<HTMLInputElement>) =>
-          checkInputValue(e.currentTarget.value)
+          checkInputValue(e.currentTarget.value, fieldID)
         }
         type="text"
+        onChange={handleChange}
       />
       {/* <Text text={label} bold={false} /> */}
       {icon ? (

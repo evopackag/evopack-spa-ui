@@ -23,11 +23,11 @@ const DataPolicy = () => {
     <>
       <Heading theme={theme} text={title} type="h2" />
       <Spacing size="xs" />
-      <Text theme={theme} size={TextSize.xs} weight={TextWeight.medium} bold>
+      <Text theme={theme} weight={TextWeight.medium} bold>
         {subTitle}
       </Text>
       <Spacing size="md" />
-      <Text theme={theme} size={TextSize.xs} weight={TextWeight.medium}>
+      <Text theme={theme} weight={TextWeight.medium}>
         {text}
       </Text>
       <Spacing size="sm" />
@@ -67,11 +67,7 @@ const DataPolicy = () => {
               <>
                 <Heading theme={theme} text={item.sectionTitle} type="h4" />
                 <Spacing size="sm" />
-                <Text
-                  theme={theme}
-                  size={TextSize.xs}
-                  weight={TextWeight.medium}
-                >
+                <Text theme={theme} weight={TextWeight.medium}>
                   {item.text}
                 </Text>
                 <Spacing size="xs" />
@@ -98,11 +94,7 @@ const DataPolicy = () => {
               <>
                 <Heading theme={theme} text={item.sectionTitle} type="h4" />
                 <Spacing size="sm" />
-                <Text
-                  theme={theme}
-                  size={TextSize.xs}
-                  weight={TextWeight.medium}
-                >
+                <Text theme={theme} weight={TextWeight.medium}>
                   {item.text}
                 </Text>
                 <Spacing size="xs" />

@@ -1,4 +1,6 @@
-import { forwardRef, MutableRefObject, useRef } from "react";
+import { forwardRef, MutableRefObject, useRef, useState } from "react";
+import { SMTPClient } from "emailjs";
+import emailjs from "@emailjs/browser";
 import Button from "../../../../components/base/Buttons/Button";
 import Checkbox from "../../../../components/base/Checkbox/Checkbox";
 import Heading from "../../../../components/base/Heading/Heading";
@@ -23,8 +25,41 @@ const ContactForm = forwardRef((data: any, ref: any) => {
     buttonText,
   } = data.data;
 
+  const [message, setMessage] = useState<any>({
+    fname: "",
+    lname: "",
+    email: "",
+    phone: "",
+    message: "",
+    GDPRAccepted: false,
+    mailSent: false,
+    error: null,
+  });
+
+  const sendEmail = (e: React.FormEvent<HTMLTextAreaElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "evo_gmail",
+        "evopack_contact_form",
+        ref.current,
+        "B6SI4O34Hd5aSQLgx"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  console.log(ref.current);
+
   return (
-    <div ref={ref}>
+    <div ref={ref} onSubmit={() => sendEmail}>
       <Spacing size="lg" />
       <div className="row center-xs contactFormContainer" id="contactForm">
         <section className="contactForm col-xs-12 col-md-12 col-lg-10">
@@ -39,16 +74,48 @@ const ContactForm = forwardRef((data: any, ref: any) => {
             name="ContactForm"
           >
             <div className="col-xs-12 col-md-4 contactForm__details">
-              <TextInput label={firstNamePlaceholder} icon="person" />
-              <TextInput label={lastNamePlaceholder} icon="person" />
-              <TextInput label={emailPlaceholder} icon="mail" />
-              <TextInput label={phonePlaceholder} icon="phone" />
+              <TextInput
+                label={firstNamePlaceholder}
+                icon="person"
+                handleChange={(e: React.FormEvent<HTMLTextAreaElement>) =>
+                  setMessage({ fname: e.currentTarget.value })
+                }
+                fieldID="fname"
+              />
+              <TextInput
+                label={lastNamePlaceholder}
+                icon="person"
+                handleChange={(e) =>
+                  setMessage({ lname: e.currentTarget.value })
+                }
+                fieldID="lname"
+              />
+              <TextInput
+                label={emailPlaceholder}
+                icon="mail"
+                handleChange={(e) =>
+                  setMessage({ email: e.currentTarget.value })
+                }
+                fieldID="mail"
+              />
+              <TextInput
+                label={phonePlaceholder}
+                icon="phone"
+                handleChange={(e) =>
+                  setMessage({ phone: e.currentTarget.value })
+                }
+                fieldID="phone"
+              />
             </div>
             <div className="col-xs-12 col-md-8  contactForm__message">
               <TextInput
                 label={messagePlaceholder}
                 theme="full-height"
                 type="textarea"
+                handleChange={(e: React.FormEvent<HTMLTextAreaElement>) =>
+                  setMessage({ message: e.currentTarget.value })
+                }
+                fieldID={message.message}
               />
             </div>
           </form>
