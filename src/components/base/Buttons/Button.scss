@@ -196,7 +196,15 @@
     padding: 0.625rem 0;
   }
 
-  .button--primary-green::after {
+  .button--primary-green::after,
+  .button--primary-green-filled::after {
     display: none;
+    // position: unset;
+    // top: 6rem;
+    // left: 0;
+    // right: 0;
+    // content: "";
+    // width: 0;
+    // height: 0;
   }
 }

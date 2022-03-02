@@ -3,7 +3,7 @@ import "./Icon.css";
 
 interface IProps {
   size: string;
-  border?: boolean;
+  border?: string;
   theme?: string;
   icon?: string;
   handleClick?: any;
@@ -23,7 +23,7 @@ const Icon = ({
   return (
     <div
       className={
-        border || isButton ? `icon icon-button icon--${border}-white` : `icon`
+        border || isButton ? `icon icon-button icon--border-${border}` : `icon`
       }
     >
       {hoverText ? (

@@ -11,11 +11,11 @@
 }
 
 .icon--border-white {
-  border: 2px solid var(--white);
+  border: 2px solid #fff;
 }
 
 .icon--border-blue {
-  border: 2px solid var(--blue);
+  border: 2px solid var(--primary-blue);
 }
 
 .icon-button {

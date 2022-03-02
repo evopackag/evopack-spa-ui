@@ -5,12 +5,14 @@ import Icon from "../../../../components/base/Icon/Icon";
 import Text from "../../../../components/base/Text/Text";
 import Toggle from "../../../../components/base/Toggle/Toggle";
 import { Languages } from "../../../../contexts/VisitorContext/VisitorContext";
+import useViewportSize from "../../../../hooks/useViewportSize/useViewportSize";
 
 interface IProps {
   productAreas: string[];
 }
 
 const HeroInfoBar = ({ productAreas }: IProps) => {
+  const isMobile = useViewportSize(1024);
   const languageOptions = [
     {
       displayText: "EN",
@@ -38,8 +40,20 @@ const HeroInfoBar = ({ productAreas }: IProps) => {
         </div>
       </div>
       <div className="heroInfoBar__contactIcons col-xs-3 justify-end">
-        <Icon icon="phone" size="sm" hoverText="+41075432323" isButton />
-        <Icon icon="mail" size="sm" hoverText="info@evopack.tech" isButton />
+        <Icon
+          icon={isMobile ? "phone--blue" : "phone"}
+          border={isMobile ? "blue" : "white"}
+          size="sm"
+          hoverText="+41075432323"
+          isButton
+        />
+        <Icon
+          icon={isMobile ? "mail--blue" : "mail"}
+          border={isMobile ? "blue" : "white"}
+          size="sm"
+          hoverText="info@evopack.tech"
+          isButton
+        />
       </div>
     </div>
   );
