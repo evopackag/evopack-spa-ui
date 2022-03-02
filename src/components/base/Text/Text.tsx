@@ -4,6 +4,7 @@ import "./Text.css";
 interface IProps {
   size?: TextSize;
   weight?: TextWeight;
+  color?: TextColour;
   theme?: string;
   accent?: string;
   bold?: boolean;
@@ -21,15 +22,32 @@ export enum TextSize {
 }
 
 export enum TextWeight {
-  thin = "thin",
-  light = "light",
-  regular = "regular",
-  medium = "medium",
-  semibold = "semibold",
-  bold = "bold",
+  thin = "200",
+  light = "300",
+  regular = "400",
+  medium = "500",
+  semibold = "700",
+  bold = "900",
 }
 
-const Text = ({ size, theme, accent, bold, opacity, children }: IProps) => {
+export enum TextColour {
+  greyBlue = "var(--grey-blue)",
+  primaryBlue = "var(--primary-blue)",
+  primaryGreen = "var(--primary-green)",
+  offWhite = "var(--off-white)",
+  lightGrey = "var(--light-grey)",
+}
+
+const Text = ({
+  size,
+  weight,
+  theme,
+  accent,
+  bold,
+  opacity,
+  children,
+  color,
+}: IProps) => {
   if (bold) {
     return (
       <p
@@ -45,7 +63,11 @@ const Text = ({ size, theme, accent, bold, opacity, children }: IProps) => {
     return (
       <p
         className={`${size} ${theme ? `text--${theme} text` : "text"}`}
-        style={{ opacity: `${opacity}` }}
+        style={{
+          opacity: `${opacity}`,
+          fontWeight: `${weight}`,
+          color: `${color}`,
+        }}
       >
         {children}
       </p>

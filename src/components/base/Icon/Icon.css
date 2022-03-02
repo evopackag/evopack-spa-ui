@@ -1,6 +1,9 @@
 .icon {
   transition: all ease-in-out 250ms;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon--md {

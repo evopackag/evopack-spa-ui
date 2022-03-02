@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Link from "../../components/base/Link/Link";
 import Button from "../base/Buttons/Button";
-import Text, { TextSize, TextWeight } from "../base/Text/Text";
+import Icon from "../base/Icon/Icon";
+import Text, { TextColour, TextSize, TextWeight } from "../base/Text/Text";
 
 import "./Header.css";
 
@@ -88,35 +89,48 @@ const Header = ({ data, refs }: IProps) => {
           onClick={() => setMobileMenu(!mobileMenu)}
         >
           {mobileMenu ? (
-            <ul className="header__mobileMenuLinks">
-              {data.map((link) => {
-                return (
-                  <li
-                    className="navlink__container row align-center justify-center"
-                    key={link}
-                  >
-                    <NavLink
-                      to={`${link.urlPath}`}
-                      className={({ isActive }) =>
-                        isActive ? "link link--active" : "link"
-                      }
-                      key={link.label}
+            <>
+              <ul className="header__mobileMenuLinks">
+                <div className="header__navigationGroupHeader">
+                  <Text size={TextSize.sm} color={TextColour.greyBlue}>
+                    Pages
+                  </Text>
+                </div>
+
+                {data.map((link) => {
+                  return (
+                    <li
+                      className="navlink__container align-center justify-center"
+                      key={link}
                     >
-                      <Text size={TextSize.sm} weight={TextWeight.medium}>
-                        {link.label}
-                      </Text>
-                    </NavLink>
-                  </li>
-                );
-              })}
-              <li className="navlink__container row" key="closeMobileMenu">
-                <Button
-                  label="Close Menu"
-                  handleClick={() => setMobileMenu(!mobileMenu)}
-                  type="primary-green"
-                />
-              </li>
-            </ul>
+                      <NavLink
+                        to={`${link.urlPath}`}
+                        className={({ isActive }) =>
+                          isActive
+                            ? "link row between-xs link--active"
+                            : "link between-xs row"
+                        }
+                        key={link.label}
+                      >
+                        <Text size={TextSize.md} weight={TextWeight.regular}>
+                          {link.label}
+                        </Text>
+                        <Icon size="sm" icon="chevron-right--white" />
+                      </NavLink>
+                    </li>
+                  );
+                })}
+
+                <li className="navlink__container row" key="closeMobileMenu">
+                  <Button
+                    label="Close Menu"
+                    handleClick={() => setMobileMenu(!mobileMenu)}
+                    type="secondary-white"
+                    icon="close--white"
+                  />
+                </li>
+              </ul>
+            </>
           ) : null}
         </nav>
       ) : (

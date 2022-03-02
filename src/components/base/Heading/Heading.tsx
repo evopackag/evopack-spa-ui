@@ -28,7 +28,7 @@ const Heading = ({
   useEffect(() => {}, [alignment]);
   const headingVariableStyles = {
     wordSpacing: `${spacing}`,
-    textAlign: `${isMobileView ? "left" : "center"}` as const,
+    textAlign: `${isMobileView && alignment ? "left" : "center"}` as const,
   };
 
   if (type === "h1") {

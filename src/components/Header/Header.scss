@@ -13,6 +13,11 @@
   right: 0;
   z-index: 100;
   transition: 500ms all ease-in-out;
+
+  &__navigationGroupHeader {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .header__links {
@@ -46,11 +51,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   animation: slideDown 600ms ease-in-out;
   transition: 500ms all ease-in-out;
   box-shadow: -0.5rem 0 1rem rgba(10, 10, 10, 0.5);
   border-radius: 0rem 0rem 2rem 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .navlink__container {
@@ -193,6 +199,10 @@
   .link {
     color: var(--off-white);
     margin: 0;
-    padding: 2rem 1rem;
+    padding: 1rem;
+    width: 100%;
+    background: var(--medium-blue);
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
   }
 }

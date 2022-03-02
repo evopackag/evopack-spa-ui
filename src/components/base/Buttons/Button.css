@@ -13,6 +13,9 @@
   align-items: center;
   justify-self: center;
 }
+.button__icon {
+  margin-left: 1rem;
+}
 
 .button--primary-green {
   color: var(--primary-green);
