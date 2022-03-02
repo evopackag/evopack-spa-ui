@@ -2,7 +2,7 @@ import Bullets from "../../../base/Bullets/Bullets";
 import Heading from "../../../base/Heading/Heading";
 import HorizontalDivider from "../../../base/HorizontalDivider/HorizontalDivider";
 import Spacing from "../../../base/Spacing/Spacing";
-import Text, { TextSize, TextWeight } from "../../../base/Text/Text";
+import Text, { TextWeight } from "../../../base/Text/Text";
 
 const legalContent = require("../../FooterContent.json");
 

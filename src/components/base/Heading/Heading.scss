@@ -24,6 +24,7 @@ h2 {
 /* .h2 .one-word-per-line {
   word-spacing: <parent-width>; 
 } */
+
 /* .your-classname {
   width: min-intrinsic;
   width: -webkit-min-content;
@@ -33,6 +34,7 @@ h2 {
   display: -ms-grid;
   -ms-grid-columns: min-content;
 } */
+
 h3 {
   font-size: 4rem;
   font-weight: bold;
@@ -103,6 +105,7 @@ h2 .endQuote::after {
     content: url(/public/assets/heading-underline--mobile.svg);
   }
 }
+
 /* h4 .startQuote::before {
   content: url(/public/assets/start-quotes.svg);
   display: inline-block;
@@ -118,6 +121,7 @@ h4 .endQuote::after {
   bottom: 0rem;
   right: 10rem;
 } */
+
 @media screen and (max-width: 1024px) {
   h1 {
     font-size: 7rem;
@@ -143,6 +147,7 @@ h4 .endQuote::after {
     font-size: 1rem;
   }
 }
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 4rem;
@@ -168,6 +173,7 @@ h4 .endQuote::after {
     font-size: 1rem;
   }
 }
+
 @media screen and (max-width: 450px) {
   h1 {
     font-size: 4rem;
