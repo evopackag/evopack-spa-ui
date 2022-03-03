@@ -39,3 +39,15 @@
   opacity: 1;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .link {
+    color: var(--off-white);
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    background: var(--medium-blue);
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}

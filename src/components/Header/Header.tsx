@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import Link from "../../components/base/Link/Link";
 import Button from "../base/Buttons/Button";
 import Icon from "../base/Icon/Icon";
+import Spacing from "../base/Spacing/Spacing";
 import Text, { TextColour, TextSize, TextWeight } from "../base/Text/Text";
 
 import "./Header.css";
@@ -68,6 +69,11 @@ const Header = ({ data, refs }: IProps) => {
     };
   }, []);
 
+  const contactOptionsData = [
+    { label: "Email", href: "mailto:info@evopack.tech", icon: "mail" },
+    { label: "Call Us", href: "tel:+417921452239", icon: "phone" },
+  ];
+
   return (
     <header className="header col-xs-12">
       <NavLink
@@ -89,8 +95,8 @@ const Header = ({ data, refs }: IProps) => {
           onClick={() => setMobileMenu(!mobileMenu)}
         >
           {mobileMenu ? (
-            <>
-              <ul className="header__mobileMenuLinks">
+            <div className="header__mobileMenuLinks">
+              <ul className="header__navigationGroup">
                 <div className="header__navigationGroupHeader">
                   <Text size={TextSize.sm} color={TextColour.greyBlue}>
                     Pages
@@ -101,7 +107,7 @@ const Header = ({ data, refs }: IProps) => {
                   return (
                     <li
                       className="navlink__container align-center justify-center"
-                      key={link}
+                      key={link.label}
                     >
                       <NavLink
                         to={`${link.urlPath}`}
@@ -120,17 +126,45 @@ const Header = ({ data, refs }: IProps) => {
                     </li>
                   );
                 })}
-
-                <li className="navlink__container row" key="closeMobileMenu">
-                  <Button
-                    label="Close Menu"
-                    handleClick={() => setMobileMenu(!mobileMenu)}
-                    type="secondary-white"
-                    icon="close--white"
-                  />
-                </li>
+                <Spacing size="md" />
               </ul>
-            </>
+              <ul className="header__navigationGroup">
+                <div className="header__navigationGroupHeader">
+                  <Text size={TextSize.sm} color={TextColour.greyBlue}>
+                    Contact Us
+                  </Text>
+                </div>
+                {contactOptionsData.map((link) => {
+                  return (
+                    <li
+                      className="navlink__container align-center justify-center"
+                      key={link.label}
+                    >
+                      <Link
+                        href={`${link.href}`}
+                        className={"link between-xs row"}
+                        key={link.label}
+                      >
+                        <Text size={TextSize.md} weight={TextWeight.regular}>
+                          {link.label}
+                        </Text>
+                        <Icon size="sm" icon={link.icon} />
+                      </Link>
+                    </li>
+                  );
+                })}
+                <Spacing size="md" />
+              </ul>
+
+              <div className="navlink__container row" key="closeMobileMenu">
+                <Button
+                  label="Close Menu"
+                  handleClick={() => setMobileMenu(!mobileMenu)}
+                  type="secondary-white"
+                  icon="close--white"
+                />
+              </div>
+            </div>
           ) : null}
         </nav>
       ) : (

@@ -42,7 +42,12 @@
 
 @media screen and (max-width: 768px) {
   .link {
-    // font-size: 2.5rem;
-    // padding-bottom: 2rem;
+    color: var(--off-white);
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    background: var(--medium-blue);
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
   }
 }

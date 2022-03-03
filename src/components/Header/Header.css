@@ -14,6 +14,13 @@
   z-index: 100;
   transition: 500ms all ease-in-out;
 }
+.header__navigationGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .header__navigationGroupHeader {
   width: 90%;
   margin-bottom: 0.5rem;
@@ -41,7 +48,8 @@
   left: 0;
   bottom: 0;
   right: 0;
-  height: 60vh;
+  min-height: auto;
+  height: 80vh;
   width: 100vw;
   background: var(--primary-blue);
   backdrop-filter: blur(20px);
