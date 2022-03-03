@@ -96,6 +96,17 @@ const Header = ({ data, refs }: IProps) => {
         >
           {mobileMenu ? (
             <div className="header__mobileMenuLinks">
+              <NavLink
+                to={`/`}
+                // className={({ isActive }) => (isActive ? "link link--active" : "link")}
+                key={"homepageLink"}
+              >
+                <img
+                  src={`${process.env.PUBLIC_URL}/assets/Evopack_GreenLogoWhiteWritingHorizontal.svg`}
+                  alt=""
+                />
+              </NavLink>
+              <Spacing size="md" />
               <ul className="header__navigationGroup">
                 <div className="header__navigationGroupHeader">
                   <Text size={TextSize.sm} color={TextColour.greyBlue}>
@@ -179,7 +190,7 @@ const Header = ({ data, refs }: IProps) => {
                   }
                   key={link.label}
                 >
-                  <Text size={TextSize.sm} weight={TextWeight.medium}>
+                  <Text size={TextSize.sm} weight={TextWeight.semibold}>
                     {link.label}
                   </Text>
                   <div className="link__underline">

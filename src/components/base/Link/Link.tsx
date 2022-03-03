@@ -37,13 +37,13 @@ const Link = ({
       {icon ? <img src={`${BASE_IMG_URL}${icon}`} /> : null}
       {label}
 
-      <div className="link__underline">
+      {/* <div className="link__underline">
         <img
           className="link__underlineImage"
           src={`${process.env.PUBLIC_URL}link-underline.svg`}
           alt=""
         />
-      </div>
+      </div> */}
     </a>
   );
 };
