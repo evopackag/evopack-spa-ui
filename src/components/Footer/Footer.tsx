@@ -1,5 +1,5 @@
 import { text } from "node:stream/consumers";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Button from "../base/Buttons/Button";
 import Heading from "../base/Heading/Heading";
 import HorizontalDivider from "../base/HorizontalDivider/HorizontalDivider";
@@ -36,6 +36,33 @@ const Footer = ({ data }: IProps) => {
     }
   };
 
+  function useOutsideAlerter(ref: any) {
+    useEffect(() => {
+      /**
+       * Alert if clicked on outside of element
+       */
+      function handleClickOutside(event: any) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          // alert("You clicked outside of me!");
+          setShowOverlay(false);
+        }
+      }
+
+      // Bind the event listener
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        // Unbind the event listener on clean up
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
+
+  // document.body.addEventListener("click", () => {
+  //   if (showOverlay) {
+  //     setShowOverlay(false);
+  //   }
+  // });
+
   const {
     subscriptionLabel,
     subscriptionPlaceholder,
@@ -43,8 +70,12 @@ const Footer = ({ data }: IProps) => {
     dataPolicyLinkLabel,
   } = data;
 
+  const footerSection = useRef(null);
+
+  useOutsideAlerter(footerSection);
+
   return (
-    <div className="col-xs-12 padding-horizontal-4">
+    <div className="col-xs-12 padding-horizontal-4" ref={footerSection}>
       <footer className="footer row justify-between align-center">
         <div className="col-xs-12 col-lg-8">
           <div className="row">
@@ -81,7 +112,7 @@ const Footer = ({ data }: IProps) => {
       <HorizontalDivider />
       <div className="row align-center justify-between footer__legals">
         <h6>©Evopack 2022</h6>
-        <div className="row">
+        <div className="row footer__legalsButtons">
           {/* <Link
             label={imprintLinkLabel}
             handleClick={() => toggleOverlay("imprint")}

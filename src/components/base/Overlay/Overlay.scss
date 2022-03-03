@@ -37,13 +37,15 @@
 }
 
 @media screen and (max-width: 768px) {
-  .overlay__content {
-    padding: 4rem 1rem;
-  }
-  .overlay__ctas {
-    padding: 1rem;
-  }
-  .overlay__ctas button:first-of-type {
-    margin-bottom: 1rem;
+  .overlay {
+    &__content {
+      padding: 4rem 1rem;
+    }
+    &__ctas {
+      padding: 1rem;
+      & button:first-of-type {
+        margin-bottom: 1rem;
+      }
+    }
   }
 }

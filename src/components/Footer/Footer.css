@@ -1,6 +1,9 @@
 .footer {
   padding: 8rem 0 2rem;
 }
+.footer__legalsButtons > button {
+  padding-bottom: 1rem;
+}
 
 .footer__subscribe {
   display: flex;
