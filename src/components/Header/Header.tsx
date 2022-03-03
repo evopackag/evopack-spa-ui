@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Link from "../../components/base/Link/Link";
+import useOutsideAlerter from "../../hooks/useClickOutsideEffect/useClickOutsideEffect";
 import Button from "../base/Buttons/Button";
 import Icon from "../base/Icon/Icon";
 import Spacing from "../base/Spacing/Spacing";
@@ -18,6 +19,8 @@ const Header = ({ data, refs }: IProps) => {
   const [isMobile, setIsMobile] = useState(false);
 
   const [mobileMenu, setMobileMenu] = useState(false);
+
+  const globalHeader = useRef(null);
 
   const vw: number = Math.max(
     document.documentElement.clientWidth || 0,
@@ -44,6 +47,8 @@ const Header = ({ data, refs }: IProps) => {
   //     }
   //   }, []);
   // };
+
+  useOutsideAlerter(globalHeader, setMobileMenu, false);
 
   useEffect(() => {
     if (window.innerWidth > 768) {
@@ -75,7 +80,7 @@ const Header = ({ data, refs }: IProps) => {
   ];
 
   return (
-    <header className="header col-xs-12">
+    <header className="header col-xs-12" ref={globalHeader}>
       <NavLink
         to={`/`}
         // className={({ isActive }) => (isActive ? "link link--active" : "link")}
