@@ -45,6 +45,7 @@ const HeroInfoBar = ({ productAreas }: IProps) => {
           border={isMobile ? "blue" : "white"}
           size="sm"
           hoverText="+41075432323"
+          href="tel:+417921452239"
           isButton
         />
         <Icon
@@ -52,6 +53,7 @@ const HeroInfoBar = ({ productAreas }: IProps) => {
           border={isMobile ? "blue" : "white"}
           size="sm"
           hoverText="info@evopack.tech"
+          href="mailto:info@evopack.tech"
           isButton
         />
       </div>

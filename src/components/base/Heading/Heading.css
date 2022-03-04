@@ -170,7 +170,7 @@ h4 .endQuote::after {
 }
 @media screen and (max-width: 450px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 
   h2 {

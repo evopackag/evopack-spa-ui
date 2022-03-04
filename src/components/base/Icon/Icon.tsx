@@ -9,6 +9,7 @@ interface IProps {
   handleClick?: any;
   isButton?: boolean;
   hoverText?: string;
+  href?: string;
 }
 
 const Icon = ({
@@ -19,12 +20,35 @@ const Icon = ({
   handleClick,
   isButton,
   hoverText,
+  href,
 }: IProps) => {
+  if (isButton) {
+    return (
+      <a
+        className={
+          border || isButton
+            ? `icon icon-button icon--border-${border}`
+            : `icon`
+        }
+        href={href}
+      >
+        {hoverText ? (
+          <div className="icon__text">
+            <Heading type="h6" text={hoverText} theme="dark" />
+          </div>
+        ) : null}
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/${icon}.svg`}
+          alt={icon}
+          onClick={handleClick}
+          className={`icon--${size}`}
+        />
+      </a>
+    );
+  }
   return (
     <div
-      className={
-        border || isButton ? `icon icon-button icon--border-${border}` : `icon`
-      }
+      className={border ? `icon icon-button icon--border-${border}` : `icon`}
     >
       {hoverText ? (
         <div className="icon__text">

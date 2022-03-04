@@ -51,6 +51,8 @@ const Footer = ({ data }: IProps) => {
     }, [ref]);
   }
 
+  useEffect(() => {}, [overlayContent]);
+
   // document.body.addEventListener("click", () => {
   //   if (showOverlay) {
   //     setShowOverlay(false);

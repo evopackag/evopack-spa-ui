@@ -16,9 +16,15 @@ import Home from "./pages/Home/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./pages/About/About";
 import Careers from "./pages/Careers/Carrers";
+import useStickyStorage from "./hooks/useStickyStorage/useStickyStorage";
 
 function App() {
-  const [language, setLanguage] = useState(Languages.English);
+  // const [language, setLanguage] = useState(Languages.English);
+  const [language, setLanguage] = useStickyStorage(
+    "languagePreference",
+    Languages.English
+  );
+
   return (
     <VisitorContext.Provider value={{ language, setLanguage }}>
       {/* <Home /> */}
