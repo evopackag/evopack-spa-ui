@@ -39,8 +39,6 @@ const HeroSection = ({ data, refs, handleCTAClick }: IProps) => {
     }
   };
 
-  console.log(isMobileView);
-
   return (
     <div className="row">
       <section className="heroSection col-xs-12 center-xs">

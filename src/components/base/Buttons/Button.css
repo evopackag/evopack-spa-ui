@@ -59,7 +59,8 @@
 }
 
 .button--primary-green-filled {
-  color: var(--primary-green);
+  background: var(--primary-green);
+  color: var(--primary-blue);
   border: 2px solid var(--primary-green);
   transition: 250ms ease-in-out all;
   position: relative;
@@ -83,9 +84,6 @@
 }
 
 .button--primary-green-filled:hover {
-  background: var(--primary-green);
-  color: var(--primary-blue);
-  border: 2px solid var(--primary-green);
   transform: translateY(-0.5rem);
 }
 
