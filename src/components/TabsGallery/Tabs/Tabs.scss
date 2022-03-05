@@ -1,6 +1,6 @@
-.tabsGallery {
+.tabs {
   overflow: scroll;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem 0 0;
 
   &::-webkit-scrollbar,
   &::-webkit-scrollbar {
@@ -30,7 +30,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .tabsGallery {
+  .tabs {
     &__container {
       justify-content: flex-start;
     }

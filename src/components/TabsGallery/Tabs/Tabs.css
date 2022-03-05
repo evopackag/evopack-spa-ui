@@ -1,27 +1,27 @@
-.tabsGallery {
+.tabs {
   overflow: scroll;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem 0 0;
 }
-.tabsGallery::-webkit-scrollbar, .tabsGallery::-webkit-scrollbar {
+.tabs::-webkit-scrollbar, .tabs::-webkit-scrollbar {
   display: none;
 }
-.tabsGallery::-webkit-scrollbar, .tabsGallery::-webkit-scrollbar {
+.tabs::-webkit-scrollbar, .tabs::-webkit-scrollbar {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
 }
-.tabsGallery__container {
+.tabs__container {
   justify-content: center;
   width: 100%;
   white-space: nowrap;
   flex-wrap: nowrap;
 }
-.tabsGallery__container > * {
+.tabs__container > * {
   margin-right: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-  .tabsGallery__container {
+  .tabs__container {
     justify-content: flex-start;
   }
 }

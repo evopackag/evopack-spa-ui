@@ -1,7 +1,7 @@
 import Heading from "../../components/base/Heading/Heading";
 import PageContainer from "../../components/base/PageContainer/PageContainer";
 import Header from "../../components/Header/Header";
-import Text from "../../components/base/Text/Text";
+import Text, { TextSize } from "../../components/base/Text/Text";
 import Button from "../../components/base/Buttons/Button";
 import { useContext } from "react";
 import VisitorContext from "../../contexts/VisitorContext/VisitorContext";
@@ -11,6 +11,7 @@ import "./About.css";
 import Footer from "../../components/Footer/Footer";
 import HorizontalDivider from "../../components/base/HorizontalDivider/HorizontalDivider";
 import TabsGallery from "../../components/TabsGallery/TabsGallery";
+import TabsContent from "../../components/TabsGallery/TabsContent/TabsContent";
 
 const About = () => {
   const websiteContent: any = require("./About.json");
@@ -59,7 +60,23 @@ const About = () => {
               { label: "Why We Started", active: true },
               { label: "Our Strengths", active: true },
             ]}
-          />
+          >
+            <TabsContent label="Our Team">
+              <Text theme="light" size={TextSize.sm}>
+                Our Team (Coming soon)
+              </Text>
+            </TabsContent>
+            <TabsContent label="Why We Started">
+              <Text theme="light" size={TextSize.sm}>
+                Why we started (Coming soon)
+              </Text>
+            </TabsContent>
+            <TabsContent label="Our Strengths">
+              <Text theme="light" size={TextSize.sm}>
+                Our stengths (Coming soon)
+              </Text>
+            </TabsContent>
+          </TabsGallery>
         </section>
       </div>
       <Footer data={languageSpecificContent.footer} />
