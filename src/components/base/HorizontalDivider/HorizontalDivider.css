@@ -8,6 +8,10 @@
 
 .slopedDivider {
   width: 100vw;
+  height: 5vh;
+  clip-path: polygon(0 90%, 100% 55%, 100% 100%, 0% 100%);
+
+  background: linear-gradient(93.42deg, #1b1b2d 8.99%, #2e3bae 116.46%);
 }
 
 /* .horizontalDividerContainer {

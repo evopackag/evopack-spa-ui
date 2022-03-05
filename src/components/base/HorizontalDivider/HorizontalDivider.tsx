@@ -9,7 +9,7 @@ const HorizontalDivider = ({ theme, slopedDivider }: IProps) => {
   if (slopedDivider) {
     return (
       <div className="slopedDivider">
-        <svg
+        {/* <svg
           width="100%"
           height="65"
           viewBox="0 0 100% 100%"
@@ -19,7 +19,7 @@ const HorizontalDivider = ({ theme, slopedDivider }: IProps) => {
           <path
             d={`M0 62L${window.innerWidth} 0L${window.innerWidth} 65H0V62Z`}
             fill="url(#paint0_linear_606_15829)"
-            width={100}
+            width={window.innerWidth}
             // height={65}
           />
           <defs>
@@ -35,7 +35,7 @@ const HorizontalDivider = ({ theme, slopedDivider }: IProps) => {
               <stop offset="0.989583" stop-color="#2E3BAE" />
             </linearGradient>
           </defs>
-        </svg>
+        </svg> */}
       </div>
     );
   }
