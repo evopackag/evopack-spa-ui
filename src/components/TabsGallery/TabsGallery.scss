@@ -1,8 +1,38 @@
 .tabsGallery {
-  & > * {
-    margin-right: 1rem;
+  overflow: scroll;
+  padding: 0 1rem;
+
+  &::-webkit-scrollbar,
+  &::-webkit-scrollbar {
+    display: none;
   }
-  & > *:last-child {
-    margin-right: 0;
+
+  &::-webkit-scrollbar,
+  &::-webkit-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+  }
+
+  &__container {
+    justify-content: center;
+    width: 100%;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    // margin: 0 1rem;
+
+    & > * {
+      margin-right: 1rem;
+    }
+    // & > *:last-child {
+    //   margin-right: 1;
+    // }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tabsGallery {
+    &__container {
+      justify-content: flex-start;
+    }
   }
 }

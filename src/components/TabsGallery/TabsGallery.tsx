@@ -14,15 +14,18 @@ const TabsGallery = ({ data }: IProps) => {
   const [filter, setFilter] = useState(data[0].label);
   return (
     <div className="width-100 row center-xs middle-xs tabsGallery">
-      {data.map((tab: any) => {
-        return (
-          <CheckboxItem
-            label={tab.label}
-            active={tab.label === filter}
-            handleClick={() => setFilter(tab.label)}
-          />
-        );
-      })}
+      <div className="row tabsGallery__container">
+        {data.map((tab: any) => {
+          return (
+            <CheckboxItem
+              label={tab.label}
+              active={tab.label === filter}
+              handleClick={() => setFilter(tab.label)}
+            />
+          );
+        })}
+      </div>
+
       <Spacing size="lg" />
       {/* {content[filter].map((content: any) => {
         return (

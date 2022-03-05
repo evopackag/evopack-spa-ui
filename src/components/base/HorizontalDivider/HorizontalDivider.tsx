@@ -20,7 +20,7 @@ const HorizontalDivider = ({ theme, slopedDivider }: IProps) => {
             d={`M0 62L${window.innerWidth} 0L${window.innerWidth} 65H0V62Z`}
             fill="url(#paint0_linear_606_15829)"
             width={100}
-            height={65}
+            // height={65}
           />
           <defs>
             <linearGradient

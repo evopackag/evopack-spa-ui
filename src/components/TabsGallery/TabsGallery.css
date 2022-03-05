@@ -1,6 +1,27 @@
-.tabsGallery > * {
+.tabsGallery {
+  overflow: scroll;
+  padding: 0 1rem;
+}
+.tabsGallery::-webkit-scrollbar, .tabsGallery::-webkit-scrollbar {
+  display: none;
+}
+.tabsGallery::-webkit-scrollbar, .tabsGallery::-webkit-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+}
+.tabsGallery__container {
+  justify-content: center;
+  width: 100%;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+.tabsGallery__container > * {
   margin-right: 1rem;
 }
-.tabsGallery > *:last-child {
-  margin-right: 0;
+
+@media screen and (max-width: 768px) {
+  .tabsGallery__container {
+    justify-content: flex-start;
+  }
 }
