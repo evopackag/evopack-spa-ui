@@ -48,9 +48,9 @@ const HeroSection = ({ data, refs, handleCTAClick }: IProps) => {
             type="h1"
             theme="light"
             spacing="100vw"
-            alignment={isMobileView ? "left" : "center"}
+            // alignment={isMobileView ? "left" : "center"}
           />
-          <span className="heroSection__subtitle">
+          <span className="heroSection__subtitle center-text">
             <Text theme={isMobileView ? "light" : "dark"}>
               Reduce your costs and impact on the planet with{" "}
               <UnderlinedText>85%&nbsp;more&nbsp;efficient</UnderlinedText>{" "}

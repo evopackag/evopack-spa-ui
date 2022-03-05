@@ -125,6 +125,21 @@
   border: 2px solid var(--primary-blue);
 }
 
+// Secondary blue filled
+
+.button--secondary-blue-filled {
+  background: var(--primary-blue);
+  color: white;
+  border: 2px solid var(--primary-blue);
+  max-width: min-content;
+}
+
+.button--secondary-blue:hover {
+  color: var(--off-white);
+  background: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+}
+
 .button--secondary-green-fill {
   /* background: var(--primary-green); */
   color: var(--primary-green);
@@ -185,7 +200,8 @@
   .button--secondary-white,
   .button--secondary-green-fill,
   .button--primary-green,
-  .button--primary-green-filled {
+  .button--primary-green-filled,
+  .button--secondary-blue-filled {
     max-width: 100%;
     width: 100%;
     display: flex;

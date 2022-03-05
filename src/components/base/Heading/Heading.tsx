@@ -10,6 +10,7 @@ interface IProps {
   accent?: boolean | string;
   spacing?: string;
   alignment?: "center" | "left" | "right" | undefined;
+  leftAlignDesktop?: boolean;
 }
 
 const Heading = ({
@@ -20,6 +21,7 @@ const Heading = ({
   weight,
   spacing,
   alignment,
+  leftAlignDesktop,
 }: IProps) => {
   const isMobileView = useViewportSize(450);
 
@@ -28,8 +30,12 @@ const Heading = ({
   useEffect(() => {}, [alignment]);
   const headingVariableStyles = {
     wordSpacing: `${spacing}`,
-    textAlign: `${isMobileView && alignment ? "left" : "center"}` as const,
+    textAlign: `${
+      isMobileView || leftAlignDesktop ? "left" : "center"
+    }` as const,
   };
+
+  // alert(`${alignment} ${isMobileView}`);
 
   if (type === "h1") {
     return (

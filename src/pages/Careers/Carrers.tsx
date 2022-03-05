@@ -11,11 +11,15 @@ import "./Careers.css";
 import Spacing from "../../components/base/Spacing/Spacing";
 import Link from "../../components/base/Link/Link";
 import Footer from "../../components/Footer/Footer";
+import Icon from "../../components/base/Icon/Icon";
+import HorizontalDivider from "../../components/base/HorizontalDivider/HorizontalDivider";
 
 const Careers = () => {
   const websiteContent: any = require("./Careers.json");
 
   const { language } = useContext(VisitorContext);
+
+  const numberOfJobs = [];
 
   const languageSpecificContent = websiteContent[language];
   return (
@@ -23,32 +27,53 @@ const Careers = () => {
       <Header data={languageSpecificContent.heroSection.navigationLinks} />
       <div className="row">
         <section className="careers__heroSection col-xs-12 center-xs">
-          <div className="center-xs padding-horizontal-4 careers__heroContent">
-            <Heading
-              text="Careers at Evopack"
-              type="h1"
-              theme="light"
-              spacing=""
-            />
+          <div className="col width-100 center-xs middle-xs padding-horizontal-4 careers__heroContent">
+            <div className="col center-xs  careers__heroSectionHeading">
+              <Spacing size="md" />
+              <Spacing size="md" />
+              <Heading
+                text="Let's work together"
+                type="h1"
+                theme="light"
+                leftAlignDesktop
+                spacing=""
+              />
+              <Spacing size="sm" />
+              <Text theme="light">
+                We currently have&nbsp;
+                <strong style={{ color: "var(--primary-green)" }}>
+                  {numberOfJobs.length}
+                </strong>
+                &nbsp;open positions available. If you’re interested in working
+                with us, please get in touch via our contact methods.
+              </Text>
+            </div>
+
+            {/* {/* <Spacing size="lg" /> */}
+
+            {/* <Link label="Get in touch" href="mailto:info@evopack.tech"></Link> */}
+          </div>
+          <HorizontalDivider slopedDivider />
+          {/* <div className="col careers__ctas">
+            <Link href="mailto:info@evopack.tech">Email Us</Link>
+          </div> */}
+          <div className="row center-xs middle-xs careers__ctas padding-horizontal-4">
             <Spacing size="md" />
-            <Text theme="light">
-              <strong>
-                We don't have any open positions right now, but we'd love to
-                hear from you if you're interested.
-              </strong>
-              <br />
-              Send us an email using our contact form or check back in the
-              future.
-            </Text>
-            {/* <Spacing size="lg" />
-            <Link label="Get in touch" href="mailto:info@evopack.tech"></Link> */}
-            {/* <Button
-              label="Get in touch"
-              type="primary-green"
+            <Button
+              label="Email Us"
+              type="secondary-blue-filled"
 
               // handleClick={handleCTAClick}
-            /> */}
+            />
+            <Spacing size="xs" />
+            <Button
+              label="Call up"
+              type="secondary-blue"
+
+              // handleClick={handleCTAClick}
+            />
           </div>
+          <Spacing size="md" />
         </section>
       </div>
       <Footer data={languageSpecificContent.footer} />

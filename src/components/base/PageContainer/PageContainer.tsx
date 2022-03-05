@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
 
+import "./PageContainer.css";
+
 interface IProps {
   children: ReactNode;
 }

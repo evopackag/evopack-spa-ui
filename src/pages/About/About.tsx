@@ -9,6 +9,8 @@ import Spacing from "../../components/base/Spacing/Spacing";
 
 import "./About.css";
 import Footer from "../../components/Footer/Footer";
+import HorizontalDivider from "../../components/base/HorizontalDivider/HorizontalDivider";
+import TabsGallery from "../../components/TabsGallery/TabsGallery";
 
 const About = () => {
   const websiteContent: any = require("./About.json");
@@ -21,10 +23,25 @@ const About = () => {
       <Header data={languageSpecificContent.heroSection.navigationLinks} />
       <div className="row height-100">
         <section className="about__heroSection col-xs-12 center-xs">
-          <div className="center-xs padding-horizontal-4 about__heroContent">
-            <Heading text="About Evopack" type="h1" theme="light" spacing="" />
-            <Spacing size="md" />
-            <Text theme="light">
+          <div className="col width-100 center-xs middle-xs padding-horizontal-4 about__heroContent">
+            <div className="col center-xs  about__heroSectionHeading">
+              <Spacing size="md" />
+              <Spacing size="md" />
+              <Heading
+                text="About Evopack"
+                type="h1"
+                theme="light"
+                leftAlignDesktop
+                spacing=""
+              />
+              <Spacing size="sm" />
+              <Text theme="light">
+                We’re a group of engineers and chemists looking to move
+                packaging into the 21st centry.
+              </Text>
+            </div>
+
+            {/* <Text theme="light">
               <strong>
                 We help companies develop more efficient, protective and
                 sustainable packaging solutions.
@@ -32,8 +49,17 @@ const About = () => {
               <br />
               Our expertise lies in the manufacturing and consulting for
               packaging ranging from paints to home products.
-            </Text>
+            </Text> */}
           </div>
+          <HorizontalDivider slopedDivider />
+          <Spacing size="md" />
+          <TabsGallery
+            data={[
+              { label: "Our Team", active: true },
+              { label: "Why We Started", active: true },
+              { label: "Our Strengths", active: true },
+            ]}
+          />
         </section>
       </div>
       <Footer data={languageSpecificContent.footer} />

@@ -6,6 +6,10 @@
   padding: 0rem 2.5rem;
 }
 
+.slopedDivider {
+  width: 100vw;
+}
+
 /* .horizontalDividerContainer {
   padding: 0 40px;
 } */
