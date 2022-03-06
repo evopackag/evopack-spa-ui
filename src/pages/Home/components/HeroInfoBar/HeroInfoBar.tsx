@@ -26,7 +26,7 @@ const HeroInfoBar = ({ productAreas }: IProps) => {
   return (
     <div className="heroInfoBar width-100 row">
       <div className="heroInfoBar__languageSettings col-xs-6 col-sm-3">
-        <Toggle options={languageOptions} />
+        {/* <Toggle options={languageOptions} toggleTop /> */}
       </div>
       <div className="heroSection__areas col-xs-10 col-md-6 pop-md">
         <div className="row justify-between">

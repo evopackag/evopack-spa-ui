@@ -9,7 +9,7 @@ import UnderlinedText from "../../components/base/UnderlinedText/UnderlinedText"
 
 import "./Careers.css";
 import Spacing from "../../components/base/Spacing/Spacing";
-import Link from "../../components/base/Link/Link";
+import Link, { ButtonLevel } from "../../components/base/Link/Link";
 import Footer from "../../components/Footer/Footer";
 import Icon from "../../components/base/Icon/Icon";
 import HorizontalDivider from "../../components/base/HorizontalDivider/HorizontalDivider";
@@ -59,7 +59,7 @@ const Careers = () => {
           </div> */}
           <div className="row center-xs middle-xs careers__ctas padding-horizontal-4">
             <Spacing size="md" />
-            <Button
+            {/* <Button
               label="Email Us"
               type="secondary-blue-filled"
 
@@ -71,7 +71,21 @@ const Careers = () => {
               type="secondary-blue"
 
               // handleClick={handleCTAClick}
-            />
+            /> */}
+            <Link
+              level={ButtonLevel.primary}
+              buttonStyle
+              href="mailto:info@evopack.tech"
+            >
+              Email Us
+            </Link>
+            <Link
+              level={ButtonLevel.secondaryBlue}
+              buttonStyle
+              href="tel:+417921452239"
+            >
+              Call Up
+            </Link>
           </div>
           <Spacing size="md" />
         </section>

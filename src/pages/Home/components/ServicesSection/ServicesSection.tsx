@@ -21,7 +21,7 @@ const ServicesSection = ({ data }: IProps) => {
   return (
     <section className="servicesSection">
       <Spacing size={isMobile ? "sm" : "lg"} />
-      <div className="row width-100 justify-center">
+      <div className="row width-100 justify-center padding-horizontal-2">
         <Heading text={title} type="h2" theme="light" />
       </div>
       <HorizontalSlider content={{}} buttons={false}>

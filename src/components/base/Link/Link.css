@@ -2,9 +2,70 @@
   color: var(--primary-blue);
   font-size: 1.125rem;
   font-weight: bold;
-  margin: 0 1.5rem;
+  margin-right: 1.5rem;
   cursor: pointer;
   position: relative;
+}
+.link--buttonStyle {
+  padding: 0.625rem 1.875rem;
+  border-radius: 2rem;
+  white-space: nowrap;
+  position: relative;
+  font-weight: bolder;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: all ease-in-out 250ms;
+  text-align: center;
+  text-decoration: none;
+}
+.link--buttonStyle__icon {
+  margin-left: 1rem;
+}
+.link--buttonStyle.link--primary {
+  background: var(--primary-blue);
+  color: white;
+  border: 2px solid var(--primary-blue);
+  max-width: min-content;
+}
+.link--buttonStyle.link--primary:hover {
+  background: #1f2052;
+  color: white;
+  border: 2px solid var(--primary-blue);
+}
+.link--buttonStyle.link--secondaryBlue {
+  background: white;
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+  max-width: min-content;
+}
+.link--buttonStyle.link--secondaryBlue:hover {
+  color: var(--off-white);
+  background: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+}
+.link--buttonStyle.link--secondaryGreen {
+  color: var(--primary-green);
+  border: 2px solid var(--primary-green);
+  transition: 250ms ease-in-out all;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link--buttonStyle.link--secondaryGreen:hover {
+  color: white;
+  background: var(--primary-green);
+  border: 2px solid var(--primary-green);
+}
+.link--buttonStyle.link--secondaryWhite {
+  color: var(--off-white);
+  border: 2px solid var(--off-white);
+  max-width: min-content;
+}
+.link--buttonStyle.link--secondaryWhite:hover {
+  background: var(--off-white);
+  color: var(--primary-blue);
+  border: 2px solid var(--off-white);
 }
 
 .link:last-of-type {

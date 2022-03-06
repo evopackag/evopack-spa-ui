@@ -88,7 +88,7 @@
       "title": "Verpackungen der Zukunft",
       "subTitle": "Nachhaltige Lösungen für eine verbesserte Produktintegrität",
       "CTA": "Kontakt",
-      "navigationLinks": [{"label": "Dienstleistungen", "urlPath": "/careers"}, {"label": "Über Uns", "urlPath": "/about"}],
+      "navigationLinks": [{"label": "Jobs & Karriere", "urlPath": "/careers"}, {"label": "Über Uns", "urlPath": "/about"}],
       "productAreas": ["Farben und Beschichtungen", "Klebstoffe", "Polymer-Dispersionen", "Haushaltspflege"]
     },
     "servicesSection": {

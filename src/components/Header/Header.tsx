@@ -1,11 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Link from "../../components/base/Link/Link";
+import { Languages } from "../../contexts/VisitorContext/VisitorContext";
 import useOutsideAlerter from "../../hooks/useClickOutsideEffect/useClickOutsideEffect";
 import Button from "../base/Buttons/Button";
 import Icon from "../base/Icon/Icon";
 import Spacing from "../base/Spacing/Spacing";
 import Text, { TextColour, TextSize, TextWeight } from "../base/Text/Text";
+import Toggle from "../base/Toggle/Toggle";
 
 import "./Header.css";
 
@@ -91,6 +93,21 @@ const Header = ({ data, refs }: IProps) => {
           alt=""
         />
       </NavLink>
+      {isMobile ? (
+        <Toggle
+          options={[
+            {
+              displayText: "EN",
+              value: Languages.English,
+            },
+            {
+              displayText: "DE",
+              value: Languages.German,
+            },
+          ]}
+          toggleTop
+        />
+      ) : null}
 
       {isMobile ? (
         <nav
@@ -171,7 +188,6 @@ const Header = ({ data, refs }: IProps) => {
                 })}
                 <Spacing size="md" />
               </ul>
-
               <div className="navlink__container row" key="closeMobileMenu">
                 <Button
                   label="Close Menu"
@@ -209,6 +225,19 @@ const Header = ({ data, refs }: IProps) => {
               </>
             );
           })}
+          <Toggle
+            options={[
+              {
+                displayText: "EN",
+                value: Languages.English,
+              },
+              {
+                displayText: "DE",
+                value: Languages.German,
+              },
+            ]}
+            toggleTop
+          />
         </nav>
       )}
     </header>

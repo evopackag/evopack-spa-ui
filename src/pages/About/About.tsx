@@ -22,7 +22,7 @@ const About = () => {
   return (
     <PageContainer>
       <Header data={languageSpecificContent.heroSection.navigationLinks} />
-      <div className="row height-100">
+      <div className="row">
         <section className="about__heroSection col-xs-12 center-xs">
           <div className="col width-100 center-xs middle-xs padding-horizontal-4 about__heroContent">
             <div className="col center-xs  about__heroSectionHeading">

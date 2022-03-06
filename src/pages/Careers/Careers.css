@@ -10,7 +10,7 @@
 .careers__ctas {
   margin-top: 4rem;
 }
-.careers__ctas button:nth-of-type(1) {
+.careers__ctas a:nth-of-type(1) {
   margin-right: 1rem;
 }
 .careers__heroSectionHeading {

@@ -64,7 +64,7 @@ const HeroSection = ({ data, refs, handleCTAClick }: IProps) => {
             handleClick={handleCTAClick}
           />
         </div>
-        <HeroInfoBar productAreas={data.productAreas} />
+        {isMobileView ? null : <HeroInfoBar productAreas={data.productAreas} />}
       </section>
     </div>
   );
