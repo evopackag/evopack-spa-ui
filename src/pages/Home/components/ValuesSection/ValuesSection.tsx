@@ -47,7 +47,7 @@ const ValuesSection = ({ data }: IProps) => {
   return (
     <section className="ValuesSection col-xs-12">
       <Spacing size="lg" />
-      <div className="valuesSection__title col width-100 align-center center-xs">
+      <div className="valuesSection__title col width-100 align-center center-xs center-text">
         <Heading text={title} type="h2" theme="light" spacing="100vw" accent />
         <Spacing size="sm" />
         <Heading text={subTitle} type="h5" theme="light" />
