@@ -45,7 +45,7 @@ const ContactForm = forwardRef((data: any, ref: any) => {
     emailjs
       .sendForm(
         "service_EvopackDesk",
-        "evopack_contact_form_1",
+        "evopack_contact",
         ref.current,
         "TjoMd8URgskSd49x1"
       )
