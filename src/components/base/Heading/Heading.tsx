@@ -11,6 +11,7 @@ interface IProps {
   spacing?: string;
   alignment?: "center" | "left" | "right" | undefined;
   leftAlignDesktop?: boolean;
+  accentWords?: string;
 }
 
 const Heading = ({
@@ -22,6 +23,7 @@ const Heading = ({
   spacing,
   alignment,
   leftAlignDesktop,
+  accentWords,
 }: IProps) => {
   const isMobileView = useViewportSize(450);
 
@@ -64,8 +66,10 @@ const Heading = ({
         className={` ${theme ? `heading--${theme}` : `heading ${alignment}`}`}
         style={{ wordSpacing: `${spacing}` }}
       >
-        {accent ? textMinusLastWord : text}
-        {accent ? <span className="underlineAccent">{lastWord}</span> : null}
+        {text}
+        {accent && accentWords ? (
+          <span className="underlineAccent">{accentWords}</span>
+        ) : null}
         {/* {accent ? (
           <img
             className="heading__accent"

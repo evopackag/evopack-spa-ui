@@ -40,7 +40,7 @@ const valuesContent = [
 ];
 
 const ValuesSection = ({ data }: IProps) => {
-  const { title, subTitle, values } = data;
+  const { title, subTitle, values, titleUnderlined } = data;
 
   console.log(values);
 
@@ -48,7 +48,14 @@ const ValuesSection = ({ data }: IProps) => {
     <section className="ValuesSection col-xs-12">
       <Spacing size="lg" />
       <div className="valuesSection__title col width-100 align-center center-xs center-text">
-        <Heading text={title} type="h2" theme="light" spacing="100vw" accent />
+        <Heading
+          text={title}
+          type="h2"
+          theme="light"
+          // spacing="100vw"
+          accent
+          accentWords={titleUnderlined}
+        />
         <Spacing size="sm" />
         <Heading text={subTitle} type="h5" theme="light" />
       </div>
