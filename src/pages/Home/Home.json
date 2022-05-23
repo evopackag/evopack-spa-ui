@@ -124,25 +124,25 @@
       "subTitle": "Only by living a sustainable philosophy can you develop sustainable products.",
       "values": [
         {
-          "title": "Reduction of transport emissions",
-          "text": "Our packaging solutions improve safety, compliance and sustainability over the entire product life cycle.",
-          "buttonText": "Learn More",
+          "title": "Reduktion von Emissionen",
+          "text": "Bis zu 25 % der weltweiten CO2-Emissionen stammen aus dem Verkehrssektor. Durch die Optimierung und Neuentwicklung von Verpackungen können die Transport- und Herstellungsemissionen verringert werden.",
+          "buttonText": "Mehr erfahren",
           "icon": "emissions",
           "theme": "white",
           "buttonTheme": "blue"
         },
         {
-          "title": "Developing resource efficient packaging solutions",
-          "text": "Save money and the planet by reducing the need for biocides in your products.",
-          "buttonText": "Learn More",
+          "title": "Reduktion von Abfällen",
+          "text": "Der Einsatz von Verpackungsmaterial sollte so gering wie möglich sein, aber hoch genug, um die Produktintegrität zu gewährleisten. Die Verpackung wird so gestaltet, dass Leistung und Materialoptimierung erfüllt sind. Durch den Einsatz der richtigen Verpackung kann der Produkt- und Verpackungsabfall reduziert werden.",
+          "buttonText": "Mehr erfahren",
           "icon": "trees",
           "theme": "blue",
           "buttonTheme": "white"
         },
         {
-          "title": "Reduce the use of harmful additives",
-          "text": "Protect your product’s quality and compliance with minimal effort and chemicals.",
-          "buttonText": "Learn More",
+          "title": "Reduktion von schädlichen Zusatzstoffen",
+          "text": "Vor allem Industrieprodukte werden mit umweltschädlichen Zusatzstoffen versehen, um die Unversehrtheit des Produkts während seiner Haltbarkeitsdauer zu gewährleisten. Durch den Einsatz der richtigen Verpackung kann die Verwendung solcher Zusatzstoffe reduziert oder ganz vermieden werden.",
+          "buttonText": "Mehr erfahren",
           "icon": "chemistry",
           "theme": "white",
           "buttonTheme": "blue"

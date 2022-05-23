@@ -11,10 +11,13 @@
   padding: 4rem;
   border-radius: 2.5rem;
   background: center center no-repeat;
-  text-align: center;
   box-shadow: 0 0.125rem 0.25rem 0 #d8d8d9;
   cursor: pointer;
   transition: all 250ms ease-in-out;
+}
+
+.learnMoreCard h3 {
+  text-align: center;
 }
 
 .learnMoreCard:nth-of-type(even) {

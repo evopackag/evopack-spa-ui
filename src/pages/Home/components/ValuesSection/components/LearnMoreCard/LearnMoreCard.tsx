@@ -40,7 +40,7 @@ const LearnMoreCard = ({
       }}
     >
       {title && !showDetails ? <Heading text={title} type="h3" /> : null}
-      {showDetails ? <Text bold>{text}</Text> : null}
+      {showDetails ? <Text>{text}</Text> : null}
       <Button
         label={cardCTA}
         handleClick={showCardDetails}

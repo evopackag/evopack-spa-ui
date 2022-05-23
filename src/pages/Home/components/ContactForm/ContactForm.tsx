@@ -44,10 +44,10 @@ const ContactForm = forwardRef((data: any, ref: any) => {
 
     emailjs
       .sendForm(
-        "evo_gmail",
+        "service_EvopackDesk",
         "evopack_contact_form",
         ref.current,
-        "B6SI4O34Hd5aSQLgx"
+        "TjoMd8URgskSd49x1"
       )
       .then(
         (result) => {
