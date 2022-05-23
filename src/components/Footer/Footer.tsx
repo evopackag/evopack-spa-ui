@@ -80,12 +80,14 @@ const Footer = ({ data }: IProps) => {
               <Heading type="h6" text="+41 7674 63355" />
               <Heading type="h6" text="info@evopack.tech" />
               <Heading type="h6" text="In der Ey 37, 4612 Wangen b. Olten" />
+              <Heading type="h6" text="Schweiz" />
             </div>
             <div className="footer__address col-xs-6">
               <Heading type="h6" text="Evopack GmbH" weight="bold" />
               <Heading type="h6" text="+41 7674 63355" />
               <Heading type="h6" text="info@evopack.tech" />
               <Heading type="h6" text="Friedrichstraße 15, 70174 Stuttgart" />
+              <Heading type="h6" text="Deutschland" />
             </div>
           </div>
         </div>
