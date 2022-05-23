@@ -56,6 +56,7 @@ const TextInput = ({
           }`}
           id={label}
           placeholder={label}
+          name={fieldID}
           onInput={(e: React.FormEvent<HTMLTextAreaElement>) =>
             checkInputValue(e.currentTarget.value, fieldID)
           }
@@ -88,6 +89,7 @@ const TextInput = ({
           onInput={(e: React.FormEvent<HTMLInputElement>) =>
             checkInputValue(e.currentTarget.value, fieldID)
           }
+          name={fieldID}
           type="text"
         />
         {/* <Text text={label} bold={false} /> */}
@@ -118,6 +120,7 @@ const TextInput = ({
           checkInputValue(e.currentTarget.value, fieldID)
         }
         type="text"
+        name={fieldID}
         onChange={handleChange}
       />
       {/* <Text text={label} bold={false} /> */}

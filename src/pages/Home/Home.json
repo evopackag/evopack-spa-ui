@@ -67,8 +67,8 @@
     },
     "contactSection": {
       "title": "Drop us a line",
-      "firstNamePlaceholder": "First Name",
-      "lastNamePlaceholder": "Last Name",
+      "firstNamePlaceholder": "Full name",
+      "lastNamePlaceholder": "Company",
       "emailPlaceholder": "Email",
       "phonePlaceholder": "Phone",
       "messagePlaceholder": "Message",
@@ -151,7 +151,7 @@
     },
     "contactSection": {
       "title": "Kontaktieren Sie uns",
-      "firstNamePlaceholder": "First Name",
+      "firstNamePlaceholder": "Name",
       "lastNamePlaceholder": "Last Name",
       "emailPlaceholder": "Email",
       "phonePlaceholder": "Phone",
