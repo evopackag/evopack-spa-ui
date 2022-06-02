@@ -32,9 +32,7 @@ const Heading = ({
   useEffect(() => {}, [alignment]);
   const headingVariableStyles = {
     wordSpacing: `${spacing}`,
-    textAlign: `${
-      isMobileView || leftAlignDesktop ? "left" : "center"
-    }` as const,
+    textAlign: "left" as const,
   };
 
   // alert(`${alignment} ${isMobileView}`);

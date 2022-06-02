@@ -37,7 +37,9 @@ const LearnMoreCard = ({
       className={`learnMoreCard learnMoreCard--${theme}`}
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL}/assets/${background}.svg)`,
+        backgroundSize: "cover",
       }}
+      data-target="learnMoreCard"
     >
       {title && !showDetails ? <Heading text={title} type="h3" /> : null}
       {showDetails ? <Text>{text}</Text> : null}

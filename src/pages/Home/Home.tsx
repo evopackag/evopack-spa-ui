@@ -8,6 +8,7 @@ import useViewportSize from "../../hooks/useViewportSize/useViewportSize";
 import ContactForm from "./components/ContactForm/ContactForm";
 import HeroSection from "./components/HeroSection/HeroSection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
+import MediumCarousel from "./components/ValuesSection/MediumCarousel";
 import ValuesSection from "./components/ValuesSection/ValuesSection";
 
 const Home = () => {
@@ -49,7 +50,8 @@ const Home = () => {
         author={languageSpecificContent.quoteSection.author}
         authorTitle={languageSpecificContent.quoteSection.authorPosition}
       />
-      <ValuesSection data={languageSpecificContent.valuesSection} />
+      {/* <ValuesSection data={languageSpecificContent.valuesSection} /> */}
+      <MediumCarousel data={languageSpecificContent.valuesSection} />
       <ContactForm
         data={languageSpecificContent.contactSection}
         ref={contactRef}

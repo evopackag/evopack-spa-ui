@@ -1,5 +1,7 @@
 .pageContainer {
   min-height: 100vh;
+  /* Comment out the below to review overflow issue */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -23,6 +23,12 @@
 
 .icon-button {
   cursor: pointer;
+  border-radius: 100rem;
+}
+.icon-button--disabled {
+  pointer-events: none;
+  border: 2px solid var(--light-grey);
+  filter: saturate(0);
 }
 
 .icon--xs {

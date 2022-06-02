@@ -1,7 +1,7 @@
 import Bullets from "../../../base/Bullets/Bullets";
 import Heading from "../../../base/Heading/Heading";
 import HorizontalDivider from "../../../base/HorizontalDivider/HorizontalDivider";
-import Spacing from "../../../base/Spacing/Spacing";
+import VerticalSpacing from "../../../base/Spacing/VerticalSpacing";
 import Text, { TextWeight } from "../../../base/Text/Text";
 
 const legalContent = require("../../FooterContent.json");
@@ -22,28 +22,28 @@ const DataPolicy = () => {
   return (
     <>
       <Heading theme={theme} text={title} type="h2" />
-      <Spacing size="xs" />
+      <VerticalSpacing size="xs" />
       <Text theme={theme} weight={TextWeight.medium} bold>
         {subTitle}
       </Text>
-      <Spacing size="md" />
+      <VerticalSpacing size="md" />
       <Text theme={theme} weight={TextWeight.medium}>
         {text}
       </Text>
-      <Spacing size="sm" />
+      <VerticalSpacing size="sm" />
       <HorizontalDivider />
-      <Spacing size="sm" />
+      <VerticalSpacing size="sm" />
       {/* First Section */}
       <Heading theme={theme} text={content[1].title} type="h3" />
-      <Spacing size="md" />
+      <VerticalSpacing size="md" />
       {content[0]
         ? content[0].content.map((item: any) => {
             return (
               <>
                 <Heading theme={theme} text={item.sectionTitle} type="h4" />
-                <Spacing size="sm" />
+                <VerticalSpacing size="sm" />
                 <Text theme={theme}>{item.text}</Text>
-                <Spacing size="xs" />
+                <VerticalSpacing size="xs" />
                 {item.bullets && item.bullets.length > 0
                   ? item.bullets.map((bullet: any) => {
                       return (
@@ -54,23 +54,23 @@ const DataPolicy = () => {
                       );
                     })
                   : null}
-                <Spacing size="md" />
+                <VerticalSpacing size="md" />
               </>
             );
           })
         : null}
       <Heading theme={theme} text={content[1].title} type="h3" />
-      <Spacing size="md" />
+      <VerticalSpacing size="md" />
       {content[1]
         ? content[1].content.map((item: any) => {
             return (
               <>
                 <Heading theme={theme} text={item.sectionTitle} type="h4" />
-                <Spacing size="sm" />
+                <VerticalSpacing size="sm" />
                 <Text theme={theme} weight={TextWeight.medium}>
                   {item.text}
                 </Text>
-                <Spacing size="xs" />
+                <VerticalSpacing size="xs" />
                 {item.bullets && item.bullets.length > 0
                   ? item.bullets.map((bullet: any) => {
                       return (
@@ -81,23 +81,23 @@ const DataPolicy = () => {
                       );
                     })
                   : null}
-                <Spacing size="md" />
+                <VerticalSpacing size="md" />
               </>
             );
           })
         : null}
       <Heading theme={theme} text={content[2].title} type="h3" />
-      <Spacing size="md" />
+      <VerticalSpacing size="md" />
       {content[2]
         ? content[2].content.map((item: any) => {
             return (
               <>
                 <Heading theme={theme} text={item.sectionTitle} type="h4" />
-                <Spacing size="sm" />
+                <VerticalSpacing size="sm" />
                 <Text theme={theme} weight={TextWeight.medium}>
                   {item.text}
                 </Text>
-                <Spacing size="xs" />
+                <VerticalSpacing size="xs" />
                 {item.bullets && item.bullets.length > 0
                   ? item.bullets.map((bullet: any) => {
                       return (
@@ -108,7 +108,7 @@ const DataPolicy = () => {
                       );
                     })
                   : null}
-                <Spacing size="md" />
+                <VerticalSpacing size="md" />
               </>
             );
           })

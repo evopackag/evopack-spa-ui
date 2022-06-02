@@ -5,7 +5,7 @@ import { Languages } from "../../contexts/VisitorContext/VisitorContext";
 import useOutsideAlerter from "../../hooks/useClickOutsideEffect/useClickOutsideEffect";
 import Button from "../base/Buttons/Button";
 import Icon from "../base/Icon/Icon";
-import Spacing from "../base/Spacing/Spacing";
+import VerticalSpacing from "../base/Spacing/VerticalSpacing";
 import Text, { TextColour, TextSize, TextWeight } from "../base/Text/Text";
 import Toggle from "../base/Toggle/Toggle";
 
@@ -128,7 +128,7 @@ const Header = ({ data, refs }: IProps) => {
                   alt=""
                 />
               </NavLink>
-              <Spacing size="md" />
+              <VerticalSpacing size="md" />
               <ul className="header__navigationGroup">
                 <div className="header__navigationGroupHeader">
                   <Text size={TextSize.sm} color={TextColour.greyBlue}>
@@ -159,7 +159,7 @@ const Header = ({ data, refs }: IProps) => {
                     </li>
                   );
                 })}
-                <Spacing size="md" />
+                <VerticalSpacing size="md" />
               </ul>
               <ul className="header__navigationGroup">
                 <div className="header__navigationGroupHeader">
@@ -186,7 +186,7 @@ const Header = ({ data, refs }: IProps) => {
                     </li>
                   );
                 })}
-                <Spacing size="md" />
+                <VerticalSpacing size="md" />
               </ul>
               <div className="navlink__container row" key="closeMobileMenu">
                 <Button
@@ -225,20 +225,22 @@ const Header = ({ data, refs }: IProps) => {
               </>
             );
           })}
-          <Toggle
-            options={[
-              {
-                displayText: "EN",
-                value: Languages.English,
-              },
-              {
-                displayText: "DE",
-                value: Languages.German,
-              },
-            ]}
-            toggleTop
-          />
         </nav>
+      )}
+      {isMobile ? null : (
+        <Toggle
+          options={[
+            {
+              displayText: "EN",
+              value: Languages.English,
+            },
+            {
+              displayText: "DE",
+              value: Languages.German,
+            },
+          ]}
+          toggleTop
+        />
       )}
     </header>
   );

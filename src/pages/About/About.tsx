@@ -5,7 +5,7 @@ import Text, { TextSize } from "../../components/base/Text/Text";
 import Button from "../../components/base/Buttons/Button";
 import { useContext } from "react";
 import VisitorContext from "../../contexts/VisitorContext/VisitorContext";
-import Spacing from "../../components/base/Spacing/Spacing";
+import VerticalSpacing from "../../components/base/Spacing/VerticalSpacing";
 
 import "./About.css";
 import Footer from "../../components/Footer/Footer";
@@ -26,8 +26,8 @@ const About = () => {
         <section className="about__heroSection col-xs-12 center-xs">
           <div className="col width-100 center-xs middle-xs padding-horizontal-4 about__heroContent">
             <div className="col center-xs  about__heroSectionHeading">
-              <Spacing size="md" />
-              <Spacing size="md" />
+              <VerticalSpacing size="md" />
+              <VerticalSpacing size="md" />
               <Heading
                 text="About Evopack"
                 type="h1"
@@ -35,7 +35,7 @@ const About = () => {
                 leftAlignDesktop
                 spacing=""
               />
-              <Spacing size="sm" />
+              <VerticalSpacing size="sm" />
               <Text theme="light">
                 We’re a group of engineers and chemists looking to move
                 packaging into the 21st centry.
@@ -53,7 +53,7 @@ const About = () => {
             </Text> */}
           </div>
           <HorizontalDivider slopedDivider />
-          <Spacing size="md" />
+          <VerticalSpacing size="md" />
           <TabsGallery
             data={[
               { label: "Our Team", active: true },

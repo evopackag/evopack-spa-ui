@@ -1,9 +1,17 @@
 import { env } from "process";
 import "./Button.css";
 
+export enum ButtonTypes {
+  primary = "primary-green-filled",
+  secondaryWhite = "secondary-white",
+  secondaryBlue = "secondary-blue",
+  secondaryWhiteFilled = "secondary-white-filled",
+  secondaryBlueFilled = "secondary-blue-filled",
+}
+
 interface IProps {
   label: string;
-  type?: string;
+  type?: string | ButtonTypes;
   icon?: string;
   handleClick?: any;
   isLinkStyle?: boolean;
@@ -27,7 +35,7 @@ const Button = ({ label, type, icon, handleClick, isLinkStyle }: IProps) => {
     <button
       className={
         type
-          ? `button button--${type} col-xs-12 col-sm-6 col-md-4`
+          ? `button button--${type} ${type} col-xs-12 col-sm-6 col-md-4`
           : "button col-xs-12 col-sm-6 col-md-4"
       }
       onClick={handleClick}

@@ -9,7 +9,7 @@
   cursor: pointer;
   transition: all ease-in-out 250ms;
   text-align: center;
-  /* display: flex; */
+  max-width: min-content;
   align-items: center;
   justify-self: center;
 }
@@ -25,20 +25,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.button--primary-green::after {
-  position: absolute;
-  top: 6rem;
-  left: 0;
-  right: 0;
-  content: "";
-  width: 100%;
-  height: 0.5rem;
-  filter: blur(5px);
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
-  transition: 250ms ease-in-out all;
 }
 
 .button--primary-green:hover {
@@ -60,27 +46,13 @@
 
 .button--primary-green-filled {
   background: var(--primary-green);
-  color: white;
+  color: var(--primary-blue);
   border: 2px solid var(--primary-green);
   transition: 250ms ease-in-out all;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.button--primary-green-filled::after {
-  position: absolute;
-  top: 6rem;
-  left: 0;
-  right: 0;
-  content: "";
-  width: 100%;
-  height: 0.5rem;
-  filter: blur(5px);
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
-  transition: 250ms ease-in-out all;
 }
 
 .button--primary-green-filled:hover {
@@ -149,6 +121,12 @@
   border: 2px solid var(--primary-green);
 }
 
+.button.secondary-white-filled {
+  background: var(--off-white);
+  color: var(--primary-blue);
+  border: 2px solid var(--off-white);
+}
+
 .linkButton {
   all: unset;
   color: var(--primary-blue);
@@ -197,10 +175,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .button {
-    padding: 0.625rem 0;
   }
 
   .button--primary-green::after,

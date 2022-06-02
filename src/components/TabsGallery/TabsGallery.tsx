@@ -1,6 +1,6 @@
 import { ReactNode, useState } from "react";
 import CheckboxItem from "../base/CheckboxItem/CheckboxItem";
-import Spacing from "../base/Spacing/Spacing";
+import VerticalSpacing from "../base/Spacing/VerticalSpacing";
 import TabsContext from "./contexts/TabsContext";
 import Tabs from "./Tabs/Tabs";
 
@@ -38,7 +38,7 @@ const TabsGallery = ({ data, children }: IProps) => {
         })}
       </div> */}
 
-        <Spacing size="lg" />
+        <VerticalSpacing size="lg" />
         {children}
         {/* {content[filter].map((content: any) => {
         return (

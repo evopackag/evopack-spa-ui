@@ -1,18 +1,17 @@
 .card {
   min-height: 100%;
   margin-left: 2rem;
-  min-width: 500px;
-  max-width: 600px;
+  max-width: 30vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   background-image: url(/public/assets/carbon_email.svg);
   padding: 4rem 2rem;
   border-radius: 2.5rem;
   background: center center no-repeat;
   text-align: center;
   /* white-space: pre-wrap; */
-  word-wrap: break-word;
+  white-space: pre-line;
 }
 
 .card:last-of-type {

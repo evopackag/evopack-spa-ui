@@ -8,7 +8,7 @@ import DividingPoint from "../../../../../public/assets/dividing-point.svg";
 import Button from "../../../../components/base/Buttons/Button";
 import HorizontalSlider from "../../../../components/HorizontalSlider/HorizontalSlider";
 import Card from "../../../../components/HorizontalSlider/components/Card/Card";
-import Spacing from "../../../../components/base/Spacing/Spacing";
+import VerticalSpacing from "../../../../components/base/Spacing/VerticalSpacing";
 import useViewportSize from "../../../../hooks/useViewportSize/useViewportSize";
 
 interface IProps {
@@ -20,7 +20,7 @@ const ServicesSection = ({ data }: IProps) => {
   const isMobile = useViewportSize(1024);
   return (
     <section className="servicesSection">
-      <Spacing size={isMobile ? "sm" : "lg"} />
+      <VerticalSpacing size={isMobile ? "sm" : "md"} />
       <div className="row width-100 justify-center padding-horizontal-2">
         <Heading text={title} type="h2" theme="light" />
       </div>

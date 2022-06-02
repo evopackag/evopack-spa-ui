@@ -2,7 +2,7 @@ import Heading from "../../../base/Heading/Heading";
 import Text from "../../../base/Text/Text";
 import Bullets from "../../../base/Bullets/Bullets";
 import HorizontalDivider from "../../../base/HorizontalDivider/HorizontalDivider";
-import Spacing from "../../../base/Spacing/Spacing";
+import VerticalSpacing from "../../../base/Spacing/VerticalSpacing";
 
 const legalContent = require("../../FooterContent.json");
 
@@ -14,18 +14,18 @@ const Imprint = () => {
     <>
       <>
         <Heading theme={theme} text={title} type="h2" />
-        <Spacing size="sm" />
+        <VerticalSpacing size="sm" />
         <HorizontalDivider />
-        <Spacing size="sm" />
-        <Spacing size="md" />
+        <VerticalSpacing size="sm" />
+        <VerticalSpacing size="md" />
         {content[0]
           ? content[0].content.map((item: any) => {
               return (
                 <>
                   <Heading theme={theme} text={item.sectionTitle} type="h4" />
-                  <Spacing size="sm" />
+                  <VerticalSpacing size="sm" />
                   <Text theme={theme}>{item.text}</Text>
-                  <Spacing size="xs" />
+                  <VerticalSpacing size="xs" />
                   {item.bullets && item.bullets.length > 0
                     ? item.bullets.map((bullet: any) => {
                         return (
@@ -36,7 +36,7 @@ const Imprint = () => {
                         );
                       })
                     : null}
-                  <Spacing size="md" />
+                  <VerticalSpacing size="md" />
                 </>
               );
             })

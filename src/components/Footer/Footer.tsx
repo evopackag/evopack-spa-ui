@@ -5,7 +5,7 @@ import Heading from "../base/Heading/Heading";
 import HorizontalDivider from "../base/HorizontalDivider/HorizontalDivider";
 import Link from "../base/Link/Link";
 import Overlay from "../base/Overlay/Overlay";
-import Spacing from "../base/Spacing/Spacing";
+import VerticalSpacing from "../base/Spacing/VerticalSpacing";
 import Text from "../base/Text/Text";
 import TextInput from "../base/TextInput/TextInput";
 import DataPolicy from "./components/DataPolicy/DataPolicy";
@@ -93,7 +93,7 @@ const Footer = ({ data }: IProps) => {
         </div>
         <div className="footer__subscribe col-xs-12 col-md-3">
           <Heading type="h6" text={subscriptionLabel} theme="" />
-          <Spacing size="xxs" />
+          <VerticalSpacing size="xxs" />
           <TextInput
             label={subscriptionPlaceholder}
             icon="arrow-right-circle--blue"

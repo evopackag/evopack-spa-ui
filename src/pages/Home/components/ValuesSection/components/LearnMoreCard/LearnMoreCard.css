@@ -2,18 +2,26 @@
   height: 600px;
   margin-left: 2rem;
   width: auto;
-  max-width: 500px;
+  min-width: 30rem;
+  max-width: min-content;
+  flex-grow: 1;
+  /* max-width: auto; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-image: url(/public/assets/carbon_email.svg);
+  background-size: cover;
   padding: 4rem;
   border-radius: 2.5rem;
   background: center center no-repeat;
   box-shadow: 0 0.125rem 0.25rem 0 #d8d8d9;
   cursor: pointer;
   transition: all 250ms ease-in-out;
+  scroll-snap-align: start;
+}
+.learnMoreCard:first-of-type {
+  margin-left: 0rem;
 }
 
 .learnMoreCard h3 {
@@ -26,7 +34,7 @@
 
 .learnMoreCard:hover {
   animation: all 250ms ease-in-out;
-  box-shadow: 0 0.25rem 0.75rem 0 rgb(0, 0, 0, 0.35);
+  box-shadow: 0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.35);
   transform: translateY(-0.25rem);
 }
 
@@ -40,7 +48,6 @@
     box-shadow: 0 0.25rem 0.75rem 0 rgb(0, 0, 0, 0.25);
   }
 } */
-
 .learnMoreCard--blue {
   color: white;
   background: var(--primary-blue) center center no-repeat;
@@ -58,31 +65,9 @@
 
 @media screen and (max-width: 1200px) {
   .learnMoreCard {
-    height: 600px;
-    margin: 1rem 0.5rem;
-    width: auto;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    /* background-image: url(/public/assets/carbon_email.svg); */
-    padding: 2rem;
-    border-radius: 2.5rem;
-    /* background: center center no-repeat; */
-    text-align: center;
-    box-shadow: 0 0.125rem 0.25rem 0 #d8d8d9;
-    cursor: pointer;
-    transition: all 250ms ease-in-out;
-  }
-
-  .learnMoreCard:nth-of-type(even) {
-    align-self: center;
-  }
-
-  .learnMoreCard:hover {
-    animation: all 250ms ease-in-out;
-    box-shadow: 0 0.25rem 0.75rem 0 rgb(0, 0, 0, 0.35);
-    transform: translateY(0);
+    width: 85vw;
+    min-width: 80vw;
+    margin-left: 1rem;
+    scroll-snap-align: center;
   }
 }

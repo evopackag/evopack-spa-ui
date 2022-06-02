@@ -1,6 +1,7 @@
 import { url } from "inspector";
 import Heading from "../../../base/Heading/Heading";
-import Text from "../../../base/Text/Text";
+import VerticalSpacing from "../../../base/Spacing/VerticalSpacing";
+import Text, { TextSize, TextWeight } from "../../../base/Text/Text";
 import "./Card.css";
 
 interface IProps {
@@ -18,8 +19,12 @@ const Card = ({ title, text, background, theme }: IProps) => {
         backgroundImage: `url(${process.env.PUBLIC_URL}/assets/${background}.svg)`,
       }}
     >
+      <VerticalSpacing size="lg" />
       {title ? <Heading text={title} type="h3" /> : null}
-      <Text bold>{text}</Text>
+      <VerticalSpacing size="md" />
+      <Text weight={TextWeight.regular} size={TextSize.lg}>
+        {text}
+      </Text>
     </div>
   );
 };

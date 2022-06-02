@@ -50,7 +50,7 @@
         },
         {
           "title": "Developing resource efficient packaging solutions",
-          "text": "Save money and the planet by reducing the need for biocides in your products.",
+          "text": "Save money and the planet by minimising the use of materials in your packaging without compromising product integrity.",
           "buttonText": "Learn More",
           "icon": "trees",
           "theme": "blue",
@@ -61,6 +61,22 @@
           "text": "Protect your product’s quality and compliance with minimal effort and chemicals.",
           "buttonText": "Learn More",
           "icon": "chemistry",
+          "theme": "white",
+          "buttonTheme": "blue"
+        },
+        {
+          "title": "Circular design",
+          "text": "Our ultimate goal is creating packaging that can be completely reused or repurposed with minimal required effort.",
+          "buttonText": "Learn More",
+          "icon": "icons/cycle--light-grey",
+          "theme": "blue",
+          "buttonTheme": "white"
+        },
+        {
+          "title": "Recycled materials",
+          "text": "We constantly look to use recycled materials in ways that is truly more sustainble, not just to write it on the tin.",
+          "buttonText": "Learn More",
+          "icon": "icons/leaf--light-grey",
           "theme": "white",
           "buttonTheme": "blue"
         }
@@ -96,7 +112,7 @@
       "title": "Was wir für Sie tun",
       "services": [
       {
-        "title": "Verpackungslösungen",
+        "title": "Verpackungs-lösungen",
         "text": "Unsere Lösungen beschützen Ihr Produkt nachhaltig während des gesamten Produkt-lebenszykluses und gewährleisten langfristige Produktintegrit.",
         "icon": "packaging--medium-blue",
         "theme": "blue"
@@ -108,7 +124,7 @@
         "theme": "green"
       },
       {
-        "title": "Hygiene Konzept",
+        "title": "Hygiene-kontrolle",
         "text": "Schützen Sie die Qualität und Konformität Ihrer Produkte mit minimalem Aufwand und minimalem Chemikalieneinsatz.",
         "icon": "lock",
         "theme": "white"
@@ -146,6 +162,22 @@
           "text": "Vor allem Industrieprodukte werden mit umweltschädlichen Zusatzstoffen versehen, um die Unversehrtheit des Produkts während seiner Haltbarkeitsdauer zu gewährleisten. Durch den Einsatz der richtigen Verpackung kann die Verwendung solcher Zusatzstoffe reduziert oder ganz vermieden werden.",
           "buttonText": "Mehr erfahren",
           "icon": "chemistry",
+          "theme": "white",
+          "buttonTheme": "blue"
+        },
+        {
+          "title": "Design für Recycling oder Wieder-verwendung",
+          "text": "Verpackungen sollten immer so gestaltet sein, dass sie effektiv zurückgewonnen und in biologischen und/oder industriellen Kreisläufen verwertet werden können.",
+          "buttonText": "Mehr erfahren",
+          "icon": "icons/cycle--light-grey",
+          "theme": "blue",
+          "buttonTheme": "white"
+        },
+        {
+          "title": "Verwendung erneuerbarer und recycelter Materialien",
+          "text": "Die Verwendung von erneuerbaren und recycelten Materialien wird immer dann bevorzugt, wenn diese nachhaltiger ist. Dabei darf Greenwashing nicht der Hauptgrund für die Verwendung solcher Materialien sein.",
+          "buttonText": "Mehr erfahren",
+          "icon": "icons/leaf--light-grey",
           "theme": "white",
           "buttonTheme": "blue"
         }

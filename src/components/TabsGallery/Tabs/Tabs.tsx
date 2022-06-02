@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import CheckboxItem from "../../base/CheckboxItem/CheckboxItem";
-import Spacing from "../../base/Spacing/Spacing";
+import VerticalSpacing from "../../base/Spacing/VerticalSpacing";
 import TabsContext from "../contexts/TabsContext";
 
 import "./Tabs.css";
@@ -27,7 +27,7 @@ const Tabs = ({ data }: IProps) => {
         })}
       </div>
 
-      <Spacing size="lg" />
+      <VerticalSpacing size="lg" />
       {/* {content[filter].map((content: any) => {
         return (
 

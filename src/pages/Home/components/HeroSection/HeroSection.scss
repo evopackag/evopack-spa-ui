@@ -5,18 +5,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 75px;
+  margin: 75px 0;
+  padding: 0 2.5rem 0;
   justify-content: space-between;
-  background: url(/public/assets/globe.svg) center -19rem;
+  // background: url(/public/assets/globe.svg) center -19rem;
 }
 
 .heroSection__CTA {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 4rem;
+  // align-items: center;
+  // justify-content: center;
   gap: 4rem;
-  max-width: 80vw;
+  width: 100%;
+  height: 87vh;
+  border-radius: 64px;
+  background: url(/public/GreenMoss.jpg) center;
+  background-size: cover;
 }
 
 .heroSection__subtitle {
@@ -25,14 +31,13 @@
 
 @media screen and (max-width: 1024px) {
   .heroSection {
-    padding-top: 43vh;
+    padding: 0 1rem;
     // background: url(/public/assets/globe.svg) center 10vh no-repeat;
     height: auto;
-    background: url(/public/assets/MobileBackground.svg) center 5vh no-repeat;
-    background-size: 60vmax;
-
     &__CTA {
       max-width: 100%;
+      padding: 2rem;
+      border-radius: 3rem;
       & > h1 {
         // color: white;
       }

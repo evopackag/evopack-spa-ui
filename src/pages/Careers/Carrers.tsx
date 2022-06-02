@@ -8,7 +8,7 @@ import VisitorContext from "../../contexts/VisitorContext/VisitorContext";
 import UnderlinedText from "../../components/base/UnderlinedText/UnderlinedText";
 
 import "./Careers.css";
-import Spacing from "../../components/base/Spacing/Spacing";
+import VerticalSpacing from "../../components/base/Spacing/VerticalSpacing";
 import Link, { ButtonLevel } from "../../components/base/Link/Link";
 import Footer from "../../components/Footer/Footer";
 import Icon from "../../components/base/Icon/Icon";
@@ -29,8 +29,8 @@ const Careers = () => {
         <section className="careers__heroSection col-xs-12 center-xs">
           <div className="col width-100 center-xs middle-xs padding-horizontal-4 careers__heroContent">
             <div className="col center-xs  careers__heroSectionHeading">
-              <Spacing size="md" />
-              <Spacing size="md" />
+              <VerticalSpacing size="md" />
+              <VerticalSpacing size="md" />
               <Heading
                 text="Let's work together"
                 type="h1"
@@ -38,7 +38,7 @@ const Careers = () => {
                 leftAlignDesktop
                 spacing=""
               />
-              <Spacing size="sm" />
+              <VerticalSpacing size="sm" />
               <Text theme="light">
                 We currently have&nbsp;
                 <strong style={{ color: "var(--primary-green)" }}>
@@ -58,7 +58,7 @@ const Careers = () => {
             <Link href="mailto:info@evopack.tech">Email Us</Link>
           </div> */}
           <div className="row center-xs middle-xs careers__ctas padding-horizontal-4">
-            <Spacing size="md" />
+            <VerticalSpacing size="md" />
             {/* <Button
               label="Email Us"
               type="secondary-blue-filled"
@@ -87,7 +87,7 @@ const Careers = () => {
               Call Up
             </Link>
           </div>
-          <Spacing size="md" />
+          <VerticalSpacing size="md" />
         </section>
       </div>
       <Footer data={languageSpecificContent.footer} />

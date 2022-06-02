@@ -5,11 +5,14 @@ import Text from "../../../../components/base/Text/Text";
 import "./HeroSection.css";
 
 import DividingPoint from "../../../../../public/assets/dividing-point.svg";
-import Button from "../../../../components/base/Buttons/Button";
+import Button, {
+  ButtonTypes,
+} from "../../../../components/base/Buttons/Button";
 import HeroInfoBar from "../HeroInfoBar/HeroInfoBar";
 import { useEffect, useRef } from "react";
 import UnderlinedText from "../../../../components/base/UnderlinedText/UnderlinedText";
 import useViewportSize from "../../../../hooks/useViewportSize/useViewportSize";
+import VerticalSpacing from "../../../../components/base/Spacing/VerticalSpacing";
 
 interface IProps {
   data: any;
@@ -42,34 +45,30 @@ const HeroSection = ({ data, refs, handleCTAClick }: IProps) => {
   return (
     <div className="row">
       <section className="heroSection col-xs-12 center-xs">
-        <div className="heroSection__CTA padding-horizontal-4">
-          <Heading
-            text={title}
-            type="h1"
-            theme="light"
-            spacing="100vw"
-            // alignment={isMobileView ? "left" : "center"}
-          />
-          <span className="heroSection__subtitle center-text">
-            {isMobileView ? (
-              <Text theme="light">
-                {subTitle}
-                {/* Reduce your costs and impact on the planet with{" "}
-              <UnderlinedText>85%&nbsp;more&nbsp;efficient</UnderlinedText>{" "}
-              packaging helping you eliminate waste and save money. */}
-              </Text>
-            ) : (
-              <Text theme="dark">{subTitle}</Text>
-            )}
-          </span>
+        {/* <VerticalSpacing size="lg" /> */}
+        <div className="heroSection__CTA padding-horizontal-4 justify-between">
+          <div>
+            <Heading
+              text={title}
+              type="h1"
+              theme="light"
+              spacing="100vw"
+              weight={"400"}
+              alignment="left"
+            />
+            <VerticalSpacing size="sm" />
+            <span className="heroSection__subtitle">
+              <Text theme="light">{subTitle}</Text>
+            </span>
+          </div>
 
           <Button
             label={CTA}
-            type="primary-green-filled"
+            type={ButtonTypes.secondaryWhiteFilled}
             handleClick={handleCTAClick}
           />
         </div>
-        {isMobileView ? null : <HeroInfoBar productAreas={data.productAreas} />}
+        {/* {isMobileView ? null : <HeroInfoBar productAreas={data.productAreas} />} */}
       </section>
     </div>
   );

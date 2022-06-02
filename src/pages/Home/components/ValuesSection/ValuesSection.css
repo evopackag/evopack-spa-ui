@@ -6,12 +6,11 @@
 
 .valuesSection__fullWidthBox {
   display: flex;
-  justify-content: center;
-  max-height: 800px;
-  min-height: 725px;
-  overflow-x: hidden;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+  justify-content: flex-start;
+  /* max-height: 800px; */
+  /* min-height: 725px; */
+  overflow-x: scroll;
+  padding: 3rem 2.5rem 1rem;
 }
 
 /* .valuesSection__fullWidthBox:nth-child(1) {

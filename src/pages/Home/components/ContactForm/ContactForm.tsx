@@ -6,7 +6,7 @@ import Text, { TextSize } from "../../../../components/base/Text/Text";
 import Button from "../../../../components/base/Buttons/Button";
 import Checkbox from "../../../../components/base/Checkbox/Checkbox";
 import Heading from "../../../../components/base/Heading/Heading";
-import Spacing from "../../../../components/base/Spacing/Spacing";
+import VerticalSpacing from "../../../../components/base/Spacing/VerticalSpacing";
 import TextInput from "../../../../components/base/TextInput/TextInput";
 import "./ContactForm.css";
 
@@ -66,7 +66,7 @@ const ContactForm = forwardRef((data: any, ref: any) => {
 
   return (
     <div>
-      <Spacing size="lg" />
+      <VerticalSpacing size="lg" />
       <div className="row center-xs contactFormContainer" id="contactForm">
         <section className="contactForm col-xs-12 col-md-12 col-lg-10">
           {sent ? (
@@ -80,7 +80,7 @@ const ContactForm = forwardRef((data: any, ref: any) => {
               <Text theme="dark" size={TextSize.lg}>
                 We'll get back to you as soon as possible.
               </Text>
-              <Spacing size="xl" />
+              <VerticalSpacing size="xl" />
               <Button
                 label="Send another?"
                 type="secondary-white"
