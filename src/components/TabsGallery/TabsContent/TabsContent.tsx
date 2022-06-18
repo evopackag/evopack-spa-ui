@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import TabsContext from "../contexts/TabsContext";
 
+import "./TabsContent.css";
+
 interface IProps {
   label: string;
   children: any;
@@ -12,7 +14,7 @@ const TabsContent = ({ label, children }: IProps) => {
   return (
     <>
       {filter === label ? (
-        <div className="tabsContent" id={label}>
+        <div className="tabsContent width-100" id={label}>
           {children}
         </div>
       ) : null}

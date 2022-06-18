@@ -12,7 +12,7 @@
   max-width: min-content;
   align-items: center;
   justify-self: center;
-  &__icon {
+  &__icon, .icon  {
     margin-left: 1rem;
   }
 }
@@ -200,8 +200,11 @@
   }
 }
 @media screen and (max-width: 450px) {
+
+  
   .button--secondary-white {
     margin-top: 2rem;
+    padding: 0.625rem 0;
   }
 
   .button--secondary-blue,

@@ -2,8 +2,19 @@ import { useEffect } from "react";
 import useViewportSize from "../../../hooks/useViewportSize/useViewportSize";
 import "./Heading.css";
 
+export enum HeadingSizes {
+  xxs = "heading--xxs",
+  xs = "heading--xs",
+  sm = "heading--sm",
+  md = "heading--md",
+  lg = "heading--lg",
+  xl = "heading--xl",
+  xxl = "heading--xxl",
+}
+
 interface IProps {
-  type: string;
+  level: string;
+  size: HeadingSizes;
   text: string;
   weight?: string | null;
   theme?: string;
@@ -15,7 +26,8 @@ interface IProps {
 }
 
 const Heading = ({
-  type,
+  level,
+  size,
   text,
   theme,
   accent,
@@ -32,15 +44,15 @@ const Heading = ({
   useEffect(() => {}, [alignment]);
   const headingVariableStyles = {
     wordSpacing: `${spacing}`,
-    textAlign: "left" as const,
+    textAlign: `${alignment ? alignment : "left"}` as const,
   };
 
   // alert(`${alignment} ${isMobileView}`);
 
-  if (type === "h1") {
+  if (level === "h1") {
     return (
       <h1
-        className={theme ? `heading--${theme}` : "heading"}
+        className={`${theme ? `heading--${theme}` : "heading"} ${size}`}
         style={headingVariableStyles}
       >
         {text}
@@ -48,7 +60,7 @@ const Heading = ({
     );
   }
 
-  if (type === "h2") {
+  if (level === "h2") {
     const allWords = text?.split(" ");
     const titleLength = allWords?.length > 0 ? allWords.length : 0;
     const lastWord = allWords[titleLength - 1];
@@ -61,7 +73,9 @@ const Heading = ({
         //     ? `heading--${theme} ${alignment}`
         //     : `heading ${alignment} padding-horizontal-4`
         // }
-        className={` ${theme ? `heading--${theme}` : `heading ${alignment}`}`}
+        className={` ${
+          theme ? `heading--${theme}` : `heading ${alignment}`
+        } ${size}`}
         style={{ wordSpacing: `${spacing}` }}
       >
         {text}
@@ -78,21 +92,21 @@ const Heading = ({
     );
   }
 
-  if (type === "h3") {
+  if (level === "h3") {
     return (
-      <h3 className={theme ? `heading--${theme}` : "heading"}>
+      <h3 className={`${theme ? `heading--${theme}` : "heading"} ${size}`}>
         {/* <img src={`${BASE_IMG_URL}${accent}`} /> */}
         {text}
       </h3>
     );
   }
 
-  if (type === "h4") {
+  if (level === "h4") {
     return (
       <h4
         className={`${theme ? `heading--${theme}` : "heading"} ${
           accent ? accent : null
-        }`}
+        } ${size}`}
       >
         {/* {accent ? <span className="startQuote"></span> : null} */}
         {text}
@@ -101,14 +115,20 @@ const Heading = ({
     );
   }
 
-  if (type === "h5") {
-    return <h5 className={theme ? `heading--${theme}` : "heading"}>{text}</h5>;
+  if (level === "h5") {
+    return (
+      <h5 className={`${theme ? `heading--${theme}` : "heading"} ${size}`}>
+        {text}
+      </h5>
+    );
   }
 
-  if (type === "h6") {
+  if (level === "h6") {
     return (
       <h6
-        className={theme ? `heading--${theme} ${weight}` : `heading ${weight}`}
+        className={`${
+          theme ? `heading--${theme} ${weight}` : `heading ${weight}`
+        } ${size}`}
       >
         {text}
       </h6>

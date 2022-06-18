@@ -1,4 +1,6 @@
-import Heading from "../../../../components/base/Heading/Heading";
+import Heading, {
+  HeadingSizes,
+} from "../../../../components/base/Heading/Heading";
 import Icon from "../../../../components/base/Icon/Icon";
 import Text from "../../../../components/base/Text/Text";
 
@@ -12,7 +14,9 @@ import HeroInfoBar from "../HeroInfoBar/HeroInfoBar";
 import { useEffect, useRef } from "react";
 import UnderlinedText from "../../../../components/base/UnderlinedText/UnderlinedText";
 import useViewportSize from "../../../../hooks/useViewportSize/useViewportSize";
-import VerticalSpacing from "../../../../components/base/Spacing/VerticalSpacing";
+import VerticalSpacing, {
+  SpacingSizes,
+} from "../../../../components/base/Spacing/VerticalSpacing";
 
 interface IProps {
   data: any;
@@ -50,13 +54,14 @@ const HeroSection = ({ data, refs, handleCTAClick }: IProps) => {
           <div>
             <Heading
               text={title}
-              type="h1"
+              level="h1"
+              size={HeadingSizes.xl}
               theme="light"
               spacing="100vw"
               weight={"400"}
               alignment="left"
             />
-            <VerticalSpacing size="sm" />
+            <VerticalSpacing size={SpacingSizes.xs16px} />
             <span className="heroSection__subtitle">
               <Text theme="light">{subTitle}</Text>
             </span>

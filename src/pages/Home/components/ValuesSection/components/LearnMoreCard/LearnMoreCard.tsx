@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Button from "../../../../../../components/base/Buttons/Button";
-import Heading from "../../../../../../components/base/Heading/Heading";
+import Heading, {
+  HeadingSizes,
+} from "../../../../../../components/base/Heading/Heading";
 import Text from "../../../../../../components/base/Text/Text";
 import "./LearnMoreCard.css";
 
@@ -36,12 +38,14 @@ const LearnMoreCard = ({
     <div
       className={`learnMoreCard learnMoreCard--${theme}`}
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/${background}.svg)`,
+        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/icons/${background}.svg)`,
         backgroundSize: "cover",
       }}
       data-target="learnMoreCard"
     >
-      {title && !showDetails ? <Heading text={title} type="h3" /> : null}
+      {title && !showDetails ? (
+        <Heading text={title} level="h3" size={HeadingSizes.lg} />
+      ) : null}
       {showDetails ? <Text>{text}</Text> : null}
       <Button
         label={cardCTA}

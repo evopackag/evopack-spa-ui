@@ -1,4 +1,5 @@
 import { env } from "process";
+import Icon, { IconColours, Icons } from "../Icon/Icon";
 import "./Button.css";
 
 export enum ButtonTypes {
@@ -10,16 +11,24 @@ export enum ButtonTypes {
 }
 
 interface IProps {
-  label: string;
+  label?: string;
   type?: string | ButtonTypes;
   icon?: string;
   handleClick?: any;
   isLinkStyle?: boolean;
+  children?: any;
 }
 
 const BASE_IMG_URL = "src/";
 
-const Button = ({ label, type, icon, handleClick, isLinkStyle }: IProps) => {
+const Button = ({
+  label,
+  children,
+  type,
+  icon,
+  handleClick,
+  isLinkStyle,
+}: IProps) => {
   if (isLinkStyle) {
     return (
       <button
@@ -27,7 +36,7 @@ const Button = ({ label, type, icon, handleClick, isLinkStyle }: IProps) => {
         onClick={handleClick}
       >
         {icon ? <img src={`${BASE_IMG_URL}${icon}`} /> : null}
-        {label}
+        {label ? label : children}
       </button>
     );
   }
@@ -40,13 +49,15 @@ const Button = ({ label, type, icon, handleClick, isLinkStyle }: IProps) => {
       }
       onClick={handleClick}
     >
-      {label}
+      {label ? label : children}
       {icon ? (
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/${icon}.svg`}
-          className="button__icon"
-        />
-      ) : null}
+        // <img
+        //   src={`${process.env.PUBLIC_URL}/assets/${icon}.svg`}
+        //   className="button__icon"
+        // />
+        <Icon size="sm" icon={icon} colour={IconColours.white} />
+      ) : // <Icon size="md" icon={icon} colour={/>
+      null}
     </button>
   );
 };

@@ -1,5 +1,9 @@
 import { createRef, useContext, useRef } from "react";
+import ImageTile from "../../components/base/ImageTile/ImageTile";
 import PageContainer from "../../components/base/PageContainer/PageContainer";
+import VerticalSpacing, {
+  SpacingSizes,
+} from "../../components/base/Spacing/VerticalSpacing";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import QuoteBox from "../../components/QuoteBox/QuoteBox";
@@ -52,6 +56,23 @@ const Home = () => {
       />
       {/* <ValuesSection data={languageSpecificContent.valuesSection} /> */}
       <MediumCarousel data={languageSpecificContent.valuesSection} />
+      <VerticalSpacing size={SpacingSizes.xl40px} />
+      {/* <div className="row width-100 align-center justify-center padding-horizontal-4">
+        <ImageTile
+          text="How we designed Böxli"
+          CTA="View story"
+          href="google.com"
+          imageURL="Designing.jpg"
+        />
+        <ImageTile
+          text="A career with responsibility"
+          CTA="View positions"
+          href="google.com"
+          imageURL="StandingOnCliff_darkened.jpg"
+        />
+      </div> */}
+      <VerticalSpacing size={SpacingSizes.xl40px} />
+
       <ContactForm
         data={languageSpecificContent.contactSection}
         ref={contactRef}

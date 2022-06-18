@@ -75,7 +75,7 @@ h6 {
 }
 
 h2 .endQuote::after {
-  content: url(/public/assets/heading-underline.svg);
+  content: url(/public/assets/icons/heading-underline.svg);
   display: inline-block;
   position: absolute;
   bottom: -1rem;
@@ -90,7 +90,7 @@ h2 .endQuote::after {
 
 .underlineAccent:nth-child(1)::after {
   position: absolute;
-  content: url(/public/assets/heading-underline.svg);
+  content: url(/public/assets/icons/heading-underline.svg);
   display: flex;
   justify-content: center;
   width: 100%;
@@ -102,7 +102,7 @@ h2 .endQuote::after {
 
 @media screen and (max-width: 992px) {
   .underlineAccent:nth-child(1)::after {
-    content: url(/public/assets/heading-underline--mobile.svg);
+    content: url(/public/assets/icons/heading-underline--mobile.svg);
   }
 }
 
@@ -199,3 +199,111 @@ h4 .endQuote::after {
     font-size: 1rem;
   }
 }
+
+
+.heading {
+  &--xxs {
+    font-size: 1.125rem;
+  }
+  &--xs {
+    font-size: 1.5rem;
+  }
+  &--sm {
+    font-size: 2rem;
+  }
+  &--md {
+    font-size: 3rem;
+  }
+  &--lg {
+    font-size: 4rem;
+    line-height: 1.5;
+  }
+  &--xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+  &--xxl {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .heading {
+    &--xxs {
+      font-size: 0.75rem;
+    }
+    &--xs {
+      font-size: 1rem;
+    }
+    &--sm {
+      font-size: 1.5rem;
+    }
+    &--md {
+      font-size: 2.5rem;
+    }
+    &--lg {
+      font-size: 4rem;
+      line-height: 1.5;
+    }
+    &--xl {
+      font-size: 5rem;
+      line-height: 1;
+    }
+    &--xxl {
+      font-size: 7rem;
+    }
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  .heading {
+    &--xxs {
+      font-size: 0.75rem;
+    }
+    &--xs {
+      font-size: 0.75rem;
+    }
+    &--sm {
+      font-size: 1rem;
+    }
+    &--md {
+      font-size: 2rem;
+    }
+    &--lg {
+      font-size: 2.5rem;
+      line-height: 1.5;
+    }
+    &--xl {
+      font-size: 3rem;
+      line-height: 1;
+    }
+    &--xxl {
+      font-size: 4rem;
+    }
+  }
+  
+}
+
+// h1 {
+//   font-size: 7rem;
+// }
+
+// h2 {
+//   font-size: 5rem;
+// }
+
+// h3 {
+//   font-size: 4rem;
+// }
+
+// h4 {
+//   font-size: 2.25rem;
+// }
+
+// h5 {
+//   font-size: 1.125rem;
+// }
+
+// h6 {
+//   font-size: 1rem;
+// }

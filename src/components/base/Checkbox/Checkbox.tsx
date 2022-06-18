@@ -1,4 +1,4 @@
-import Heading from "../Heading/Heading";
+import Heading, { HeadingSizes } from "../Heading/Heading";
 import "./Checkbox.css";
 
 interface IProps {
@@ -19,7 +19,13 @@ const Checkbox = ({ label, inputID }: IProps) => {
         <span className="checkmark"></span>
       </div>
       <div className="col-xs-10 start-xs">
-        <Heading text={label} type="h6" theme="dark" weight="normal" />
+        <Heading
+          text={label}
+          level="h6"
+          size={HeadingSizes.xxs}
+          theme="dark"
+          weight="normal"
+        />
       </div>
     </div>
   );

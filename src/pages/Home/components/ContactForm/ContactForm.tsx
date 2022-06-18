@@ -5,8 +5,12 @@ import emailjs from "emailjs-com";
 import Text, { TextSize } from "../../../../components/base/Text/Text";
 import Button from "../../../../components/base/Buttons/Button";
 import Checkbox from "../../../../components/base/Checkbox/Checkbox";
-import Heading from "../../../../components/base/Heading/Heading";
-import VerticalSpacing from "../../../../components/base/Spacing/VerticalSpacing";
+import Heading, {
+  HeadingSizes,
+} from "../../../../components/base/Heading/Heading";
+import VerticalSpacing, {
+  SpacingSizes,
+} from "../../../../components/base/Spacing/VerticalSpacing";
 import TextInput from "../../../../components/base/TextInput/TextInput";
 import "./ContactForm.css";
 
@@ -15,7 +19,7 @@ import "./ContactForm.css";
 //   ref: any;
 // }
 
-const ContactForm = forwardRef((data: any, ref: any) => {
+const ContactForm = forwardRef((data: any, ref?: any) => {
   const {
     title,
     firstNamePlaceholder,
@@ -62,17 +66,16 @@ const ContactForm = forwardRef((data: any, ref: any) => {
     setSent(!sent);
   };
 
-  console.log(ref.current);
-
   return (
     <div>
-      <VerticalSpacing size="lg" />
+      <VerticalSpacing size={SpacingSizes.xs16px} />
       <div className="row center-xs contactFormContainer" id="contactForm">
         <section className="contactForm col-xs-12 col-md-12 col-lg-10">
           {sent ? (
             <>
               <Heading
-                type="h2"
+                level="h2"
+                size={HeadingSizes.xl}
                 text="Thank you for your getting in touch"
                 theme="dark"
                 accent={false}
@@ -80,7 +83,7 @@ const ContactForm = forwardRef((data: any, ref: any) => {
               <Text theme="dark" size={TextSize.lg}>
                 We'll get back to you as soon as possible.
               </Text>
-              <VerticalSpacing size="xl" />
+              <VerticalSpacing size={SpacingSizes.xl40px} />
               <Button
                 label="Send another?"
                 type="secondary-white"
@@ -90,7 +93,13 @@ const ContactForm = forwardRef((data: any, ref: any) => {
           ) : (
             <>
               <div className="row start-sm">
-                <Heading type="h2" text={title} theme="dark" accent={false} />
+                <Heading
+                  level="h2"
+                  size={HeadingSizes.xl}
+                  text={title}
+                  theme="dark"
+                  accent={false}
+                />
               </div>
               <form
                 className="padding-top-8 row"

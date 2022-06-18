@@ -1,11 +1,11 @@
 import { text } from "node:stream/consumers";
 import { useEffect, useRef, useState } from "react";
 import Button from "../base/Buttons/Button";
-import Heading from "../base/Heading/Heading";
+import Heading, { HeadingSizes } from "../base/Heading/Heading";
 import HorizontalDivider from "../base/HorizontalDivider/HorizontalDivider";
 import Link from "../base/Link/Link";
 import Overlay from "../base/Overlay/Overlay";
-import VerticalSpacing from "../base/Spacing/VerticalSpacing";
+import VerticalSpacing, { SpacingSizes } from "../base/Spacing/VerticalSpacing";
 import Text from "../base/Text/Text";
 import TextInput from "../base/TextInput/TextInput";
 import DataPolicy from "./components/DataPolicy/DataPolicy";
@@ -76,24 +76,63 @@ const Footer = ({ data }: IProps) => {
         <div className="col-xs-12 col-lg-8">
           <div className="row">
             <div className="footer__address col-xs-6">
-              <Heading type="h6" text="Evopack AG" weight="bold" />
-              <Heading type="h6" text="+41 7674 63355" />
-              <Heading type="h6" text="info@evopack.tech" />
-              <Heading type="h6" text="In der Ey 37, 4612 Wangen b. Olten" />
-              <Heading type="h6" text="Schweiz" />
+              <Heading
+                level="h6"
+                size={HeadingSizes.xxs}
+                text="Evopack AG"
+                weight="bold"
+              />
+              <Heading
+                level="h6"
+                size={HeadingSizes.xxs}
+                text="+41 7674 63355"
+              />
+              <Heading
+                level="h6"
+                size={HeadingSizes.xxs}
+                text="info@evopack.tech"
+              />
+              <Heading
+                level="h6"
+                size={HeadingSizes.xxs}
+                text="In der Ey 37, 4612 Wangen b. Olten"
+              />
+              <Heading level="h6" size={HeadingSizes.xxs} text="Schweiz" />
             </div>
             <div className="footer__address col-xs-6">
-              <Heading type="h6" text="Evopack GmbH" weight="bold" />
-              <Heading type="h6" text="+41 7674 63355" />
-              <Heading type="h6" text="info@evopack.tech" />
-              <Heading type="h6" text="Friedrichstraße 15, 70174 Stuttgart" />
-              <Heading type="h6" text="Deutschland" />
+              <Heading
+                level="h6"
+                size={HeadingSizes.xxs}
+                text="Evopack GmbH"
+                weight="bold"
+              />
+              <Heading
+                level="h6"
+                size={HeadingSizes.xxs}
+                text="+49 1578 7898842"
+              />
+              <Heading
+                level="h6"
+                size={HeadingSizes.xxs}
+                text="info@evopack.tech"
+              />
+              <Heading
+                level="h6"
+                size={HeadingSizes.xxs}
+                text="Friedrichstraße 15, 70174 Stuttgart"
+              />
+              <Heading level="h6" size={HeadingSizes.xxs} text="Deutschland" />
             </div>
           </div>
         </div>
         <div className="footer__subscribe col-xs-12 col-md-3">
-          <Heading type="h6" text={subscriptionLabel} theme="" />
-          <VerticalSpacing size="xxs" />
+          <Heading
+            level="h6"
+            size={HeadingSizes.xxs}
+            text={subscriptionLabel}
+            theme=""
+          />
+          <VerticalSpacing size={SpacingSizes.xxxs8px} />
           <TextInput
             label={subscriptionPlaceholder}
             icon="arrow-right-circle--blue"

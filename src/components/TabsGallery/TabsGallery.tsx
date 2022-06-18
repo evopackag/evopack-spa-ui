@@ -1,6 +1,6 @@
 import { ReactNode, useState } from "react";
 import CheckboxItem from "../base/CheckboxItem/CheckboxItem";
-import VerticalSpacing from "../base/Spacing/VerticalSpacing";
+import VerticalSpacing, { SpacingSizes } from "../base/Spacing/VerticalSpacing";
 import TabsContext from "./contexts/TabsContext";
 import Tabs from "./Tabs/Tabs";
 
@@ -14,18 +14,12 @@ interface IProps {
 const TabsGallery = ({ data, children }: IProps) => {
   const { label, handleClick, active, content } = data;
 
-  const [filter, setFilter] = useState(data[0].label);
+  const [filter, setFilter] = useState(data[0]);
 
   return (
     <div className="width-100 col center-xs middle-xs tabsGallery">
       <TabsContext.Provider value={{ filter, setFilter }}>
-        <Tabs
-          data={[
-            { label: "Our Team", active: true },
-            { label: "Why We Started", active: true },
-            { label: "Our Strengths", active: true },
-          ]}
-        />
+        <Tabs data={data} />
         {/* <div className="row tabsGallery__container">
         {data.map((tab: any) => {
           return (
@@ -38,7 +32,7 @@ const TabsGallery = ({ data, children }: IProps) => {
         })}
       </div> */}
 
-        <VerticalSpacing size="lg" />
+        {/* <VerticalSpacing size={SpacingSizes.md24px} /> */}
         {children}
         {/* {content[filter].map((content: any) => {
         return (

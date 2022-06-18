@@ -4,8 +4,8 @@ import Link from "../../components/base/Link/Link";
 import { Languages } from "../../contexts/VisitorContext/VisitorContext";
 import useOutsideAlerter from "../../hooks/useClickOutsideEffect/useClickOutsideEffect";
 import Button from "../base/Buttons/Button";
-import Icon from "../base/Icon/Icon";
-import VerticalSpacing from "../base/Spacing/VerticalSpacing";
+import Icon, { IconColours, Icons } from "../base/Icon/Icon";
+import VerticalSpacing, { SpacingSizes } from "../base/Spacing/VerticalSpacing";
 import Text, { TextColour, TextSize, TextWeight } from "../base/Text/Text";
 import Toggle from "../base/Toggle/Toggle";
 
@@ -21,6 +21,8 @@ const Header = ({ data, refs }: IProps) => {
   const [isMobile, setIsMobile] = useState(false);
 
   const [mobileMenu, setMobileMenu] = useState(false);
+
+  const [hideNav, setHideNav] = useState(false);
 
   const globalHeader = useRef(null);
 
@@ -76,22 +78,47 @@ const Header = ({ data, refs }: IProps) => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        console.log("hiding header");
+        setHideNav(true);
+      } else if (window.scrollY <= 0) {
+        console.log("showing header");
+        setHideNav(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const contactOptionsData = [
     { label: "Email", href: "mailto:info@evopack.tech", icon: "mail" },
-    { label: "Call Us", href: "tel:+417921452239", icon: "phone" },
+    { label: "Call Us", href: "tel:+41767463355", icon: "phone" },
   ];
 
   return (
-    <header className="header col-xs-12" ref={globalHeader}>
+    <header
+      className={`header col-xs-12 ${hideNav ? "header--hidden" : null}`}
+      ref={globalHeader}
+    >
       <NavLink
         to={`/`}
         // className={({ isActive }) => (isActive ? "link link--active" : "link")}
         key={"homepageLink"}
       >
         <img
-          src={`${process.env.PUBLIC_URL}/assets/Evopack_GreenLogoBlueWritingHorizontal.svg`}
+          src={`${process.env.PUBLIC_URL}/assets/icons/evopack-logo--blue.svg`}
           alt=""
         />
+        {/* <Icon
+          size="xxl"
+          icon={Icons.evoPackLogoGreenBlue}
+          colour={IconColours.blue}
+        /> */}
       </NavLink>
       {isMobile ? (
         <Toggle
@@ -124,11 +151,11 @@ const Header = ({ data, refs }: IProps) => {
                 key={"homepageLink"}
               >
                 <img
-                  src={`${process.env.PUBLIC_URL}/assets/Evopack_GreenLogoWhiteWritingHorizontal.svg`}
+                  src={`${process.env.PUBLIC_URL}/assets/icons/Evopack_GreenLogoWhiteWritingHorizontal.svg`}
                   alt=""
                 />
               </NavLink>
-              <VerticalSpacing size="md" />
+              <VerticalSpacing size={SpacingSizes.md24px} />
               <ul className="header__navigationGroup">
                 <div className="header__navigationGroupHeader">
                   <Text size={TextSize.sm} color={TextColour.greyBlue}>
@@ -154,12 +181,17 @@ const Header = ({ data, refs }: IProps) => {
                         <Text size={TextSize.md} weight={TextWeight.regular}>
                           {link.label}
                         </Text>
-                        <Icon size="sm" icon="chevron-right--white" />
+                        <Icon
+                          size="sm"
+                          icon={Icons.chevronRight}
+                          colour={IconColours.white}
+                        />
+                        {/* <Icon size="sm" icon="chevron-right--white" /> */}
                       </NavLink>
                     </li>
                   );
                 })}
-                <VerticalSpacing size="md" />
+                <VerticalSpacing size={SpacingSizes.md24px} />
               </ul>
               <ul className="header__navigationGroup">
                 <div className="header__navigationGroupHeader">
@@ -181,19 +213,24 @@ const Header = ({ data, refs }: IProps) => {
                         <Text size={TextSize.md} weight={TextWeight.regular}>
                           {link.label}
                         </Text>
-                        <Icon size="sm" icon={link.icon} />
+                        <Icon
+                          size="sm"
+                          icon={link.icon}
+                          colour={IconColours.white}
+                        />
+                        {/* <Icon size="sm" icon={link.icon} /> */}
                       </Link>
                     </li>
                   );
                 })}
-                <VerticalSpacing size="md" />
+                <VerticalSpacing size={SpacingSizes.md24px} />
               </ul>
               <div className="navlink__container row" key="closeMobileMenu">
                 <Button
                   label="Close Menu"
                   handleClick={() => setMobileMenu(!mobileMenu)}
                   type="secondary-white"
-                  icon="close--white"
+                  icon="close"
                 />
               </div>
             </div>

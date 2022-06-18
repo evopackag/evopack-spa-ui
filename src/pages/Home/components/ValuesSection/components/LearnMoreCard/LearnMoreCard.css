@@ -10,7 +10,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url(/public/assets/carbon_email.svg);
   background-size: cover;
   padding: 4rem;
   border-radius: 2.5rem;
@@ -18,7 +17,7 @@
   box-shadow: 0 0.125rem 0.25rem 0 #d8d8d9;
   cursor: pointer;
   transition: all 250ms ease-in-out;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 .learnMoreCard:first-of-type {
   margin-left: 0rem;

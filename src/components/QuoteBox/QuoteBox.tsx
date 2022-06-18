@@ -1,5 +1,5 @@
 import { createRef } from "react";
-import Heading from "../base/Heading/Heading";
+import Heading, { HeadingSizes } from "../base/Heading/Heading";
 import Text from "../base/Text/Text";
 import "./QuoteBox.css";
 
@@ -26,9 +26,26 @@ const QuoteBox = ({ text, theme, author, authorTitle }: IProps) => {
       ref={missionRef}
     >
       <div className="quoteBox__text">
-        <Heading type="h4" text={firstWord} theme="dark" accent="startQuote" />
-        <Heading type="h4" text={quoteText} theme="dark" />
-        <Heading type="h4" text={lastWord} theme="dark" accent="endQuote" />
+        <Heading
+          level="h4"
+          size={HeadingSizes.md}
+          text={firstWord}
+          theme="dark"
+          accent="startQuote"
+        />
+        <Heading
+          level="h4"
+          size={HeadingSizes.md}
+          text={quoteText}
+          theme="dark"
+        />
+        <Heading
+          level="h4"
+          size={HeadingSizes.md}
+          text={lastWord}
+          theme="dark"
+          accent="endQuote"
+        />
       </div>
       <div className="quoteBox__author col align-center center-xs">
         <Text theme="dark" bold>

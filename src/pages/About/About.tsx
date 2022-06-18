@@ -1,11 +1,13 @@
-import Heading from "../../components/base/Heading/Heading";
+import Heading, { HeadingSizes } from "../../components/base/Heading/Heading";
 import PageContainer from "../../components/base/PageContainer/PageContainer";
 import Header from "../../components/Header/Header";
 import Text, { TextSize } from "../../components/base/Text/Text";
 import Button from "../../components/base/Buttons/Button";
 import { useContext } from "react";
 import VisitorContext from "../../contexts/VisitorContext/VisitorContext";
-import VerticalSpacing from "../../components/base/Spacing/VerticalSpacing";
+import VerticalSpacing, {
+  SpacingSizes,
+} from "../../components/base/Spacing/VerticalSpacing";
 
 import "./About.css";
 import Footer from "../../components/Footer/Footer";
@@ -26,16 +28,17 @@ const About = () => {
         <section className="about__heroSection col-xs-12 center-xs">
           <div className="col width-100 center-xs middle-xs padding-horizontal-4 about__heroContent">
             <div className="col center-xs  about__heroSectionHeading">
-              <VerticalSpacing size="md" />
-              <VerticalSpacing size="md" />
+              <VerticalSpacing size={SpacingSizes.md24px} />
+              <VerticalSpacing size={SpacingSizes.md24px} />
               <Heading
                 text="About Evopack"
-                type="h1"
+                level="h1"
+                size={HeadingSizes.xl}
                 theme="light"
                 leftAlignDesktop
                 spacing=""
               />
-              <VerticalSpacing size="sm" />
+              <VerticalSpacing size={SpacingSizes.xs16px} />
               <Text theme="light">
                 We’re a group of engineers and chemists looking to move
                 packaging into the 21st centry.
@@ -53,14 +56,8 @@ const About = () => {
             </Text> */}
           </div>
           <HorizontalDivider slopedDivider />
-          <VerticalSpacing size="md" />
-          <TabsGallery
-            data={[
-              { label: "Our Team", active: true },
-              { label: "Why We Started", active: true },
-              { label: "Our Strengths", active: true },
-            ]}
-          >
+          <VerticalSpacing size={SpacingSizes.md24px} />
+          <TabsGallery data={["Our Team", "Why We Started", "Our Strengths"]}>
             <TabsContent label="Our Team">
               <Text theme="light" size={TextSize.sm}>
                 Our Team (Coming soon)

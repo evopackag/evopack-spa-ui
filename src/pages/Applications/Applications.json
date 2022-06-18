@@ -1,0 +1,249 @@
+{
+  "english": {
+    "applicationAreas": [
+      {
+        "sectionHeading": "Paints and Coatings",
+        "subheading": "Liefern Sie reine Haushaltsprodukte mit niedrigeren Kosten und Biozidgebrauch",
+        "applicationHeroImage": "applicationsImages__paints.jpg",
+        "children": [
+          {
+            "component": "TextBox",
+            "heading": "Sustainability in the paints industry",
+            "headingFontColour": "#075932",
+            "copy": "Sie stellen die Basis vieler Formulierungen dar und werden in großen Mengen eingesetzt. Ein Klarlack besteht aus bis zu 99 %, Beton für Hochhäuser aus bis zu 10 % und Klebstoffe aus beihnahe 100 % Bindemitteldispersion. In den meisten Fällen werden Bindemitteldispersionen in der Industrie zu anderen Produkten weiter-verarbeitet, bevor sie an den Endkonsumenten gelangen. Dies erfordert maximale Performance: zuverlässig und langfristig.",
+            "icon": "leaf",
+            "iconColour": "--sustain-green",
+            "backgroundColour": "#FFF7EF"
+          },
+          {
+            "component": "TextBox",
+            "heading": "Biocides in paints",
+            "copy": "In der Vergangenheit wurden effektive Biozide wie MIT oder CMIT eingesetzt, um Wasch- und Reinigungsmittel bis zum Endkonsumenten kontaminationsfrei zu halten. Die Produkte waren damit bis zum vollständigen Verbrauch sicher."
+          },
+          {
+            "component": "TextBox",
+            "heading": "It's time to rethink",
+            "copy": "Wir von Evopack bieten für die Reinigungsmittel-industrie Lösungen, die helfen die Produkt-integrität bis zum letzten Tropfen zu gewähr-leisten. Dabei sollen keine oder möglichst wenig gefährliche Rohstoffe eigesetzt werden."
+          },
+          {
+            "component": "LargeCard",
+            "heading": "Mit unserer Nachhaltigkeitsberatung",
+            "copy": "Wir von Evopack bieten für die Reinigungsmittel-industrie Lösungen, die helfen die Produkt-integrität bis zum letzten Tropfen zu gewähr-leisten. Dabei sollen keine oder möglichst wenig gefährliche Rohstoffe eigesetzt werden."
+          },
+          {
+            "component": "LargeCard",
+            "heading": "Mit unserer Nachhaltigkeitsberatung",
+            "copy": "Wir von Evopack bieten für die Reinigungsmittel-industrie Lösungen, die helfen die Produkt-integrität bis zum letzten Tropfen zu gewähr-leisten. Dabei sollen keine oder möglichst wenig gefährliche Rohstoffe eigesetzt werden."
+          },
+          {
+            "component": "LargeCard",
+            "heading": "Mit unserer innovativen Verpackungen",
+            "copy": "Wir von Evopack bieten für die Reinigungsmittel-industrie Lösungen, die helfen die Produkt-integrität bis zum letzten Tropfen zu gewähr-leisten. Dabei sollen keine oder möglichst wenig gefährliche Rohstoffe eigesetzt werden."
+          }
+        ]
+      },
+      {
+        "sectionHeading": "Adhesives",
+        "subheading": "Liefern Sie reine Haushaltsprodukte mit niedrigeren Kosten und Biozidgebrauch",
+        "applicationHeroImage": "applicationsImages__paints.jpg"
+      },
+      {
+        "sectionHeading": "Polymer dispersions",
+        "subheading": "Liefern Sie reine Haushaltsprodukte mit niedrigeren Kosten und Biozidgebrauch",
+        "applicationHeroImage": "applicationsImages__paints.jpg"
+      },
+      {
+        "sectionHeading": "Household products",
+        "subheading": "Liefern Sie reine Haushaltsprodukte mit niedrigeren Kosten und Biozidgebrauch",
+        "applicationHeroImage": "applicationsImages__paints.jpg"
+      }
+    ],
+    "heroSection": {
+      "title": "Next Generation Packaging",
+      "subTitle": "Sustainable solutions for enhanced product integrity",
+      "CTA": "Contact Us",
+      "navigationLinks": [{"label": "Applications", "urlPath": "/applications"}, {"label": "Careers", "urlPath": "/careers"}, {"label": "About Us", "urlPath": "/about"}],
+      "productAreas": ["Paints and Coatings", "Adhesives", "Polymer Dispersions", "Home Products"]
+    },
+    "servicesSection": {
+      "title": "What we do for you",
+      "services": [
+        {
+          "title": "Packaging Design",
+          "text": "Our packaging solutions improve safety, compliance and sustainability over the entire product life cycle.",
+          "icon": "packaging--medium-blue",
+          "theme": "blue"
+        },
+        {
+          "title": "Sustainablility Consulting",
+          "text": "Save money and the planet by reducing the need for biocides in your products.",
+          "icon": "question",
+          "theme": "green"
+        },
+        {
+          "title": "Hygiene Control",
+          "text": "Protect your product’s quality and compliance with minimal effort and chemicals.",
+          "icon": "lock",
+          "theme": "white"
+        }
+      ]
+    },
+    "quoteSection": {
+      "quote": "At Evopack, we have made it our mission to identify and optimise outdated packaging concepts. We believe in an evolution of packaging towards more sustainable and less impactful packaging. Our mission is to drive this evolution. We develop packaging for a better future.",
+      "author": "Test Person",
+      "authorPosition": "Head of Engineering"
+    },
+    "valuesSection": {
+      "title": "Sustainablility throughout",
+      "subTitle": "Only by living a sustainable philosophy can you develop sustainable products.",
+      "values": [
+        {
+          "title": "Reduction of transport emissions",
+          "text": "Our packaging solutions improve safety, compliance and sustainability over the entire product life cycle.",
+          "buttonText": "Learn More",
+          "icon": "emissions",
+          "theme": "white",
+          "buttonTheme": "blue"
+        },
+        {
+          "title": "Developing resource efficient packaging solutions",
+          "text": "Save money and the planet by reducing the need for biocides in your products.",
+          "buttonText": "Learn More",
+          "icon": "trees",
+          "theme": "blue",
+          "buttonTheme": "white"
+        },
+        {
+          "title": "Reduce the use of harmful additives",
+          "text": "Protect your product’s quality and compliance with minimal effort and chemicals.",
+          "buttonText": "Learn More",
+          "icon": "chemistry",
+          "theme": "white",
+          "buttonTheme": "blue"
+        }
+      ]
+    },
+    "contactSection": {
+      "title": "Drop us a line",
+      "firstNamePlaceholder": "First Name",
+      "lastNamePlaceholder": "Last Name",
+      "emailPlaceholder": "Email",
+      "phonePlaceholder": "Phone",
+      "messagePlaceholder": "Message",
+      "GDPRCheckboxText": "Tick this box to sign up for marketing - you can unsubscribe at any time.",
+      "buttonText": "Send Message"
+    },
+    "footer": {
+      "subscriptionLabel": "Be the first to know",
+      "subscriptionPlaceholder": "Enter your email",
+      "imprintLinkLabel": "Imprint",
+      "dataPolicyLinkLabel": "Data Policy"
+    }
+
+  },
+  "german": {
+    "applicationAreas": [
+      {
+        "application": "Paints and Coatings",
+        "subheading": "Liefern Sie reine Haushaltsprodukte mit niedrigeren Kosten und Biozidgebrauch"
+      },
+      {
+        "application": "Adhesives",
+        "subheading": "Liefern Sie reine Haushaltsprodukte mit niedrigeren Kosten und Biozidgebrauch"
+      },
+      {
+        "application": "Polymer dispersions",
+        "subheading": "Liefern Sie reine Haushaltsprodukte mit niedrigeren Kosten und Biozidgebrauch"
+      },
+      {
+        "application": "Household products",
+        "subheading": "Liefern Sie reine Haushaltsprodukte mit niedrigeren Kosten und Biozidgebrauch"
+      }
+    ],
+    "heroSection": {
+      "title": "Verpackungen der Zukunft",
+      "subTitle": "Nachhaltige Lösungen für eine verbesserte Produktintegrität",
+      "CTA": "Kontakt",
+      "navigationLinks": [{"label": "Jobs & Karriere", "urlPath": "/careers"}, {"label": "Über Uns", "urlPath": "/about"}],
+      "productAreas": ["Farben und Beschichtungen", "Klebstoffe", "Polymer-Dispersionen", "Haushaltspflege"]
+    },
+    "servicesSection": {
+      "title": "Was wir für Sie tun",
+      "services": [
+      {
+        "title": "Verpackungslösungen",
+        "text": "Our packaging solutions improve safety, compliance and sustainability over the entire product life cycle.",
+        "icon": "packaging--medium-blue",
+        "theme": "blue"
+      },
+      {
+        "title": "Nachhaltigkeits Beratung",
+        "text": "Save money and the planet by reducing the need for biocides in your products.",
+        "icon": "question",
+        "theme": "green"
+      },
+      {
+        "title": "Hygiene Konzept",
+        "text": "Protect your product’s quality and compliance with minimal effort and chemicals.",
+        "icon": "lock",
+        "theme": "white"
+      }
+      ]
+    },
+    "quoteSection": {
+      "quote": "Hier bei Evopack, we have made it our mission to identify and optimise outdated packaging concepts. We believe in an evolution of packaging towards more sustainable and less impactful packaging. Our mission is to drive this evolution. We develop packaging for a better future.",
+      "author": "Eine Person",
+      "authorPosition": "Head of Engineering"
+    },
+    "valuesSection": {
+      "title": "Nachhaltigkeit immer",
+      "subTitle": "Only by living a sustainable philosophy can you develop sustainable products.",
+      "values": [
+        {
+          "title": "Reduction of transport emissions",
+          "text": "Our packaging solutions improve safety, compliance and sustainability over the entire product life cycle.",
+          "buttonText": "Learn More",
+          "icon": "emissions",
+          "theme": "white",
+          "buttonTheme": "blue"
+        },
+        {
+          "title": "Developing resource efficient packaging solutions",
+          "text": "Save money and the planet by reducing the need for biocides in your products.",
+          "buttonText": "Learn More",
+          "icon": "trees",
+          "theme": "blue",
+          "buttonTheme": "white"
+        },
+        {
+          "title": "Reduce the use of harmful additives",
+          "text": "Protect your product’s quality and compliance with minimal effort and chemicals.",
+          "buttonText": "Learn More",
+          "icon": "chemistry",
+          "theme": "white",
+          "buttonTheme": "blue"
+        }
+      ]
+    },
+    "contactSection": {
+      "title": "Kontaktieren Sie uns",
+      "firstNamePlaceholder": "First Name",
+      "lastNamePlaceholder": "Last Name",
+      "emailPlaceholder": "Email",
+      "phonePlaceholder": "Phone",
+      "messagePlaceholder": "Message",
+      "GDPRCheckboxText": "Tick this box to sign up for marketing - you can unsubscribe at any time.",
+      "buttonText": "Send Message"
+    },
+    "footer": {
+      "subscriptionLabel": "Erfahren Sie alles zuerst",
+      "subscriptionPlaceholder": "Enter your email",
+      "imprintLinkLabel": "Imprint",
+      "dataPolicyLinkLabel": "Datenschutz"
+    }
+
+  },
+  "french":{
+
+  }
+}

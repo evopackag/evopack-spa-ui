@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Icon, { IconColours } from "../Icon/Icon";
 import Text from "../Text/Text";
 import "./TextInput.css";
 
@@ -66,11 +67,14 @@ const TextInput = ({
           // }
         />
         {icon ? (
-          <img
-            className="textInput__icon"
-            src={`${process.env.PUBLIC_URL}/assets/${contextualIcon}.svg`}
-          />
-        ) : null}
+          <span className="textInput__icon">
+            <Icon size="sm" icon={contextualIcon} colour={IconColours.white} />
+          </span>
+        ) : // <img
+        //   className="textInput__icon"
+        //   src={`${process.env.PUBLIC_URL}/assets/${contextualIcon}.svg`}
+        // />
+        null}
       </div>
     );
   }
@@ -99,7 +103,7 @@ const TextInput = ({
         >
           <img
             className="textInput__submitIcon"
-            src={`${process.env.PUBLIC_URL}/assets/${
+            src={`${process.env.PUBLIC_URL}/assets/icons/${
               active ? "arrow-line-right--blue" : "arrow-line-right--blue"
             }.svg`}
           />
@@ -127,7 +131,7 @@ const TextInput = ({
       {icon ? (
         <img
           className="textInput__icon"
-          src={`${process.env.PUBLIC_URL}/assets/${contextualIcon}.svg`}
+          src={`${process.env.PUBLIC_URL}/assets/icons/${contextualIcon}.svg`}
         />
       ) : null}
     </div>

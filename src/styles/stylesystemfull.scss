@@ -551,48 +551,48 @@
     border-radius: 0%;
   }
 
-  &-2 {
+  &-8 {
+    border-radius: 0.5rem;
+  }
+
+  &-16 {
+    border-radius: 1rem;
+  }
+
+  &-24 {
+    border-radius: 1.5rem;
+  }
+
+  &-32 {
     border-radius: 2rem;
   }
 
-  &-10 {
-    border-radius: 10%;
-  }
-
-  &-20 {
-    border-radius: 20%;
-  }
-
-  &-30 {
-    border-radius: 30%;
-  }
-
   &-40 {
-    border-radius: 40%;
+    border-radius: 2.5rem;
   }
 
-  &-50 {
-    border-radius: 50%;
+  &-48 {
+    border-radius: 3rem;
   }
 
-  &-60 {
-    border-radius: 60%;
+  &-56 {
+    border-radius: 3.5rem;
   }
 
-  &-70 {
-    border-radius: 70%;
+  &-64 {
+    border-radius: 4rem;
+  }
+
+  &-72 {
+    border-radius: 4.5rem;
   }
 
   &-80 {
-    border-radius: 80%;
+    border-radius: 5rem;
   }
 
-  &-90 {
-    border-radius: 90%;
-  }
-
-  &-100 {
-    border-radius: 100%;
+  &-round {
+    border-radius: 100rem;
   }
 }
 

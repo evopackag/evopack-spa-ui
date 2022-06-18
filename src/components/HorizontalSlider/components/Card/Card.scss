@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-image: url(/public/assets/carbon_email.svg);
   padding: 4rem 2rem;
   border-radius: 2.5rem;
   background: center center no-repeat;
@@ -15,6 +14,11 @@
   /* white-space: pre-wrap; */
   // word-wrap: break-word;
   white-space:pre-line;
+
+  & h3 {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
 }
 
 .card:last-of-type {

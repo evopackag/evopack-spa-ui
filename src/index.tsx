@@ -13,6 +13,10 @@ const navigationData = [
     urlPath: "",
   },
   {
+    label: "Applications",
+    urlPath: "/applications",
+  },
+  {
     label: "Careers",
     urlPath: "/careers",
   },

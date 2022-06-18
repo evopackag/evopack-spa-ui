@@ -1,6 +1,8 @@
 import "./HeroInfoBar.css";
 
-import Heading from "../../../../components/base/Heading/Heading";
+import Heading, {
+  HeadingSizes,
+} from "../../../../components/base/Heading/Heading";
 import Icon from "../../../../components/base/Icon/Icon";
 import Text from "../../../../components/base/Text/Text";
 import Toggle from "../../../../components/base/Toggle/Toggle";
@@ -30,13 +32,13 @@ const HeroInfoBar = ({ productAreas }: IProps) => {
       </div>
       <div className="heroSection__areas col-xs-10 col-md-6 pop-md">
         <div className="row justify-between">
-          <Heading text={productAreas[0]} type="h6" />
+          <Heading text={productAreas[0]} level="h6" size={HeadingSizes.xxs} />
           <img src={`${process.env.PUBLIC_URL}/assets/dividing-point.svg`} />
-          <Heading text={productAreas[1]} type="h6" />
+          <Heading text={productAreas[1]} level="h6" size={HeadingSizes.xxs} />
           <img src={`${process.env.PUBLIC_URL}/assets/dividing-point.svg`} />
-          <Heading text={productAreas[2]} type="h6" />
+          <Heading text={productAreas[2]} level="h6" size={HeadingSizes.xxs} />
           <img src={`${process.env.PUBLIC_URL}/assets/dividing-point.svg`} />
-          <Heading text={productAreas[3]} type="h6" />
+          <Heading text={productAreas[3]} level="h6" size={HeadingSizes.xxs} />
         </div>
       </div>
       <div className="heroInfoBar__contactIcons col-xs-3 justify-end">

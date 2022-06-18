@@ -25,6 +25,9 @@
   width: 90%;
   margin-bottom: 0.5rem;
 }
+.header--hidden {
+  top: -100rem;
+}
 
 .header__links {
   display: flex;

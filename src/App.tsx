@@ -17,6 +17,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./pages/About/About";
 import Careers from "./pages/Careers/Carrers";
 import useStickyStorage from "./hooks/useStickyStorage/useStickyStorage";
+import Applications from "./pages/Applications/Applications";
 
 function App() {
   // const [language, setLanguage] = useState(Languages.English);
@@ -25,18 +26,28 @@ function App() {
     Languages.English
   );
 
+  const navigationLinks = [
+    // { label: "Applications", urlPath: "/applications" },
+    { label: "Careers", urlPath: "/careers" },
+    { label: "About Us", urlPath: "/about" },
+  ];
+
   return (
     <VisitorContext.Provider value={{ language, setLanguage }}>
       {/* <Home /> */}
+
       <BrowserRouter>
         <Routes>
+          {/* <Header data={navigationLinks} /> */}
           <Route path="/">
             <Route index element={<Home />} />
+            {/* <Route path="applications" element={<Applications />} /> */}
             <Route path="careers" element={<Careers />} />
             <Route path="about" element={<About />} />
           </Route>
         </Routes>
       </BrowserRouter>
+      {/* <Footer data={"hi"} /> */}
     </VisitorContext.Provider>
   );
 }

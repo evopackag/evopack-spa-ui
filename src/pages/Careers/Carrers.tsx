@@ -1,4 +1,4 @@
-import Heading from "../../components/base/Heading/Heading";
+import Heading, { HeadingSizes } from "../../components/base/Heading/Heading";
 import PageContainer from "../../components/base/PageContainer/PageContainer";
 import Header from "../../components/Header/Header";
 import Text from "../../components/base/Text/Text";
@@ -8,7 +8,9 @@ import VisitorContext from "../../contexts/VisitorContext/VisitorContext";
 import UnderlinedText from "../../components/base/UnderlinedText/UnderlinedText";
 
 import "./Careers.css";
-import VerticalSpacing from "../../components/base/Spacing/VerticalSpacing";
+import VerticalSpacing, {
+  SpacingSizes,
+} from "../../components/base/Spacing/VerticalSpacing";
 import Link, { ButtonLevel } from "../../components/base/Link/Link";
 import Footer from "../../components/Footer/Footer";
 import Icon from "../../components/base/Icon/Icon";
@@ -29,16 +31,17 @@ const Careers = () => {
         <section className="careers__heroSection col-xs-12 center-xs">
           <div className="col width-100 center-xs middle-xs padding-horizontal-4 careers__heroContent">
             <div className="col center-xs  careers__heroSectionHeading">
-              <VerticalSpacing size="md" />
-              <VerticalSpacing size="md" />
+              <VerticalSpacing size={SpacingSizes.md24px} />
+              <VerticalSpacing size={SpacingSizes.md24px} />
               <Heading
                 text="Let's work together"
-                type="h1"
+                level="h1"
+                size={HeadingSizes.xl}
                 theme="light"
                 leftAlignDesktop
                 spacing=""
               />
-              <VerticalSpacing size="sm" />
+              <VerticalSpacing size={SpacingSizes.xs16px} />
               <Text theme="light">
                 We currently have&nbsp;
                 <strong style={{ color: "var(--primary-green)" }}>
@@ -58,7 +61,7 @@ const Careers = () => {
             <Link href="mailto:info@evopack.tech">Email Us</Link>
           </div> */}
           <div className="row center-xs middle-xs careers__ctas padding-horizontal-4">
-            <VerticalSpacing size="md" />
+            <VerticalSpacing size={SpacingSizes.md24px} />
             {/* <Button
               label="Email Us"
               type="secondary-blue-filled"
@@ -82,12 +85,12 @@ const Careers = () => {
             <Link
               level={ButtonLevel.secondaryBlue}
               buttonStyle
-              href="tel:+417921452239"
+              href="tel:+41767463355"
             >
               Call Up
             </Link>
           </div>
-          <VerticalSpacing size="md" />
+          <VerticalSpacing size={SpacingSizes.md24px} />
         </section>
       </div>
       <Footer data={languageSpecificContent.footer} />

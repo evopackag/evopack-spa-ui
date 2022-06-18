@@ -1,4 +1,4 @@
-import Heading from "../Heading/Heading";
+import Heading, { HeadingSizes } from "../Heading/Heading";
 import "./Icon.css";
 
 interface IProps {
@@ -18,6 +18,23 @@ export enum Icons {
   chevronLeft = "chevron-left",
   chevronRight = "chevron-right",
   plusCircle = "plus-circle",
+  leaf = "leaf",
+  arrowLeft = "arrow-left",
+  arrowRight = "arrow-right",
+  arrowDown = "arrow-down",
+  arrowUp = "arrow-up",
+  endQuote = "end-quote",
+  chemistry = "chemistry",
+  cycle = "cycle",
+  phone = "phone",
+  lock = "lock",
+  pause = "pause",
+  mail = "mail",
+  person = "person",
+  packaging = "packaging",
+  question = "question",
+  trees = "trees",
+  evoPackLogoGreenBlue = "evopack-logo",
 }
 
 export enum IconColours {
@@ -25,6 +42,7 @@ export enum IconColours {
   white = "--white",
   green = "--green",
   lightGrey = "--light-grey",
+  sustainGreen = "--sustain-green",
 }
 
 const Icon = ({
@@ -51,7 +69,12 @@ const Icon = ({
       >
         {hoverText ? (
           <div className="icon__text">
-            <Heading type="h6" text={hoverText} theme="dark" />
+            <Heading
+              level="h6"
+              size={HeadingSizes.xxs}
+              text={hoverText}
+              theme="dark"
+            />
           </div>
         ) : null}
         <img
@@ -71,11 +94,19 @@ const Icon = ({
     >
       {hoverText ? (
         <div className="icon__text">
-          <Heading type="h6" text={hoverText} theme="dark" />
+          <Heading
+            level="h6"
+            size={HeadingSizes.xxs}
+            text={hoverText}
+            theme="dark"
+          />
         </div>
       ) : null}
       <img
-        src={`${process.env.PUBLIC_URL}/assets/${icon}.svg`}
+        // src={`${process.env.PUBLIC_URL}/assets/${icon}.svg`}
+        src={`${process.env.PUBLIC_URL}/assets/icons/${icon}${
+          disable ? IconColours.lightGrey : colour
+        }.svg`}
         alt={icon}
         onClick={handleClick}
         className={`icon--${size}`}

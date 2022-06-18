@@ -1,4 +1,6 @@
-import Heading from "../../../../components/base/Heading/Heading";
+import Heading, {
+  HeadingSizes,
+} from "../../../../components/base/Heading/Heading";
 import Icon, { Icons } from "../../../../components/base/Icon/Icon";
 import Text from "../../../../components/base/Text/Text";
 
@@ -9,7 +11,9 @@ import Button from "../../../../components/base/Buttons/Button";
 import HorizontalSlider from "../../../../components/HorizontalSlider/HorizontalSlider";
 import Card from "../../../../components/HorizontalSlider/components/Card/Card";
 import LearnMoreCard from "./components/LearnMoreCard/LearnMoreCard";
-import VerticalSpacing from "../../../../components/base/Spacing/VerticalSpacing";
+import VerticalSpacing, {
+  SpacingSizes,
+} from "../../../../components/base/Spacing/VerticalSpacing";
 
 interface IProps {
   data: any;
@@ -46,18 +50,24 @@ const ValuesSection = ({ data }: IProps) => {
 
   return (
     <section className="ValuesSection col-xs-12">
-      <VerticalSpacing size="lg" />
+      <VerticalSpacing size={SpacingSizes.lg32px} />
       <div className="valuesSection__title col width-100 align-center center-xs center-text">
         <Heading
           text={title}
-          type="h2"
+          size={HeadingSizes.xl}
+          level="h2"
           theme="light"
           // spacing="100vw"
           accent
           accentWords={titleUnderlined}
         />
-        <VerticalSpacing size="sm" />
-        <Heading text={subTitle} type="h5" theme="light" />
+        <VerticalSpacing size={SpacingSizes.md24px} />
+        <Heading
+          text={subTitle}
+          level="h5"
+          size={HeadingSizes.sm}
+          theme="light"
+        />
       </div>
       <div className="valuesSection__fullWidthBox">
         {values.map((card: any) => {

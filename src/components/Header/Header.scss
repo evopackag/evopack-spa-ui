@@ -26,6 +26,10 @@
     width: 90%;
     margin-bottom: 0.5rem;
   }
+
+  &--hidden {
+    top: -100rem;
+  }
 }
 
 .header__links {

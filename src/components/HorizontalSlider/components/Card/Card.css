@@ -5,13 +5,16 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-image: url(/public/assets/carbon_email.svg);
   padding: 4rem 2rem;
   border-radius: 2.5rem;
   background: center center no-repeat;
   text-align: center;
   /* white-space: pre-wrap; */
   white-space: pre-line;
+}
+.card h3 {
+  flex-grow: 1;
+  flex-basis: 0;
 }
 
 .card:last-of-type {

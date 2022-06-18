@@ -1,8 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 
-import Heading from "../../../../components/base/Heading/Heading";
+import Heading, {
+  HeadingSizes,
+} from "../../../../components/base/Heading/Heading";
 import LearnMoreCard from "./components/LearnMoreCard/LearnMoreCard";
-import VerticalSpacing from "../../../../components/base/Spacing/VerticalSpacing";
+import VerticalSpacing, {
+  SpacingSizes,
+} from "../../../../components/base/Spacing/VerticalSpacing";
 import Icon, {
   IconColours,
   Icons,
@@ -66,20 +70,26 @@ const MediumCarousel = ({ data }: IProps) => {
 
   return (
     <section className="ValuesSection col-xs-12">
-      <VerticalSpacing size="lg" />
+      <VerticalSpacing size={SpacingSizes.lg32px} />
       <div className="valuesSection__title col width-100 align-center center-xs center-text">
         <Heading
           text={title}
-          type="h2"
+          level="h2"
+          size={HeadingSizes.xl}
           theme="light"
           // spacing="100vw"
           accent
           accentWords={titleUnderlined}
         />
-        <VerticalSpacing size="sm" />
-        <Heading text={subTitle} type="h5" theme="light" />
+        <VerticalSpacing size={SpacingSizes.xs16px} />
+        <Heading
+          text={subTitle}
+          level="h5"
+          size={HeadingSizes.sm}
+          theme="light"
+        />
       </div>
-      <VerticalSpacing size="sm" />
+      <VerticalSpacing size={SpacingSizes.xs16px} />
       <div
         className="valuesSection__fullWidthBox"
         onScroll={scrollHandler}
@@ -97,7 +107,7 @@ const MediumCarousel = ({ data }: IProps) => {
           );
         })}
       </div>
-      <VerticalSpacing size="sm" />
+      <VerticalSpacing size={SpacingSizes.xs16px} />
       <div className="row justify-center align-center mediumCarousel__stepper">
         <Icon
           isButton

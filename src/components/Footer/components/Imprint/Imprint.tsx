@@ -1,8 +1,10 @@
-import Heading from "../../../base/Heading/Heading";
+import Heading, { HeadingSizes } from "../../../base/Heading/Heading";
 import Text from "../../../base/Text/Text";
 import Bullets from "../../../base/Bullets/Bullets";
 import HorizontalDivider from "../../../base/HorizontalDivider/HorizontalDivider";
-import VerticalSpacing from "../../../base/Spacing/VerticalSpacing";
+import VerticalSpacing, {
+  SpacingSizes,
+} from "../../../base/Spacing/VerticalSpacing";
 
 const legalContent = require("../../FooterContent.json");
 
@@ -13,19 +15,24 @@ const Imprint = () => {
   return (
     <>
       <>
-        <Heading theme={theme} text={title} type="h2" />
-        <VerticalSpacing size="sm" />
+        <Heading theme={theme} text={title} level="h2" size={HeadingSizes.xl} />
+        <VerticalSpacing size={SpacingSizes.lg32px} />
         <HorizontalDivider />
-        <VerticalSpacing size="sm" />
-        <VerticalSpacing size="md" />
+        <VerticalSpacing size={SpacingSizes.lg32px} />
+        <VerticalSpacing size={SpacingSizes.xxxl64px} />
         {content[0]
           ? content[0].content.map((item: any) => {
               return (
                 <>
-                  <Heading theme={theme} text={item.sectionTitle} type="h4" />
-                  <VerticalSpacing size="sm" />
+                  <Heading
+                    theme={theme}
+                    text={item.sectionTitle}
+                    level="h4"
+                    size={HeadingSizes.md}
+                  />
+                  <VerticalSpacing size={SpacingSizes.lg32px} />
                   <Text theme={theme}>{item.text}</Text>
-                  <VerticalSpacing size="xs" />
+                  <VerticalSpacing size={SpacingSizes.xs16px} />
                   {item.bullets && item.bullets.length > 0
                     ? item.bullets.map((bullet: any) => {
                         return (
@@ -36,7 +43,7 @@ const Imprint = () => {
                         );
                       })
                     : null}
-                  <VerticalSpacing size="md" />
+                  <VerticalSpacing size={SpacingSizes.xxxl64px} />
                 </>
               );
             })
