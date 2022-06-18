@@ -4,12 +4,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 0.5rem;
 }
 
 .icon--md {
   width: 1.125rem;
   height: 1.125rem;
-  padding: 0.5rem;
+  // padding: 0.5rem;
   border-radius: 50%;
 }
 
@@ -69,4 +70,36 @@
 
 .icon:hover > .icon__text {
   opacity: 1;
+}
+
+
+.icon-size--{
+  &xs {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  &sm {
+    width: 1rem;
+    height: 1rem;
+  }
+  &md {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  &lg {
+    width: 2rem;
+    height: 2rem;
+  }
+  &xl {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  &xxl {
+    width: 3rem;
+    height: 3rem;
+  }
+  &xxxl {
+    width: 6rem;
+    height: 6rem;
+  }
 }

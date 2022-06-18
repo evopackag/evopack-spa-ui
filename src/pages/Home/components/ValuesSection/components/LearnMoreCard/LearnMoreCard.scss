@@ -1,16 +1,17 @@
 .learnMoreCard {
-  height: 600px;
+  height: auto;
+  // height: max-content;
   margin-left: 2rem;
   width: auto;
   min-width: 30rem;
   max-width: min-content;
-  flex-grow: 1;
+  // flex-grow: 1;
   /* max-width: auto; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url(/public/assets/carbon_email.svg);
+  background-image: url(/public/assets/icons/carbon_email.svg);
   background-size: cover;
   padding: 4rem;
   border-radius: 2.5rem;
@@ -27,10 +28,12 @@
 
 .learnMoreCard h3 {
   text-align: center;
+  flex-grow: 100;
+  display: flex;
 }
 
 .learnMoreCard:nth-of-type(even) {
-  align-self: flex-end;
+  // align-self: flex-end;
 }
 
 .learnMoreCard:hover {

@@ -1,4 +1,7 @@
 import { createRef, useContext, useRef } from "react";
+import { BoxBackground } from "../../components/base/Box/Box";
+import Bullet from "../../components/base/Bullet/Bullet";
+import { IconColours, Icons } from "../../components/base/Icon/Icon";
 import ImageTile from "../../components/base/ImageTile/ImageTile";
 import PageContainer from "../../components/base/PageContainer/PageContainer";
 import VerticalSpacing, {
@@ -70,7 +73,13 @@ const Home = () => {
           href="google.com"
           imageURL="StandingOnCliff_darkened.jpg"
         />
-      </div> */}
+      </div>
+      <Bullet
+        text="This is a test bullet"
+        background={BoxBackground.sustainBeige}
+        icon={Icons.tick}
+        iconColour={IconColours.green}
+      /> */}
       <VerticalSpacing size={SpacingSizes.xl40px} />
 
       <ContactForm

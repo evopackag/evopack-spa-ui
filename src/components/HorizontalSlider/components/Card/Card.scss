@@ -6,18 +6,25 @@
   max-width: 30vw;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 4rem 2rem;
+  justify-content: center;
+  padding: 4rem 1rem;
   border-radius: 2.5rem;
   background: center center no-repeat;
+  background-size: contain;
+  background-position: center;
   text-align: center;
   /* white-space: pre-wrap; */
   // word-wrap: break-word;
   white-space:pre-line;
 
   & h3 {
-    flex-grow: 1;
+    // flex-grow: 1;
     flex-basis: 0;
+    word-spacing: 100vw;
+  }
+
+  & p {
+    max-width: 75%;
   }
 }
 
@@ -49,6 +56,9 @@
     min-height: 500px;
     background-size: 50%;
     background-position-y: 20%;
+    background-size: cover;
+  background-position: center;
+  background-size: 75%;
 
     &__content {
       flex-direction: column;

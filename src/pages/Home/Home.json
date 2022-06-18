@@ -68,7 +68,7 @@
           "title": "Circular design",
           "text": "Our ultimate goal is creating packaging that can be completely reused or repurposed with minimal required effort.",
           "buttonText": "Learn More",
-          "icon": "icons/cycle--light-grey",
+          "icon": "cycle--light-grey",
           "theme": "blue",
           "buttonTheme": "white"
         },
@@ -76,7 +76,7 @@
           "title": "Recycled materials",
           "text": "We constantly look to use recycled materials in ways that is truly more sustainble, not just to write it on the tin.",
           "buttonText": "Learn More",
-          "icon": "icons/leaf--light-grey",
+          "icon": "leaf--light-grey",
           "theme": "white",
           "buttonTheme": "blue"
         }
@@ -169,7 +169,7 @@
           "title": "Design für Recycling oder Wieder-verwendung",
           "text": "Verpackungen sollten immer so gestaltet sein, dass sie effektiv zurückgewonnen und in biologischen und/oder industriellen Kreisläufen verwertet werden können.",
           "buttonText": "Mehr erfahren",
-          "icon": "icons/cycle--light-grey",
+          "icon": "cycle--light-grey",
           "theme": "blue",
           "buttonTheme": "white"
         },
@@ -177,7 +177,7 @@
           "title": "Verwendung erneuerbarer und recycelter Materialien",
           "text": "Die Verwendung von erneuerbaren und recycelten Materialien wird immer dann bevorzugt, wenn diese nachhaltiger ist. Dabei darf Greenwashing nicht der Hauptgrund für die Verwendung solcher Materialien sein.",
           "buttonText": "Mehr erfahren",
-          "icon": "icons/leaf--light-grey",
+          "icon": "leaf--light-grey",
           "theme": "white",
           "buttonTheme": "blue"
         }

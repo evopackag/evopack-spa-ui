@@ -6,6 +6,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  & > p {
+    display: inherit;
+  }
 }
 
 .quoteBox__text {
@@ -21,13 +25,13 @@
   padding-top: 3rem;
 }
 
-.startQuote h4,
-.endQuote h4 {
+.startQuote p,
+.endQuote p{
   display: inline;
 }
 
 .startQuote::before {
-  content: url(/public/assets/start-quotes.svg);
+  content: url(/public/assets/icons/start-quotes.svg);
   display: inline-block;
   position: absolute;
   top: -1.5rem;
@@ -35,16 +39,16 @@
 }
 
 .endQuote::after {
-  content: url(/public/assets/end-quotes.svg);
+  content: url(/public/assets/icons/end-quotes.svg);
   display: inline-block;
   position: absolute;
   bottom: 0rem;
-  right: -2rem;
+  right: 8rem;
 }
 
 @media screen and (max-width: 992px) {
   .startQuote::before {
-    content: url(/public/assets/start-quote--mobile.svg);
+    content: url(/public/assets/icons/start-quote--mobile.svg);
     display: inline-block;
     position: absolute;
     top: -1rem;
@@ -52,7 +56,7 @@
   }
 
   .endQuote::after {
-    content: url(/public/assets/end-quote--mobile.svg);
+    content: url(/public/assets/icons/end-quote--mobile.svg);
     display: inline-block;
     position: absolute;
     bottom: 0rem;

@@ -7,6 +7,9 @@
   justify-content: center;
   align-items: center;
 }
+.quoteBox > p {
+  display: inherit;
+}
 
 .quoteBox__text {
   color: var(--white);
@@ -21,8 +24,8 @@
   padding-top: 3rem;
 }
 
-.startQuote h4,
-.endQuote h4 {
+.startQuote p,
+.endQuote p {
   display: inline;
 }
 
@@ -39,7 +42,7 @@
   display: inline-block;
   position: absolute;
   bottom: 0rem;
-  right: -2rem;
+  right: 8rem;
 }
 
 @media screen and (max-width: 992px) {

@@ -1,6 +1,7 @@
 import { createRef } from "react";
+import useViewportSize from "../../hooks/useViewportSize/useViewportSize";
 import Heading, { HeadingSizes } from "../base/Heading/Heading";
-import Text from "../base/Text/Text";
+import Text, { TextSize } from "../base/Text/Text";
 import "./QuoteBox.css";
 
 interface IProps {
@@ -18,6 +19,8 @@ const QuoteBox = ({ text, theme, author, authorTitle }: IProps) => {
 
   const missionRef = createRef<HTMLDivElement>();
 
+  const isMobile = useViewportSize(768);
+
   return (
     <section
       className={`${
@@ -26,32 +29,51 @@ const QuoteBox = ({ text, theme, author, authorTitle }: IProps) => {
       ref={missionRef}
     >
       <div className="quoteBox__text">
-        <Heading
+        {/* <Heading
           level="h4"
           size={HeadingSizes.md}
           text={firstWord}
           theme="dark"
           accent="startQuote"
-        />
-        <Heading
+        /> */}
+        <Text
+          theme="dark"
+          size={isMobile ? TextSize.lg : TextSize.xl}
+          accent="startQuote"
+          bold
+        >
+          {firstWord}
+        </Text>
+        <Text theme="dark" size={isMobile ? TextSize.lg : TextSize.xl} bold>
+          {quoteText}
+        </Text>
+        <Text
+          theme="dark"
+          size={isMobile ? TextSize.lg : TextSize.xl}
+          accent="endQuote"
+          bold
+        >
+          {lastWord}
+        </Text>
+        {/* <Heading
           level="h4"
           size={HeadingSizes.md}
           text={quoteText}
           theme="dark"
-        />
-        <Heading
+        /> */}
+        {/* <Heading
           level="h4"
           size={HeadingSizes.md}
           text={lastWord}
           theme="dark"
           accent="endQuote"
-        />
+        /> */}
       </div>
       <div className="quoteBox__author col align-center center-xs">
-        <Text theme="dark" bold>
+        <Text theme="dark" size={TextSize.md} bold>
           {author ? author : "Testing"}
         </Text>
-        <Text theme="dark" opacity="0.5">
+        <Text theme="dark" size={TextSize.md} opacity="0.5">
           {authorTitle ? authorTitle : "test"}
         </Text>
       </div>

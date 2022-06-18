@@ -16,17 +16,17 @@ interface IProps {
 const Card = ({ title, text, background, theme }: IProps) => {
   return (
     <div
-      className={`card card--${theme}`}
+      className={`card card--${theme} justify-center align-center`}
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL}/assets/icons/${background}.svg)`,
       }}
     >
-      <VerticalSpacing size={SpacingSizes.lg32px} />
+      {/* <VerticalSpacing size={SpacingSizes.lg32px} /> */}
       {title ? (
         <Heading text={title} level="h3" size={HeadingSizes.lg} />
       ) : null}
       <VerticalSpacing size={SpacingSizes.md24px} />
-      <Text weight={TextWeight.regular} size={TextSize.md}>
+      <Text weight={TextWeight.regular} size={TextSize.lg}>
         {text}
       </Text>
     </div>

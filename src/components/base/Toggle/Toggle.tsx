@@ -23,7 +23,7 @@ const Toggle = ({ options, toggleTop }: IProps) => {
               id={option.displayText}
               onClick={() => setLanguage(option.value)}
             >
-              <Text size={TextSize.xs} weight={TextWeight.semibold}>
+              <Text size={TextSize.sm} weight={TextWeight.semibold}>
                 {option.displayText}
               </Text>
             </button>

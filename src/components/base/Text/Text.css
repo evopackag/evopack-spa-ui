@@ -3,6 +3,11 @@
 } */
 .text {
   max-width: 50ch;
+  line-height: 1.5;
+}
+
+p[data-context=endQuote], p[data-context=startQuote], p[data-context=startQuote] + p {
+  display: inline;
 }
 
 .text--bold {
@@ -26,17 +31,30 @@
 }
 
 .text--sm {
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 .text--md {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
 }
 
 .text--lg {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .text--xl {
+  font-size: 3rem;
+}
+
+.text-size--sm {
+  font-size: 0.75rem;
+}
+.text-size--md {
+  font-size: 1.125rem;
+}
+.text-size--lg {
+  font-size: 1.5rem;
+}
+.text-size--xl {
   font-size: 3rem;
 }

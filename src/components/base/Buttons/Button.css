@@ -46,7 +46,7 @@
 
 .button--primary-green-filled {
   background: var(--primary-green);
-  color: var(--primary-blue);
+  color: var(--off-white);
   border: 2px solid var(--primary-green);
   transition: 250ms ease-in-out all;
   position: relative;
@@ -162,7 +162,7 @@
 @media screen and (max-width: 450px) {
   .button--secondary-white {
     margin-top: 2rem;
-    padding: 0.625rem 0;
+    padding: 0.625rem 2rem;
   }
 
   .button--secondary-blue,
@@ -172,7 +172,6 @@
 .button--primary-green-filled,
 .button--secondary-blue-filled {
     max-width: 100%;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

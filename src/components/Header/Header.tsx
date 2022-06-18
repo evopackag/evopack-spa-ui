@@ -248,7 +248,7 @@ const Header = ({ data, refs }: IProps) => {
                   }
                   key={link.label}
                 >
-                  <Text size={TextSize.sm} weight={TextWeight.semibold}>
+                  <Text size={TextSize.md} weight={TextWeight.semibold}>
                     {link.label}
                   </Text>
                   <div className="link__underline">

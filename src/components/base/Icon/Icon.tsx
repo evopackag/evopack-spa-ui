@@ -26,6 +26,7 @@ export enum Icons {
   endQuote = "end-quote",
   chemistry = "chemistry",
   cycle = "cycle",
+  cross = "cross",
   phone = "phone",
   lock = "lock",
   pause = "pause",
@@ -34,6 +35,7 @@ export enum Icons {
   packaging = "packaging",
   question = "question",
   trees = "trees",
+  tick = "tick",
   evoPackLogoGreenBlue = "evopack-logo",
 }
 
@@ -90,7 +92,11 @@ const Icon = ({
   }
   return (
     <div
-      className={border ? `icon icon-button icon--border-${border}` : `icon`}
+      className={
+        border
+          ? `icon icon-button icon--border-${border}`
+          : `icon margin-right-2`
+      }
     >
       {hoverText ? (
         <div className="icon__text">
@@ -109,7 +115,7 @@ const Icon = ({
         }.svg`}
         alt={icon}
         onClick={handleClick}
-        className={`icon--${size}`}
+        className={`icon--${size} icon-size--${size}`}
       />
     </div>
   );

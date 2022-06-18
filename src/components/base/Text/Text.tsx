@@ -13,12 +13,12 @@ interface IProps {
 }
 
 export enum TextSize {
-  xxs = "text--xxs",
-  xs = "text--xs",
-  sm = "text--sm",
-  md = "text--md",
-  lg = "text--lg",
-  xl = "text--xl",
+  xxs = "text-size--xxs",
+  xs = "text-size--xs",
+  sm = "text-size--sm",
+  md = "text-size--md",
+  lg = "text-size--lg",
+  xl = "text-size--xl",
 }
 
 export enum TextWeight {
@@ -51,10 +51,11 @@ const Text = ({
   if (bold) {
     return (
       <p
-        className={`${size} ${
+        className={`text ${size} ${
           theme ? `text--${theme} text--bold` : "text--bold"
-        }`}
+        } text-size--${size} ${accent ? accent : null}`}
         style={{ opacity: `${opacity}` }}
+        data-context={accent}
       >
         {children}
       </p>
@@ -62,12 +63,15 @@ const Text = ({
   } else {
     return (
       <p
-        className={`${size} ${theme ? `text--${theme} text` : "text"}`}
+        className={`${size} ${
+          theme ? `text--${theme} text` : "text"
+        } text-size--${size} ${accent ? accent : null}`}
         style={{
           opacity: `${opacity}`,
           fontWeight: `${weight}`,
           color: `${color}`,
         }}
+        data-context={accent}
       >
         {children}
       </p>

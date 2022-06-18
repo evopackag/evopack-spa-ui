@@ -69,7 +69,7 @@ const HeroSection = ({ data, refs, handleCTAClick }: IProps) => {
 
           <Button
             label={CTA}
-            type={ButtonTypes.secondaryWhiteFilled}
+            type={ButtonTypes.primary}
             handleClick={handleCTAClick}
           />
         </div>
