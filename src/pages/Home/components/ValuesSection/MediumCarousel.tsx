@@ -70,7 +70,7 @@ const MediumCarousel = ({ data }: IProps) => {
 
   return (
     <section className="ValuesSection col-xs-12">
-      <VerticalSpacing size={SpacingSizes.lg32px} />
+      <VerticalSpacing size={SpacingSizes.xxxxl96px} />
       <div className="valuesSection__title col width-100 align-center center-xs center-text">
         <Heading
           text={title}
