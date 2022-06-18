@@ -8,7 +8,7 @@
       "productAreas": ["Paints and Coatings", "Adhesives", "Polymer Dispersions", "Home Products"]
     },
     "servicesSection": {
-      "title": "What we do for you",
+      "title": "What we can do for you",
       "services": [
         {
           "title": "Packaging Design",
@@ -109,7 +109,7 @@
       "productAreas": ["Farben und Beschichtungen", "Klebstoffe", "Polymer-Dispersionen", "Haushaltspflege"]
     },
     "servicesSection": {
-      "title": "Was wir für Sie tun",
+      "title": "Was wir für Sie tun können",
       "services": [
       {
         "title": "Verpackungs-lösungen",

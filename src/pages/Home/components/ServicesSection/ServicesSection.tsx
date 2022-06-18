@@ -25,11 +25,12 @@ const ServicesSection = ({ data }: IProps) => {
   return (
     <section className="servicesSection">
       <VerticalSpacing
-        size={isMobile ? SpacingSizes.sm20px : SpacingSizes.md24px}
+        size={isMobile ? SpacingSizes.xxxl64px : SpacingSizes.md24px}
       />
       <div className="row width-100 justify-center padding-horizontal-2">
         <Heading text={title} level="h2" size={HeadingSizes.xl} theme="light" />
       </div>
+      <VerticalSpacing size={SpacingSizes.xs16px} />
       <HorizontalSlider content={{}} buttons={false}>
         {services.map((service: any) => {
           return (

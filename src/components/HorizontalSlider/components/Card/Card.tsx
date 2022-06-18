@@ -1,4 +1,5 @@
 import { url } from "inspector";
+import useViewportSize from "../../../../hooks/useViewportSize/useViewportSize";
 import Heading, { HeadingSizes } from "../../../base/Heading/Heading";
 import VerticalSpacing, {
   SpacingSizes,
@@ -14,6 +15,7 @@ interface IProps {
 }
 
 const Card = ({ title, text, background, theme }: IProps) => {
+  const isMobile = useViewportSize(768);
   return (
     <div
       className={`card card--${theme} justify-center align-center`}
@@ -26,7 +28,10 @@ const Card = ({ title, text, background, theme }: IProps) => {
         <Heading text={title} level="h3" size={HeadingSizes.lg} />
       ) : null}
       <VerticalSpacing size={SpacingSizes.md24px} />
-      <Text weight={TextWeight.regular} size={TextSize.lg}>
+      <Text
+        weight={TextWeight.regular}
+        size={isMobile ? TextSize.md : TextSize.lg}
+      >
         {text}
       </Text>
     </div>
