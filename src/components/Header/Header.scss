@@ -55,7 +55,7 @@
   bottom: 0;
   right: 0;
   min-height: auto;
-  height: 80vh;
+  height: min-content;
   // height: 60vh;
   width: 100vw;
   // background: var(--off-white);
@@ -70,7 +70,7 @@
   transition: 500ms all ease-in-out;
   box-shadow: -0.5rem 0 1rem rgba(10, 10, 10, 0.5);
   border-radius: 0rem 0rem 2rem 2rem;
-  padding-bottom: 1.5rem;
+  padding: 10vh 0 1.5rem;
 }
 
 .navlink__container {

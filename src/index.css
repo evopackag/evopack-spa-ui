@@ -6,7 +6,14 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100vh;
+  /* Fallback for browsers that do not support Custom Properties */
+  height: -webkit-fill-available;
+  height: var(--vh, 100vh);
 }
+
+
 
 :root {
   --primary-blue: #1b1b2d;
