@@ -69,7 +69,7 @@ const ContactForm = forwardRef((data: any, ref?: any) => {
   return (
     <div>
       <VerticalSpacing size={SpacingSizes.xs16px} />
-      <div className="row center-xs contactFormContainer" id="contactForm">
+      <form className="row center-xs contactFormContainer" id="contactForm">
         <section className="contactForm col-xs-12 col-md-12 col-lg-10">
           {sent ? (
             <>
@@ -176,7 +176,7 @@ const ContactForm = forwardRef((data: any, ref?: any) => {
             </>
           )}
         </section>
-      </div>
+      </form>
     </div>
   );
 });
