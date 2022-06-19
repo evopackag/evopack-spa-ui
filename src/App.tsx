@@ -52,6 +52,10 @@ function App() {
         "--vh",
         `${innerWindowHeight}px`
       );
+      document.documentElement.style.setProperty(
+        "--vh90",
+        `${innerWindowHeight - innerWindowHeight * 0.11}px`
+      );
     }
   }
 
@@ -73,7 +77,9 @@ function App() {
   window.addEventListener("resize", () => {
     // We execute the same script as before
     let vh = window.innerHeight * 0.01;
+    let vh90 = vh * 0.9;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
+    document.documentElement.style.setProperty("--vh90", `${vh90}px`);
   });
 
   return (

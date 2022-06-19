@@ -1,5 +1,5 @@
 .heroSection {
-  height: 100vh;
+  height: var(--vh, 100vh);
   width: 100%;
   /* padding-top: 10vh; */
   display: flex;
@@ -19,7 +19,7 @@
   // justify-content: center;
   gap: 4rem;
   width: 100%;
-  height: 87vh;
+  height: 100%;
   border-radius: 64px;
   background: url(/public/GreenMoss.jpg) center;
   background-size: cover;
@@ -33,7 +33,7 @@
   .heroSection {
     padding: 0 1rem;
     // background: url(/public/assets/globe.svg) center 10vh no-repeat;
-    height: auto;
+    height: var(--vh90, 80vh);
     &__CTA {
       max-width: 100%;
       padding: 2rem;
