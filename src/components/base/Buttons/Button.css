@@ -1,6 +1,6 @@
 .button {
   all: unset;
-  padding: 0.625rem 1.875rem;
+  padding: 1rem 2rem;
   border-radius: 2rem;
   white-space: nowrap;
   position: relative;
@@ -23,6 +23,7 @@
   transition: 250ms ease-in-out all;
   position: relative;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -162,7 +163,7 @@
 @media screen and (max-width: 450px) {
   .button--secondary-white {
     margin-top: 2rem;
-    padding: 0.625rem 2rem;
+    padding: 1rem 2rem;
   }
 
   .button--secondary-blue,
@@ -172,6 +173,8 @@
 .button--primary-green-filled,
 .button--secondary-blue-filled {
     max-width: 100%;
+    width: -webkit-fill-available;
+    min-width: auto;
     display: flex;
     align-items: center;
     justify-content: center;

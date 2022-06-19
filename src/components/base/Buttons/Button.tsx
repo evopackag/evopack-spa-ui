@@ -49,7 +49,6 @@ const Button = ({
       }
       onClick={handleClick}
     >
-      {label ? label : children}
       {icon ? (
         // <img
         //   src={`${process.env.PUBLIC_URL}/assets/${icon}.svg`}
@@ -58,6 +57,7 @@ const Button = ({
         <Icon size="sm" icon={icon} colour={IconColours.white} />
       ) : // <Icon size="md" icon={icon} colour={/>
       null}
+      {label ? label : children}
     </button>
   );
 };
