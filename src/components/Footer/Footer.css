@@ -22,10 +22,13 @@
 
 @media screen and (max-width: 1200px) {
   .footer__subscribe {
-    padding-top: 1rem;
+    padding-top: 3rem;
   }
 }
 @media screen and (max-width: 450px) {
+  .footer {
+    padding: 3rem 0 2rem;
+  }
   .footer__legals {
     align-items: center;
     justify-content: center;

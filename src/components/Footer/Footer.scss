@@ -23,12 +23,14 @@
 
 @media screen and (max-width: 1200px) {
   .footer__subscribe {
-    padding-top: 1rem;
+    padding-top: 3rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .footer__legals {
+  .footer {
+    padding: 3rem 0 2rem;
+  &__legals {
     align-items: center;
     justify-content: center;
     flex-direction: column-reverse;
@@ -38,4 +40,5 @@
       padding-top: 1rem;
     }
   }
+}
 }
