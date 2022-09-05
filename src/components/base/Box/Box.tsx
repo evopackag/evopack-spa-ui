@@ -1,9 +1,12 @@
 import { ReactNode } from "react";
+import { TextColour } from "../Text/Text";
+
+import "./Box.css";
 
 export enum BorderRadii {
   none = "border-radius-none",
   small16px = "border-radius-16",
-  medium24px = "border-radius-24",
+  medium24px = "24px",
   large48px = "border-radius-48",
 }
 
@@ -19,6 +22,7 @@ export enum BoxBackground {
   primaryBlue = "#1B1B2D",
   white = "#ffffff",
   primaryGreen = "#30C07B",
+  lightGrey = "#F0F0F0",
 }
 
 export enum BorderColour {
@@ -27,6 +31,52 @@ export enum BorderColour {
   primaryBlue = "",
   primaryGreen = "",
 }
+
+export enum EvopackTheme {
+  backgroud = "#1B1B2D",
+  icon = "Evopack_GreenLogoWhiteWritingHorizontal",
+  // fontColour = TextColour.offWhite,
+}
+
+export const ColourThemes = {
+  evopack: {
+    background: "#1B1B2D",
+    icon: "Evopack_GreenLogoWhiteWritingHorizontal",
+    fontColour: TextColour.offWhite,
+  },
+  sustainability: {
+    background: "#FFF7EF",
+    icon: "leaf--sustain-green",
+    fontColour: TextColour.sustainGreen,
+  },
+  education: {
+    background: BoxBackground.lightGrey,
+    icon: "Evopack_GreenLogoWhiteWritingHorizontal",
+    fontColour: TextColour.primaryBlue,
+    border: BorderColour.lightGrey,
+    BorderWidth: BorderWidth.small1px,
+  },
+};
+
+// export enum ColourThemes {
+//   evopack = {
+//     background: "#1B1B2D",
+//     icon: "Evopack_GreenLogoWhiteWritingHorizontal",
+//     fontColour: TextColour.offWhite,
+//   },
+//   sustainability = {
+//     background: "#FFF7EF",
+//     icon: "leaf--sustain-green",
+//     fontColour: TextColour.sustainGreen,
+//   },
+//   education = {
+//     background: "#ffffff",
+//     icon: "Evopack_GreenLogoWhiteWritingHorizontal",
+//     fontColour: TextColour.primaryBlue,
+//     border: BorderColour.lightGrey,
+//     BorderWidth: BorderWidth.small1px,
+//   },
+// }
 
 interface IProps {
   children: ReactNode;
@@ -47,7 +97,7 @@ const Box = ({
 }: IProps) => {
   return (
     <div
-      className="box row padding-3"
+      className="box row padding-6 width-100"
       style={{
         border: `${borderWidth}px ${borderColour} solid`,
         borderRadius: `${borderRadius}`,

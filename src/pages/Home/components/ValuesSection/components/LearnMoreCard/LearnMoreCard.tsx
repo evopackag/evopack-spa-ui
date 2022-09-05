@@ -3,7 +3,7 @@ import Button from "../../../../../../components/base/Buttons/Button";
 import Heading, {
   HeadingSizes,
 } from "../../../../../../components/base/Heading/Heading";
-import Text from "../../../../../../components/base/Text/Text";
+import Text, { TextSize } from "../../../../../../components/base/Text/Text";
 import "./LearnMoreCard.css";
 
 interface IProps {
@@ -46,7 +46,7 @@ const LearnMoreCard = ({
       {title && !showDetails ? (
         <Heading text={title} level="h3" size={HeadingSizes.lg} />
       ) : null}
-      {showDetails ? <Text>{text}</Text> : null}
+      {showDetails ? <Text size={TextSize.xl}>{text}</Text> : null}
       <Button
         label={cardCTA}
         handleClick={showCardDetails}

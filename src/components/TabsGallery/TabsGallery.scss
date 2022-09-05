@@ -1,6 +1,6 @@
 .tabsGallery {
   overflow: scroll;
-  padding: 0 1rem 0 1rem;
+  // padding: 0 1rem 0 1rem;
 
   &::-webkit-scrollbar,
   &::-webkit-scrollbar {
@@ -11,6 +11,28 @@
   &::-webkit-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none;
+  }
+
+  &_hero {
+    width: 100%;
+    padding: 0.5rem;
+    position: relative;
+
+    &Image {
+      width: 100%;
+      height: auto;
+      max-height: 60vh;
+      min-height: 300px;
+      object-fit: cover;
+      max-width: 20000px;
+      border-radius: 0.5rem;
+    }
+    & .tabs {
+      left: 0;
+      right: 0;
+      bottom: -1.25rem;
+      position: absolute;
+    }
   }
 
   &__container {
@@ -33,6 +55,19 @@
   .tabsGallery {
     &__container {
       justify-content: flex-start;
+    }
+
+    &_hero {
+      width: 100%;
+      padding: 0;
+      position: relative;
+
+      &Image {
+        border-radius: 0rem;
+      }
+      & .tabs {
+        bottom: unset;
+      }
     }
   }
 }

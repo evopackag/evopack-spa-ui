@@ -5,19 +5,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 2.5rem 0;
-  justify-content: space-between;
+  padding: 5.5rem 2.5rem 0;
+  background-image: url(/public/evopack_heroBackground.jpg);
+  background-color: linear-gradient(0deg, rgba(255, 255, 255, 0) 5.35%, #FFFFFF 58.6%);
+  background-size: 100%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 5.35%, #FFFFFF 58.6%), url(/public/evopack_heroBackground.jpg) 0 20vh;
+  background-size: cover;
 }
 
 .heroSection__CTA {
   display: flex;
   flex-direction: column;
   padding: 4rem;
-  gap: 4rem;
   width: 100%;
   height: 100%;
   border-radius: 64px;
-  background: url(/public/GreenMoss.jpg) center;
+  background: url(/public/evopack_heroBackground.jpg) center;
   background-size: cover;
 }
 
@@ -27,8 +30,11 @@
 
 @media screen and (max-width: 1024px) {
   .heroSection {
-    padding: 0 1rem;
+    padding: 3rem 1rem;
     height: var(--vh90, 80vh);
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 5.35%, #FFFFFF 58.6%), url(/public/evopack_heroBackground.jpg) 0 50vh;
+    background-size: cover;
   }
   .heroSection__CTA {
     max-width: 100%;

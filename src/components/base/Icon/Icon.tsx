@@ -1,6 +1,10 @@
 import Heading, { HeadingSizes } from "../Heading/Heading";
 import "./Icon.css";
 
+export enum IconBackgrounds {
+  greenSubdued = "#F3FCF8",
+}
+
 interface IProps {
   size: string;
   border?: string;
@@ -12,6 +16,7 @@ interface IProps {
   hoverText?: string;
   href?: string;
   disable?: boolean;
+  background?: IconBackgrounds;
 }
 
 export enum Icons {
@@ -37,6 +42,7 @@ export enum Icons {
   trees = "trees",
   tick = "tick",
   evoPackLogoGreenBlue = "evopack-logo",
+  evoPackLogoGreenWhite = "Evopack_GreenLogoWhiteWritingHorizontal",
 }
 
 export enum IconColours {
@@ -58,6 +64,7 @@ const Icon = ({
   hoverText,
   href,
   disable,
+  background,
 }: IProps) => {
   if (isButton) {
     return (
@@ -97,6 +104,7 @@ const Icon = ({
           ? `icon icon-button icon--border-${border}`
           : `icon margin-right-2`
       }
+      style={{ background: `${background}` }}
     >
       {hoverText ? (
         <div className="icon__text">

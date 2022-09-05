@@ -38,18 +38,18 @@ const QuoteBox = ({ text, theme, author, authorTitle }: IProps) => {
         /> */}
         <Text
           theme="dark"
-          size={isMobile ? TextSize.lg : TextSize.xl}
+          size={isMobile ? TextSize.xl : TextSize.xxl}
           accent="startQuote"
           bold
         >
           {firstWord}
         </Text>
-        <Text theme="dark" size={isMobile ? TextSize.lg : TextSize.xl} bold>
+        <Text theme="dark" size={isMobile ? TextSize.xl : TextSize.xxl} bold>
           {quoteText}
         </Text>
         <Text
           theme="dark"
-          size={isMobile ? TextSize.lg : TextSize.xl}
+          size={isMobile ? TextSize.xl : TextSize.xxl}
           accent="endQuote"
           bold
         >

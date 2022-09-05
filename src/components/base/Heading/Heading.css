@@ -6,15 +6,17 @@ h1 {
 }
 
 h2 {
-  font-size: 6rem;
   font-weight: bold;
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 1rem 0rem;
   /* word-spacing: 100vw; */
   /* margin-top: 4rem; */
   /* overflow-x: hidden; */
+}
+
+.left-aligned {
+  text-align: left;
 }
 
 .centered {
@@ -98,6 +100,21 @@ h2 .endQuote::after {
   right: 0rem; */
 }
 
+.heading--animated {
+  transform: translateY(1rem);
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(0.25rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 992px) {
   .underlineAccent:nth-child(1)::after {
     content: url(/public/assets/icons/heading-underline--mobile.svg);
@@ -168,30 +185,8 @@ h4 .endQuote::after {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 450px) {
-  h1 {
-    font-size: 3.2rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 3rem;
-  }
-
-  h4 {
-    font-size: 1.5rem;
-  }
-
-  h5 {
-    font-size: 1rem;
-  }
-
-  h6 {
-    font-size: 1rem;
-  }
+.heading {
+  max-width: 800px;
 }
 .heading--xxs {
   font-size: 1.125rem;
@@ -247,10 +242,10 @@ h4 .endQuote::after {
     font-size: 0.75rem;
   }
   .heading--xs {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   .heading--sm {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .heading--md {
     font-size: 2rem;

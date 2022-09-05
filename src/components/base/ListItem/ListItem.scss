@@ -1,0 +1,23 @@
+.listItem {
+  width: 100%;
+  &_iconContainer {
+    border-radius: 100rem;
+    background: #F3FCF8;
+    & * {
+      margin-right: 0;
+    }
+  }
+
+  &__copy {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .listItem {
+    & div p {
+      text-align: center;
+    }
+  }
+  
+}

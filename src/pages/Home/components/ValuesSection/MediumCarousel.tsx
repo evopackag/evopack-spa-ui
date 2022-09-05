@@ -81,7 +81,7 @@ const MediumCarousel = ({ data }: IProps) => {
           accent
           accentWords={titleUnderlined}
         />
-        <VerticalSpacing size={SpacingSizes.xs16px} />
+        <VerticalSpacing size={SpacingSizes.lg32px} />
         <Heading
           text={subTitle}
           level="h5"

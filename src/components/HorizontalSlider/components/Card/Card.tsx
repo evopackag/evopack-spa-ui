@@ -30,7 +30,7 @@ const Card = ({ title, text, background, theme }: IProps) => {
       <VerticalSpacing size={SpacingSizes.md24px} />
       <Text
         weight={TextWeight.regular}
-        size={isMobile ? TextSize.md : TextSize.lg}
+        size={isMobile ? TextSize.md : TextSize.xl}
       >
         {text}
       </Text>

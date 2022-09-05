@@ -57,7 +57,7 @@ const ValuesSection = ({ data }: IProps) => {
           size={HeadingSizes.xl}
           level="h2"
           theme="light"
-          // spacing="100vw"
+          isBold
           accent
           accentWords={titleUnderlined}
         />

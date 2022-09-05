@@ -10,7 +10,7 @@
 
 .toggle__option {
   all: unset;
-  padding: 0.5rem 1rem;
+  padding: 6px;
   border-radius: 100rem;
   display: flex;
   align-items: center;
@@ -48,10 +48,10 @@
   // box-shadow: -2px -2px 4px 0px #f6f6f6 inset;
 
   &__option {
-    // width: 2.5em;
-    // height: 2.5em;
     all: unset;
-    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    // padding: 6px;
     border-radius: 100rem;
     display: flex;
     align-items: center;

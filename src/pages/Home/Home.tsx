@@ -1,4 +1,4 @@
-import { createRef, useContext, useRef } from "react";
+import { createRef, useContext, useEffect, useRef } from "react";
 import { BoxBackground } from "../../components/base/Box/Box";
 import Bullet from "../../components/base/Bullet/Bullet";
 import { IconColours, Icons } from "../../components/base/Icon/Icon";
@@ -37,9 +37,9 @@ const Home = () => {
     }
   }
 
-  const linkRefs = [contactRef, servicesRef, missionRef];
-
-  console.log(languageSpecificContent.heroSection.navigationLinks);
+  useEffect(() => {
+    document.documentElement.scrollTop = 0;
+  }, []);
 
   return (
     <PageContainer>

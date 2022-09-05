@@ -10,6 +10,13 @@ export enum Colours {
   lightGrey = "var(--light-grey)",
 }
 
+export enum ApplicationAreas {
+  PaintsAndCoatings = "Paints and Coatings",
+  Adhesives = "Adhesives",
+  PolymerDispersion = "Polymer dispersions",
+  HouseholdProducts = "Household products",
+}
+
 export const iPad: any = !!window.navigator.userAgent.match(/iPad/i);
 export const iPhone: any = !!window.navigator.userAgent.match(/iPhone/i);
 export const iOS: any = iPad || iPhone;

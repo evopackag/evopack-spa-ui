@@ -3,8 +3,9 @@
   align-items: center;
   justify-content: space-between;
   width: 100vw;
-  height: 70px;
-  background: rgba(245, 245, 247, 0.5);
+  background: rgba(255, 255, 255, 1);
+  // box-shadow: inset 0 -1px 0 0 #fff;
+  // background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(20px);
   padding: 0 2.5rem;
   position: fixed;
@@ -13,6 +14,18 @@
   right: 0;
   z-index: 100;
   transition: 500ms all ease-in-out;
+
+  &__innerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    // border-bottom: 1px inset #F2F2F2;
+    box-shadow: inset 0 -1px 0 0 #F2F2F2;
+    padding: 1rem 0;
+    // background: rgba(255, 255, 255, 1);
+  }
 
   &__navigationGroup {
     width: 100%;
@@ -27,7 +40,7 @@
     margin-bottom: 0.5rem;
   }
 
-  &--hidden {
+  &.hide {
     top: -100rem;
   }
 }
@@ -178,6 +191,31 @@
   width: 100%;
   height: 100%;
 }
+
+.link:hover {
+  // text-decoration: underline 3px solid var(--primary-green);
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  width: 0;
+  height: 3px;
+  background-color: var(--primary-green);
+  transition: 300ms ease-in all;
+  transform-origin: center;
+}
+
+.link:hover.link::after {
+  width: 100%;
+}
+
+.link--active::after {
+  width: 100%;
+}
+
+// Making the handdrawn animation
 
 .link:hover > .link__underline,
 .link:focus > .link__underline {

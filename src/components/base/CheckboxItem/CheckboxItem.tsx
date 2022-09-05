@@ -16,8 +16,8 @@ const CheckboxItem = ({ label, active, handleClick }: IProps) => {
       }`}
       onClick={handleClick}
     >
-      <input type="checkbox" id={label} />
-      <Text size={TextSize.sm} theme="primary-colour">
+      <input type="checkbox" id={label} key={label} />
+      <Text size={TextSize.md} theme="primary-colour">
         {label}
       </Text>
     </div>

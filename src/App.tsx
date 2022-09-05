@@ -29,7 +29,7 @@ function App() {
   );
 
   const navigationLinks = [
-    // { label: "Applications", urlPath: "/applications" },
+    { label: "Applications", urlPath: "/applications" },
     { label: "Careers", urlPath: "/careers" },
     { label: "About Us", urlPath: "/about" },
   ];
@@ -91,7 +91,7 @@ function App() {
           {/* <Header data={navigationLinks} /> */}
           <Route path="/">
             <Route index element={<Home />} />
-            {/* <Route path="applications" element={<Applications />} /> */}
+            <Route path="applications" element={<Applications />} />
             <Route path="careers" element={<Careers />} />
             <Route path="about" element={<About />} />
           </Route>

@@ -7,6 +7,7 @@ import Button from "../../../../components/base/Buttons/Button";
 import Checkbox from "../../../../components/base/Checkbox/Checkbox";
 import Heading, {
   HeadingSizes,
+  HeadingWeights,
 } from "../../../../components/base/Heading/Heading";
 import VerticalSpacing, {
   SpacingSizes,
@@ -78,9 +79,10 @@ const ContactForm = forwardRef((data: any, ref?: any) => {
                 size={HeadingSizes.xl}
                 text="Thank you for your getting in touch"
                 theme="dark"
+                weight={HeadingWeights.bold}
                 accent={false}
               />
-              <Text theme="dark" size={TextSize.lg}>
+              <Text theme="dark" size={TextSize.xl}>
                 We'll get back to you as soon as possible.
               </Text>
               <VerticalSpacing size={SpacingSizes.xl40px} />

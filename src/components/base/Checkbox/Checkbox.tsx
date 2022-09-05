@@ -9,7 +9,7 @@ interface IProps {
 const Checkbox = ({ label, inputID }: IProps) => {
   return (
     <div className="row start-xs align-center">
-      <div className="">
+      <div className="position-relative">
         <input
           type="checkbox"
           className="checkbox checkbox--${border}-white"
@@ -19,13 +19,7 @@ const Checkbox = ({ label, inputID }: IProps) => {
         <span className="checkmark"></span>
       </div>
       <div className="col-xs-10 start-xs">
-        <Heading
-          text={label}
-          level="h6"
-          size={HeadingSizes.xxs}
-          theme="dark"
-          weight="normal"
-        />
+        <Heading text={label} level="h6" size={HeadingSizes.xxs} theme="dark" />
       </div>
     </div>
   );

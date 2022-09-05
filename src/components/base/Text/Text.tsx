@@ -1,4 +1,5 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
+import useScrolledDistance from "../../../hooks/useScrolledDistance/useScrolledDistance";
 import "./Text.css";
 
 interface IProps {
@@ -10,6 +11,7 @@ interface IProps {
   bold?: boolean;
   children?: any;
   opacity?: string;
+  animate?: boolean;
 }
 
 export enum TextSize {
@@ -19,6 +21,7 @@ export enum TextSize {
   md = "text-size--md",
   lg = "text-size--lg",
   xl = "text-size--xl",
+  xxl = "text-size--xxl",
 }
 
 export enum TextWeight {
@@ -36,6 +39,7 @@ export enum TextColour {
   primaryGreen = "var(--primary-green)",
   offWhite = "var(--off-white)",
   lightGrey = "var(--light-grey)",
+  sustainGreen = "var(--sustain-green)",
 }
 
 const Text = ({
@@ -47,15 +51,44 @@ const Text = ({
   opacity,
   children,
   color,
+  animate,
 }: IProps) => {
+  const textObject = useRef(document.createElement("div"));
+
+  // const animate =
+  //   useScrolledDistance(window.innerHeight * 0.7, "fadeUp", textObject) > 1000
+  //     ? "fadeUp"
+  //     : "don't Fade";
+
+  const [scrolledDistance, setScrolledDistance] = useState(0);
+
+  function recordScrollDistance(e: Event) {
+    setScrolledDistance(textObject.current.getBoundingClientRect().y);
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", recordScrollDistance);
+
+    return () => {
+      window.removeEventListener("scroll", recordScrollDistance);
+    };
+  });
+
+  const styleClasses = `${size} text--${theme} ${
+    scrolledDistance > window.innerHeight * 0.6 && animate
+      ? "text--animated"
+      : null
+  }`;
+
   if (bold) {
     return (
       <p
         className={`text ${size} ${
           theme ? `text--${theme} text--bold` : "text--bold"
-        } text-size--${size} ${accent ? accent : null}`}
+        } text-size--${size} ${styleClasses} ${accent ? accent : null}`}
         style={{ opacity: `${opacity}` }}
         data-context={accent}
+        ref={textObject}
       >
         {children}
       </p>
@@ -65,7 +98,7 @@ const Text = ({
       <p
         className={`${size} ${
           theme ? `text--${theme} text` : "text"
-        } text-size--${size} ${accent ? accent : null}`}
+        } text-size--${size} ${styleClasses} ${accent ? accent : null}`}
         style={{
           opacity: `${opacity}`,
           fontWeight: `${weight}`,

@@ -1,6 +1,5 @@
 .tabsGallery {
   overflow: scroll;
-  padding: 0 1rem 0 1rem;
 }
 .tabsGallery::-webkit-scrollbar, .tabsGallery::-webkit-scrollbar {
   display: none;
@@ -9,6 +8,26 @@
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
+}
+.tabsGallery_hero {
+  width: 100%;
+  padding: 0.5rem;
+  position: relative;
+}
+.tabsGallery_heroImage {
+  width: 100%;
+  height: auto;
+  max-height: 60vh;
+  min-height: 300px;
+  object-fit: cover;
+  max-width: 20000px;
+  border-radius: 0.5rem;
+}
+.tabsGallery_hero .tabs {
+  left: 0;
+  right: 0;
+  bottom: -1.25rem;
+  position: absolute;
 }
 .tabsGallery__container {
   justify-content: center;
@@ -23,5 +42,16 @@
 @media screen and (max-width: 768px) {
   .tabsGallery__container {
     justify-content: flex-start;
+  }
+  .tabsGallery_hero {
+    width: 100%;
+    padding: 0;
+    position: relative;
+  }
+  .tabsGallery_heroImage {
+    border-radius: 0rem;
+  }
+  .tabsGallery_hero .tabs {
+    bottom: unset;
   }
 }

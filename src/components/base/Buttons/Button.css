@@ -49,15 +49,16 @@
   background: var(--primary-green);
   color: var(--off-white);
   border: 2px solid var(--primary-green);
-  transition: 250ms ease-in-out all;
+  transition: 450ms ease-in-out all;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 0 0px var(--primary-green-25perc-solid);
 }
 
 .button--primary-green-filled:hover {
-  transform: translateY(-0.5rem);
+  box-shadow: 0 0 0 4px var(--primary-green-25perc-solid);
 }
 
 .button--primary-green-filled:hover::after {
@@ -99,12 +100,17 @@
   color: white;
   border: 2px solid var(--primary-blue);
   max-width: min-content;
+  box-shadow: 0 0 0 0px var(--primary-blue-25perc-solid);
+}
+.button--secondary-blue-filled:hover {
+  box-shadow: 0 0 0 6px var(--primary-blue-25perc-solid);
 }
 
 .button--secondary-blue:hover {
   color: var(--off-white);
   background: var(--primary-blue);
   border: 2px solid var(--primary-blue);
+  box-shadow: 0 0 0 4px var(--primary-blue-25perc-solid);
 }
 
 .button--secondary-green-fill {

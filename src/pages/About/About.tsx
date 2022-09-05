@@ -57,7 +57,7 @@ const About = () => {
           </div>
           <HorizontalDivider slopedDivider />
           <VerticalSpacing size={SpacingSizes.md24px} />
-          <TabsGallery data={["Our Team", "Why We Started", "Our Strengths"]}>
+          {/* <TabsGallery data={["Our Team", "Why We Started", "Our Strengths"]}>
             <TabsContent label="Our Team">
               <Text theme="light" size={TextSize.sm}>
                 Our Team (Coming soon)
@@ -73,7 +73,7 @@ const About = () => {
                 Our stengths (Coming soon)
               </Text>
             </TabsContent>
-          </TabsGallery>
+          </TabsGallery> */}
         </section>
       </div>
       <Footer data={languageSpecificContent.footer} />

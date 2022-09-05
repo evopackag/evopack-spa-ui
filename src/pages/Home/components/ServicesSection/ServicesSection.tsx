@@ -1,5 +1,6 @@
 import Heading, {
   HeadingSizes,
+  HeadingWeights,
 } from "../../../../components/base/Heading/Heading";
 import Icon from "../../../../components/base/Icon/Icon";
 import Text from "../../../../components/base/Text/Text";
@@ -25,12 +26,18 @@ const ServicesSection = ({ data }: IProps) => {
   return (
     <section className="servicesSection">
       <VerticalSpacing
-        size={isMobile ? SpacingSizes.xxxl64px : SpacingSizes.md24px}
+        size={isMobile ? SpacingSizes.md24px : SpacingSizes.xxxxl96px}
       />
       <div className="row width-100 justify-center padding-horizontal-2">
-        <Heading text={title} level="h2" size={HeadingSizes.xl} theme="light" />
+        <Heading
+          text={title}
+          level="h2"
+          size={HeadingSizes.lg}
+          theme="light"
+          weight={HeadingWeights.medium}
+        />
       </div>
-      <VerticalSpacing size={SpacingSizes.xs16px} />
+      <VerticalSpacing size={SpacingSizes.xl40px} />
       <HorizontalSlider content={{}} buttons={false}>
         {services.map((service: any) => {
           return (

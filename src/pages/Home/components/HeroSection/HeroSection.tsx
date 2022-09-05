@@ -1,8 +1,9 @@
 import Heading, {
   HeadingSizes,
+  textAlignments,
 } from "../../../../components/base/Heading/Heading";
 import Icon from "../../../../components/base/Icon/Icon";
-import Text from "../../../../components/base/Text/Text";
+import Text, { TextSize } from "../../../../components/base/Text/Text";
 
 import "./HeroSection.css";
 
@@ -48,31 +49,31 @@ const HeroSection = ({ data, refs, handleCTAClick }: IProps) => {
 
   return (
     <div className="row">
-      <section className="heroSection col-xs-12 center-xs">
+      <section className="heroSection col-xs-12 middle-xs center-text">
         {/* <VerticalSpacing size="lg" /> */}
-        <div className="heroSection__CTA padding-horizontal-4 justify-between">
-          <div>
-            <Heading
-              text={title}
-              level="h1"
-              size={HeadingSizes.xl}
-              theme="light"
-              spacing="100vw"
-              weight={"400"}
-              alignment="left"
-            />
-            <VerticalSpacing size={SpacingSizes.xs16px} />
-            <span className="heroSection__subtitle">
-              <Text theme="light">{subTitle}</Text>
-            </span>
-          </div>
-
-          <Button
-            label={CTA}
-            type={ButtonTypes.primary}
-            handleClick={handleCTAClick}
-          />
-        </div>
+        {/* <div className="heroSection__CTA padding-horizontal-4 col center-xs middle-xs center-text"> */}
+        <VerticalSpacing size={SpacingSizes.xxxl64px} />
+        <Heading
+          text={title}
+          level="h1"
+          size={HeadingSizes.lg}
+          theme="light"
+          // spacing="100vw"
+          alignment={textAlignments.center}
+        />
+        <VerticalSpacing size={SpacingSizes.xs16px} />
+        {/* <span className="heroSection__subtitle row middle-xs"> */}
+        <Text size={isMobileView ? TextSize.sm : TextSize.lg} theme="light">
+          {subTitle}
+        </Text>
+        {/* </span> */}
+        <VerticalSpacing size={SpacingSizes.xxl48px} />
+        <Button
+          label={CTA}
+          type={ButtonTypes.secondaryBlueFilled}
+          handleClick={handleCTAClick}
+        />
+        {/* </div> */}
         {/* {isMobileView ? null : <HeroInfoBar productAreas={data.productAreas} />} */}
       </section>
     </div>

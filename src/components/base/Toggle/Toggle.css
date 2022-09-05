@@ -10,7 +10,7 @@
 
 .toggle__option {
   all: unset;
-  padding: 0.5rem 1rem;
+  padding: 6px;
   border-radius: 100rem;
   display: flex;
   align-items: center;
@@ -47,7 +47,8 @@
 }
 .toggleTop__option {
   all: unset;
-  padding: 0.5rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 100rem;
   display: flex;
   align-items: center;

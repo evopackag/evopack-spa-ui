@@ -16,7 +16,7 @@ const Tabs = ({ data }: IProps) => {
 
   const { filter, setFilter } = useContext(TabsContext);
   return (
-    <div className="width-100 row center-xs middle-xs tabs">
+    <div className="width-100 row center-md tabs">
       <div className="row tabs__container">
         {data.map((tab: any) => {
           return (

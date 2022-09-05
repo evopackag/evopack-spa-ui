@@ -14,7 +14,10 @@ const TabsContent = ({ label, children }: IProps) => {
   return (
     <>
       {filter === label ? (
-        <div className="tabsContent width-100" id={label}>
+        <div
+          className="tabsContent col width-100 align-center"
+          id={`${label}_hi`}
+        >
           {children}
         </div>
       ) : null}

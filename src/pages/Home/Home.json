@@ -1,10 +1,10 @@
 {
   "english": {
     "heroSection": {
-      "title": "Next Generation Packaging",
-      "subTitle": "Reduce your costs and impact on the planet with 85% more efficient packaging helping you eliminate waste and save money.",
-      "CTA": "Contact Us",
-      "navigationLinks": [{"label": "Careers", "urlPath": "/careers"}, {"label": "About Us", "urlPath": "/about"}],
+      "title": "Perfect Product Performance. Every time.",
+      "subTitle": "Reduce your costs and impact on the planet with more efficient packaging - helping you eliminate waste and save money.",
+      "CTA": "Get expert support",
+      "navigationLinks": [{"label": "Applications", "urlPath": "/applications"}, {"label": "Careers", "urlPath": "/careers"}, {"label": "About Us", "urlPath": "/about"}],
       "productAreas": ["Paints and Coatings", "Adhesives", "Polymer Dispersions", "Home Products"]
     },
     "servicesSection": {
@@ -102,10 +102,10 @@
   },
   "german": {
     "heroSection": {
-      "title": "Verpackungen der Zukunft",
-      "subTitle": "Reduzieren Sie Ihre Kosten und die Auswirkungen auf den Planeten mit 85 % effizienteren Verpackungen, die Ihnen helfen, Abfall zu vermeiden und Geld zu sparen.",
-      "CTA": "Kontakt",
-      "navigationLinks": [{"label": "Jobs & Karriere", "urlPath": "/careers"}, {"label": "Über Uns", "urlPath": "/about"}],
+      "title": "Optimale Produktleistung. Jedes Mal.",
+      "subTitle": "Guarantieren Sie optimale Produktleistung mit effizienten Verpackungslösungen, während Sie gleichzeitig Kosten und Abfall reduzieren.",
+      "CTA": "Produktexperten kontaktieren",
+      "navigationLinks": [{"label": "Anwendungen", "urlPath": "/applications"}, {"label": "Jobs & Karriere", "urlPath": "/careers"}, {"label": "Über Uns", "urlPath": "/about"}],
       "productAreas": ["Farben und Beschichtungen", "Klebstoffe", "Polymer-Dispersionen", "Haushaltspflege"]
     },
     "servicesSection": {
