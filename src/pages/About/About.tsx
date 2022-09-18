@@ -16,22 +16,23 @@ import TabsGallery from "../../components/TabsGallery/TabsGallery";
 import TabsContent from "../../components/TabsGallery/TabsContent/TabsContent";
 
 const About = () => {
-  const websiteContent: any = require("./About.json");
+  const websiteContent: any = require("../EvopackContent.json");
 
   const { language } = useContext(VisitorContext);
 
-  const languageSpecificContent = websiteContent[language];
+  const { heading, subheading } = websiteContent[language].about;
   return (
     <PageContainer>
-      <Header data={languageSpecificContent.heroSection.navigationLinks} />
+      <Header />
+      <VerticalSpacing size={SpacingSizes.xxxl64px} />
       <div className="row">
         <section className="about__heroSection col-xs-12 center-xs">
           <div className="col width-100 center-xs middle-xs padding-horizontal-4 about__heroContent">
-            <div className="col center-xs  about__heroSectionHeading">
+            <div className="col center-xs  about__heroSectionHeading center-text">
               <VerticalSpacing size={SpacingSizes.md24px} />
               <VerticalSpacing size={SpacingSizes.md24px} />
               <Heading
-                text="About Evopack"
+                text={heading}
                 level="h1"
                 size={HeadingSizes.xl}
                 theme="light"
@@ -39,10 +40,7 @@ const About = () => {
                 spacing=""
               />
               <VerticalSpacing size={SpacingSizes.xs16px} />
-              <Text theme="light">
-                We’re a group of engineers and chemists looking to move
-                packaging into the 21st centry.
-              </Text>
+              <Text theme="light">{subheading}</Text>
             </div>
 
             {/* <Text theme="light">
@@ -57,26 +55,9 @@ const About = () => {
           </div>
           <HorizontalDivider slopedDivider />
           <VerticalSpacing size={SpacingSizes.md24px} />
-          {/* <TabsGallery data={["Our Team", "Why We Started", "Our Strengths"]}>
-            <TabsContent label="Our Team">
-              <Text theme="light" size={TextSize.sm}>
-                Our Team (Coming soon)
-              </Text>
-            </TabsContent>
-            <TabsContent label="Why We Started">
-              <Text theme="light" size={TextSize.sm}>
-                Why we started (Coming soon)
-              </Text>
-            </TabsContent>
-            <TabsContent label="Our Strengths">
-              <Text theme="light" size={TextSize.sm}>
-                Our stengths (Coming soon)
-              </Text>
-            </TabsContent>
-          </TabsGallery> */}
         </section>
       </div>
-      <Footer data={languageSpecificContent.footer} />
+      <Footer />
     </PageContainer>
   );
 };

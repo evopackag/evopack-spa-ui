@@ -17,6 +17,59 @@ export enum ApplicationAreas {
   HouseholdProducts = "Household products",
 }
 
+export const globalRoutes: any = {
+  english: [
+    { label: "Applications", urlPath: "/applications" },
+    { label: "Careers", urlPath: "/careers" },
+    { label: "About Us", urlPath: "/about" },
+  ],
+  german: [
+    { label: "Anwendungen", urlPath: "/applications" },
+    { label: "Jobs & Karriere", urlPath: "/careers" },
+    { label: "Über Uns", urlPath: "/about" },
+  ],
+};
+
+export const globalFooterContent: any = {
+  english: {
+    subscriptionLabel: "Be the first to know",
+    subscriptionPlaceholder: "Enter your email",
+    imprintLinkLabel: "Imprint",
+    dataPolicyLinkLabel: "Data Policy",
+  },
+  german: {
+    subscriptionLabel: "Erfahren Sie alles zuerst",
+    subscriptionPlaceholder: "Ihre E-Mail",
+    imprintLinkLabel: "Impressum",
+    dataPolicyLinkLabel: "Datenschutz",
+  },
+};
+
+export const globalContactFormContent: any = {
+  english: {
+    heading: "Drop us a line",
+    firstNamePlaceholder: "Full name",
+    lastNamePlaceholder: "Company",
+    emailPlaceholder: "Email",
+    phonePlaceholder: "Phone",
+    messagePlaceholder: "Message",
+    GDPRCheckboxText:
+      "Tick this box to sign up for marketing - you can unsubscribe at any time.",
+    buttonText: "Send Message",
+  },
+  german: {
+    heading: "Kontaktieren Sie uns",
+    firstNamePlaceholder: "Name",
+    lastNamePlaceholder: "Firma",
+    emailPlaceholder: "E-Mail",
+    phonePlaceholder: "Telefon",
+    messagePlaceholder: "Nachricht",
+    GDPRCheckboxText:
+      "Aktivieren Sie dieses Feld, um Neuigkeiten von uns zu erhalten.",
+    buttonText: "Nachricht senden",
+  },
+};
+
 export const iPad: any = !!window.navigator.userAgent.match(/iPad/i);
 export const iPhone: any = !!window.navigator.userAgent.match(/iPhone/i);
 export const iOS: any = iPad || iPhone;

@@ -1,4 +1,10 @@
-import { forwardRef, MutableRefObject, useRef, useState } from "react";
+import {
+  forwardRef,
+  MutableRefObject,
+  useContext,
+  useRef,
+  useState,
+} from "react";
 import { SMTPClient } from "emailjs";
 // import emailjs from "@emailjs/browser";
 import emailjs from "emailjs-com";
@@ -14,15 +20,19 @@ import VerticalSpacing, {
 } from "../../../../components/base/Spacing/VerticalSpacing";
 import TextInput from "../../../../components/base/TextInput/TextInput";
 import "./ContactForm.css";
+import VisitorContext from "../../../../contexts/VisitorContext/VisitorContext";
+import { globalContactFormContent } from "../../../../constants/globalConstants";
 
 // interface IProps {
 //   data: any;
 //   ref: any;
 // }
 
-const ContactForm = forwardRef((data: any, ref?: any) => {
+const ContactForm = forwardRef((data?: any, ref?: any) => {
+  const { language } = useContext(VisitorContext);
+
   const {
-    title,
+    heading,
     firstNamePlaceholder,
     lastNamePlaceholder,
     emailPlaceholder,
@@ -30,7 +40,7 @@ const ContactForm = forwardRef((data: any, ref?: any) => {
     messagePlaceholder,
     GDPRCheckboxText,
     buttonText,
-  } = data.data;
+  } = globalContactFormContent[language];
 
   const [message, setMessage] = useState<any>({
     fname: "",
@@ -98,7 +108,7 @@ const ContactForm = forwardRef((data: any, ref?: any) => {
                 <Heading
                   level="h2"
                   size={HeadingSizes.xl}
-                  text={title}
+                  text={heading}
                   theme="dark"
                   accent={false}
                 />

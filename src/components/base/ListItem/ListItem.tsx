@@ -8,10 +8,10 @@ import "./ListItem.css";
 interface IProps {
   icon: Icons;
   heading: string;
-  copy: string;
+  text: string;
 }
 
-const ListItem = ({ icon, heading, copy }: IProps) => {
+const ListItem = ({ icon, heading, text }: IProps) => {
   return (
     <li
       className="listItem row align-start justify-start middle-xs center-xs start-md"
@@ -21,7 +21,7 @@ const ListItem = ({ icon, heading, copy }: IProps) => {
         <Icon size="xxl" icon={icon} colour={IconColours.green} />
       </div>
 
-      <div className="col listItem__copy center-xs center-text start-text-md start-md">
+      <div className="col listItem__text center-xs center-text start-text-md start-md">
         <Heading
           level="h3"
           size={HeadingSizes.xs}
@@ -29,7 +29,7 @@ const ListItem = ({ icon, heading, copy }: IProps) => {
           weight={HeadingWeights.medium}
         />
         <VerticalSpacing size={SpacingSizes.xxxs8px} />
-        <Text size={TextSize.sm}>{copy}</Text>
+        <Text size={TextSize.sm}>{text}</Text>
       </div>
     </li>
   );

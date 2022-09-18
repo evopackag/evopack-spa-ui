@@ -3,11 +3,11 @@
   width: 100%;
 }
 
-.ValuesSection {
+.carousel {
   width: 100%;
 }
 
-.valuesSection__fullWidthBox {
+.carousel__fullWidthBox {
   display: flex;
   justify-content: flex-start;
   /* max-height: 800px; */
@@ -18,14 +18,14 @@
   scroll-snap-type: x mandatory;
   scroll-padding: 0 2rem;
 }
-.valuesSection__fullWidthBox::-webkit-scrollbar, .valuesSection__fullWidthBox::-webkit-scrollbar {
+.carousel__fullWidthBox::-webkit-scrollbar, .carousel__fullWidthBox::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
 }
 
-/* .valuesSection__fullWidthBox:nth-child(1) {
+/* .carousel__fullWidthBox:nth-child(1) {
   align-self: flex-end;
 } */
 .horizontalSlider::-webkit-scrollbar,
@@ -40,9 +40,9 @@
   scrollbar-width: none;
 }
 
-.mediumCarousel__stepper {
+.carousel__stepper {
   width: 100%;
 }
-.mediumCarousel__stepper > a:first-of-type {
+.carousel__stepper > a:first-of-type {
   margin-right: 2rem;
 }

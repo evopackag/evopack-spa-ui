@@ -4,7 +4,7 @@ import Heading, {
 import Icon, { Icons } from "../../../../components/base/Icon/Icon";
 import Text from "../../../../components/base/Text/Text";
 
-import "./ValuesSection.css";
+import "./Carousel.css";
 
 import DividingPoint from "../../../../../public/assets/dividing-point.svg";
 import Button from "../../../../components/base/Buttons/Button";
@@ -43,15 +43,15 @@ const valuesContent = [
   },
 ];
 
-const ValuesSection = ({ data }: IProps) => {
+const Carousel = ({ data }: IProps) => {
   const { title, subTitle, values, titleUnderlined } = data;
 
   console.log(values);
 
   return (
-    <section className="ValuesSection col-xs-12">
+    <section className="carousel col-xs-12">
       <VerticalSpacing size={SpacingSizes.lg32px} />
-      <div className="valuesSection__title col width-100 align-center center-xs center-text">
+      <div className="carousel__title col width-100 align-center center-xs center-text">
         <Heading
           text={title}
           size={HeadingSizes.xl}
@@ -69,11 +69,11 @@ const ValuesSection = ({ data }: IProps) => {
           theme="light"
         />
       </div>
-      <div className="valuesSection__fullWidthBox">
+      <div className="carousel__fullWidthBox">
         {values.map((card: any) => {
           return (
             <LearnMoreCard
-              title={card.title}
+              heading={card.title}
               text={card.text}
               background={card.icon}
               theme={card.theme}
@@ -88,4 +88,4 @@ const ValuesSection = ({ data }: IProps) => {
   );
 };
 
-export default ValuesSection;
+export default Carousel;

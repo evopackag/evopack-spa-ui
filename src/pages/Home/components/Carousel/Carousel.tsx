@@ -12,24 +12,24 @@ import Icon, {
   Icons,
 } from "../../../../components/base/Icon/Icon";
 
-import "./MediumCarousel.css";
+import "./Carousel.css";
 
 interface IProps {
   data: any;
 }
 
-const MediumCarousel = ({ data }: IProps) => {
+const Carousel = ({ data }: IProps) => {
   const [carouselPosition, setCarouselPosition] = useState(0);
 
   const carousel = useRef(document.createElement("div"));
 
-  const { title, subTitle, values, titleUnderlined } = data;
+  const { heading, subheading, cards, underlinedHeading } = data;
 
   const windowWidth = window.innerWidth;
 
   const moveCarouselLeft = () => {
     if (
-      document.getElementsByClassName(".valuesSection__fullWidthBox") &&
+      document.getElementsByClassName(".carousel__fullWidthBox") &&
       carouselPosition >= 0
     ) {
       carousel.current.scrollBy({
@@ -41,7 +41,7 @@ const MediumCarousel = ({ data }: IProps) => {
   };
   const moveCarouselRight = () => {
     if (
-      document.getElementsByClassName(".valuesSection__fullWidthBox") &&
+      document.getElementsByClassName(".carousel__fullWidthBox") &&
       carouselPosition <= 1
     ) {
       // track.scrollTo(windowWidth, 0);
@@ -69,21 +69,21 @@ const MediumCarousel = ({ data }: IProps) => {
   };
 
   return (
-    <section className="ValuesSection col-xs-12">
+    <section className="carousel col-xs-12">
       <VerticalSpacing size={SpacingSizes.xxxxl96px} />
-      <div className="valuesSection__title col width-100 align-center center-xs center-text">
+      <div className="carousel__title col width-100 align-center center-xs center-text">
         <Heading
-          text={title}
+          text={heading}
           level="h2"
           size={HeadingSizes.xl}
           theme="light"
           // spacing="100vw"
           accent
-          accentWords={titleUnderlined}
+          accentWords={underlinedHeading}
         />
         <VerticalSpacing size={SpacingSizes.lg32px} />
         <Heading
-          text={subTitle}
+          text={subheading}
           level="h5"
           size={HeadingSizes.sm}
           theme="light"
@@ -91,14 +91,14 @@ const MediumCarousel = ({ data }: IProps) => {
       </div>
       <VerticalSpacing size={SpacingSizes.xs16px} />
       <div
-        className="valuesSection__fullWidthBox"
+        className="carousel__fullWidthBox"
         onScroll={scrollHandler}
         ref={carousel}
       >
-        {values.map((card: any) => {
+        {cards.map((card: any) => {
           return (
             <LearnMoreCard
-              title={card.title}
+              heading={card.heading}
               text={card.text}
               background={card.icon}
               theme={card.theme}
@@ -108,7 +108,7 @@ const MediumCarousel = ({ data }: IProps) => {
         })}
       </div>
       <VerticalSpacing size={SpacingSizes.xs16px} />
-      <div className="row justify-center align-center mediumCarousel__stepper">
+      <div className="row justify-center align-center carousel__stepper">
         <Icon
           isButton
           icon={Icons.chevronLeft}
@@ -132,4 +132,4 @@ const MediumCarousel = ({ data }: IProps) => {
   );
 };
 
-export default MediumCarousel;
+export default Carousel;

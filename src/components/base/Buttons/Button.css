@@ -100,19 +100,27 @@
   color: white;
   border: 2px solid var(--primary-blue);
   max-width: min-content;
-  box-shadow: 0 0 0 0px var(--primary-blue-25perc-solid);
 }
 .button--secondary-blue-filled:hover {
-  box-shadow: 0 0 0 6px var(--primary-blue-25perc-solid);
+  animation: ButtonOrbe 2500ms linear infinite;
 }
 
 .button--secondary-blue:hover {
   color: var(--off-white);
   background: var(--primary-blue);
   border: 2px solid var(--primary-blue);
-  box-shadow: 0 0 0 4px var(--primary-blue-25perc-solid);
+  animation: infinite 10000ms linear ButtonOrbe;
+  animation-delay: 800ms;
 }
 
+@keyframes ButtonOrbe {
+  0% {
+    box-shadow: 0 0 0 0px var(--primary-blue-25perc-solid);
+  }
+  100% {
+    box-shadow: 0 0 0 12px rgba(27, 27, 45, 0);
+  }
+}
 .button--secondary-green-fill {
   /* background: var(--primary-green); */
   color: var(--primary-green);

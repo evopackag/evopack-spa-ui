@@ -8,7 +8,7 @@
 .listItem_iconContainer * {
   margin-right: 0;
 }
-.listItem__copy {
+.listItem__text {
   max-width: 80%;
 }
 

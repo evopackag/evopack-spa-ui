@@ -1,5 +1,7 @@
 import { text } from "node:stream/consumers";
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
+import { globalFooterContent } from "../../constants/globalConstants";
+import VisitorContext from "../../contexts/VisitorContext/VisitorContext";
 import Button from "../base/Buttons/Button";
 import Heading, { HeadingSizes } from "../base/Heading/Heading";
 import HorizontalDivider from "../base/HorizontalDivider/HorizontalDivider";
@@ -13,19 +15,17 @@ import Imprint from "./components/Imprint/Imprint";
 
 import "./Footer.css";
 
-var legalContent = require("./FooterContent.json");
+// var legalContent = require("./FooterContent.json");
 
-interface IProps {
-  data: any;
-}
-
-const Footer = ({ data }: IProps) => {
+const Footer = () => {
   const [showOverlay, setShowOverlay] = useState(false);
   const [overlayContent, setOverlayContent] = useState("imprint");
 
   const [subscriptionEmail, setSubscriptionEmail] = useState({
     email: "",
   });
+
+  const { language } = useContext(VisitorContext);
 
   const toggleOverlay = (content: string) => {
     if (showOverlay) {
@@ -53,18 +53,12 @@ const Footer = ({ data }: IProps) => {
 
   useEffect(() => {}, [overlayContent]);
 
-  // document.body.addEventListener("click", () => {
-  //   if (showOverlay) {
-  //     setShowOverlay(false);
-  //   }
-  // });
-
   const {
     subscriptionLabel,
     subscriptionPlaceholder,
     imprintLinkLabel,
     dataPolicyLinkLabel,
-  } = data;
+  } = globalFooterContent[language];
 
   const footerSection = useRef(null);
 

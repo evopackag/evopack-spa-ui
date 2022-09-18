@@ -24,21 +24,25 @@ import Footer from "../../components/Footer/Footer";
 const Applications = () => {
   const applicationsData: any = require("./Applications.json");
 
-  const homeData: any = require("../Home/Home.json");
+  const evopackContent: any = require("../EvopackContent.json");
 
   const { language } = useContext(VisitorContext);
 
   const { filter } = useContext(TabsContext);
 
-  const footerData = homeData[language].footer;
+  const applicationsContent = evopackContent[language].applications;
 
-  const languageSpecificContent = applicationsData[language];
-
-  const allApplicationsContent = languageSpecificContent.applicationAreas;
+  const allApplicationsContent = applicationsData[language].applicationAreas;
 
   const tabLabels: string[] = Array.from(
-    allApplicationsContent,
-    (application: any) => application.sectionHeading
+    applicationsContent,
+    (application: any) => application.heading
+  );
+
+  const applicationHeadings: string[] = applicationsContent.map(
+    (application: any) => {
+      return application;
+    }
   );
 
   const convertArrayToObject = (array: any, key: string) => {
@@ -51,9 +55,9 @@ const Applications = () => {
     }, initialValue);
   };
 
-  const heroImages = allApplicationsContent.reduce(
+  const heroImages = applicationsContent.reduce(
     (obj: any, item: any) =>
-      Object.assign(obj, { [item.sectionHeading]: item.applicationHeroImage }),
+      Object.assign(obj, { [item.heading]: item.heroImage }),
     {}
   );
 
@@ -61,37 +65,25 @@ const Applications = () => {
     {
       label: tabLabels[0],
       component: (
-        <ApplicationsLayout
-          data={allApplicationsContent[0]}
-          id={tabLabels[0]}
-        />
+        <ApplicationsLayout data={applicationsContent[0]} id={tabLabels[0]} />
       ),
     },
     {
       label: tabLabels[1],
       component: (
-        <ApplicationsLayout
-          data={allApplicationsContent[1]}
-          id={tabLabels[1]}
-        />
+        <ApplicationsLayout data={applicationsContent[1]} id={tabLabels[1]} />
       ),
     },
     {
       label: tabLabels[2],
       component: (
-        <ApplicationsLayout
-          data={allApplicationsContent[2]}
-          id={tabLabels[2]}
-        />
+        <ApplicationsLayout data={applicationsContent[2]} id={tabLabels[2]} />
       ),
     },
     {
       label: tabLabels[3],
       component: (
-        <ApplicationsLayout
-          data={allApplicationsContent[3]}
-          id={tabLabels[3]}
-        />
+        <ApplicationsLayout data={applicationsContent[3]} id={tabLabels[3]} />
       ),
     },
   ];
@@ -102,7 +94,7 @@ const Applications = () => {
 
   return (
     <PageContainer>
-      <Header data={languageSpecificContent.heroSection.navigationLinks} />
+      <Header />
       <VerticalSpacing size={SpacingSizes.xxxl64px} />
       {/* <VerticalSpacing size={SpacingSizes.xxxxl96px} /> */}
       <TabsGallery
@@ -111,29 +103,27 @@ const Applications = () => {
         showBackgroundImage
         tabs={applicationComponents}
       >
+        {/* {applicationsContent.map((application: any) => {
+          return (
+            <TabsContent label={tabLabels[0]}>
+              <ApplicationsLayout
+                data={applicationsContent[0]}
+                id={tabLabels[0]}
+              />
+            </TabsContent>
+          );
+        })} */}
         <TabsContent label={tabLabels[0]}>
-          <ApplicationsLayout
-            data={allApplicationsContent[0]}
-            id={tabLabels[0]}
-          />
+          <ApplicationsLayout data={applicationsContent[0]} id={tabLabels[0]} />
         </TabsContent>
         <TabsContent label={tabLabels[1]}>
-          <ApplicationsLayout
-            data={allApplicationsContent[1]}
-            id={tabLabels[1]}
-          />
+          <ApplicationsLayout data={applicationsContent[1]} id={tabLabels[1]} />
         </TabsContent>
         <TabsContent label={tabLabels[2]}>
-          <ApplicationsLayout
-            data={allApplicationsContent[2]}
-            id={tabLabels[2]}
-          />
+          <ApplicationsLayout data={applicationsContent[2]} id={tabLabels[2]} />
         </TabsContent>
         <TabsContent label={tabLabels[3]}>
-          <ApplicationsLayout
-            data={allApplicationsContent[3]}
-            id={tabLabels[3]}
-          />
+          <ApplicationsLayout data={applicationsContent[3]} id={tabLabels[3]} />
         </TabsContent>
         {/* <div className="row center-xs">
           {allApplicationsContent.overview &&
@@ -166,11 +156,8 @@ const Applications = () => {
             })}
         </div> */}
       </TabsGallery>
-      <ContactForm
-        data={languageSpecificContent.contactSection}
-        ref={undefined}
-      />
-      <Footer data={footerData} />
+      <ContactForm data={applicationsContent.contactSection} ref={undefined} />
+      <Footer />
     </PageContainer>
   );
 };

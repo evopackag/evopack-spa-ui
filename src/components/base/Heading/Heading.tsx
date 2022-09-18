@@ -104,8 +104,8 @@ const Heading = ({
   if (level === "h2") {
     const allWords = text?.split(" ");
     const titleLength = allWords?.length > 0 ? allWords.length : 0;
-    const lastWord = allWords[titleLength - 1];
-    const textMinusLastWord = text.slice(0, text.length - lastWord.length);
+    // const lastWord = allWords[titleLength - 1];
+    // const textMinusLastWord = text.slice(0, text.length - lastWord.length);
 
     return (
       <h2

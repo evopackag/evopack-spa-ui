@@ -257,5 +257,8 @@
     background: var(--medium-blue);
     border-radius: 1rem;
     margin-bottom: 0.5rem;
+    &--active::after  {
+      content: unset;
+    }
   }
 }

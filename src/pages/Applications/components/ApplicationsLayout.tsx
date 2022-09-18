@@ -30,13 +30,12 @@ interface IProps {
 
 const ApplicationsLayout = ({ data, id }: IProps) => {
   const {
-    sectionHeading,
+    heading,
     subheading,
     overview,
     sustainability,
     solution,
-    pitch,
-    relatedServices,
+    featuresList,
   } = data;
 
   return (
@@ -49,7 +48,7 @@ const ApplicationsLayout = ({ data, id }: IProps) => {
         <Heading
           level="h1"
           size={HeadingSizes.lg}
-          text={sectionHeading}
+          text={heading}
           alignment="center"
         />
         <VerticalSpacing size={SpacingSizes.xs16px} />
@@ -58,7 +57,7 @@ const ApplicationsLayout = ({ data, id }: IProps) => {
       <VerticalSpacing size={SpacingSizes.xxxl64px} />
 
       <div className="row justify-center width-100">
-        {overview.heading && overview.copy ? (
+        {overview.heading && overview.text ? (
           <Box
             background={BoxBackground.lightGrey}
             borderRadius={BorderRadii.medium24px}
@@ -80,12 +79,12 @@ const ApplicationsLayout = ({ data, id }: IProps) => {
                   isBold
                 />
                 <VerticalSpacing size={SpacingSizes.xs16px} />
-                <Text size={TextSize.md}>{overview.copy}</Text>
+                <Text size={TextSize.md}>{overview.text}</Text>
               </div>
             </div>
           </Box>
         ) : null}
-        {sustainability.heading && sustainability.copy ? (
+        {sustainability.heading && sustainability.text ? (
           <Box
             background={ColourThemes.sustainability.background}
             borderRadius={BorderRadii.medium24px}
@@ -111,7 +110,7 @@ const ApplicationsLayout = ({ data, id }: IProps) => {
                   size={TextSize.md}
                   color={ColourThemes.sustainability.fontColour}
                 >
-                  {sustainability.copy}
+                  {sustainability.text}
                 </Text>
               </div>
             </div>
@@ -119,7 +118,7 @@ const ApplicationsLayout = ({ data, id }: IProps) => {
         ) : null}
       </div>
       <VerticalSpacing size={SpacingSizes.xxxl64px} />
-      {solution.heading && solution.copy ? (
+      {solution.heading && solution.text ? (
         <Box
           background={ColourThemes.evopack.background}
           borderRadius={BorderRadii.medium24px}
@@ -156,7 +155,7 @@ const ApplicationsLayout = ({ data, id }: IProps) => {
 
               <VerticalSpacing size={SpacingSizes.xs16px} />
               <Text size={TextSize.md} color={ColourThemes.evopack.fontColour}>
-                {solution.copy}
+                {solution.text}
               </Text>
             </div>
           </div>
@@ -165,7 +164,7 @@ const ApplicationsLayout = ({ data, id }: IProps) => {
       <VerticalSpacing size={SpacingSizes.xxxxl96px} />
       <div className="col width-100 justify-center align-center center-text">
         <Heading
-          text={pitch.subheading}
+          text={featuresList.subheading}
           level="h2"
           size={HeadingSizes.xs}
           colour={Colours.primaryBlue}
@@ -173,7 +172,7 @@ const ApplicationsLayout = ({ data, id }: IProps) => {
         />
         <VerticalSpacing size={SpacingSizes.xs16px} />
         <Heading
-          text={pitch.heading}
+          text={featuresList.heading}
           level="h2"
           size={HeadingSizes.md}
           colour={Colours.primaryBlue}
@@ -182,23 +181,23 @@ const ApplicationsLayout = ({ data, id }: IProps) => {
         />
         <VerticalSpacing size={SpacingSizes.xxxxl96px} />
         <ul className="col align-start applicationsLayout__relatedServices">
-          {relatedServices &&
-            relatedServices.map((service: any) => {
+          {featuresList.listItems &&
+            featuresList.listItems.map((feature: any) => {
               return (
                 <>
-                  {service.publish && (
+                  {feature.publish && (
                     <>
                       <ListItem
-                        heading={service.heading}
-                        copy={service.copy}
-                        icon={service.icon}
+                        heading={feature.heading}
+                        text={feature.text}
+                        icon={feature.icon}
                       />
                       <VerticalSpacing size={SpacingSizes.xxl48px} />
                     </>
                   )}
                   {/* <ListItem
                     heading={service.heading}
-                    copy={service.copy}
+                    text={service.text}
                     icon={service.icon}
                   />
                   <VerticalSpacing size={SpacingSizes.xxl48px} /> */}
@@ -215,7 +214,7 @@ const ApplicationsLayout = ({ data, id }: IProps) => {
             return (
               <Card
                 title={service.heading}
-                text={service.copy}
+                text={service.text}
                 background={service.icon}
                 theme={service.theme}
               />

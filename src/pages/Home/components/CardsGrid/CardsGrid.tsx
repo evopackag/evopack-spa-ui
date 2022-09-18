@@ -5,7 +5,7 @@ import Heading, {
 import Icon from "../../../../components/base/Icon/Icon";
 import Text from "../../../../components/base/Text/Text";
 
-import "./ServicesSection.css";
+import "./CardsGrid.css";
 
 import DividingPoint from "../../../../../public/assets/dividing-point.svg";
 import Button from "../../../../components/base/Buttons/Button";
@@ -20,11 +20,11 @@ interface IProps {
   data: any;
 }
 
-const ServicesSection = ({ data }: IProps) => {
-  const { title, services } = data;
+const CardsGrid = ({ data }: IProps) => {
+  const { title, cards } = data;
   const isMobile = useViewportSize(1024);
   return (
-    <section className="servicesSection">
+    <section className="cardsGrid">
       <VerticalSpacing
         size={isMobile ? SpacingSizes.md24px : SpacingSizes.xxxxl96px}
       />
@@ -39,13 +39,13 @@ const ServicesSection = ({ data }: IProps) => {
       </div>
       <VerticalSpacing size={SpacingSizes.xl40px} />
       <HorizontalSlider content={{}} buttons={false}>
-        {services.map((service: any) => {
+        {cards.map((cards: any) => {
           return (
             <Card
-              title={service.title}
-              text={service.text}
-              background={service.icon}
-              theme={service.theme}
+              heading={cards.heading}
+              text={cards.text}
+              background={cards.icon}
+              theme={cards.theme}
             />
           );
         })}
@@ -54,4 +54,4 @@ const ServicesSection = ({ data }: IProps) => {
   );
 };
 
-export default ServicesSection;
+export default CardsGrid;

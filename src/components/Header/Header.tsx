@@ -1,6 +1,7 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Link from "../../components/base/Link/Link";
+import { globalRoutes } from "../../constants/globalConstants";
 import VisitorContext, {
   Languages,
 } from "../../contexts/VisitorContext/VisitorContext";
@@ -15,12 +16,11 @@ import Toggle from "../base/Toggle/Toggle";
 import "./Header.css";
 
 interface IProps {
-  data: any[];
   scrollToFunction?: any;
   refs?: any;
 }
 
-const Header = ({ data, refs }: IProps) => {
+const Header = ({ refs }: IProps) => {
   const [isMobile, setIsMobile] = useState(false);
 
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -95,21 +95,6 @@ const Header = ({ data, refs }: IProps) => {
     { label: "Call Us", href: "tel:+41767463355", icon: "phone" },
   ];
 
-  const navigationLinks: any = {
-    english: [
-      { label: "Applications", urlPath: "/applications" },
-      { label: "Careers", urlPath: "/careers" },
-      { label: "About Us", urlPath: "/about" },
-    ],
-    german: [
-      { label: "Anwendungen", urlPath: "/applications" },
-      { label: "Jobs & Karriere", urlPath: "/careers" },
-      { label: "Über Uns", urlPath: "/about" },
-    ],
-  };
-
-  const activeLanguageNavigation = navigationLinks[language];
-
   return (
     <header
       className={`header col-xs-12 ${
@@ -164,7 +149,7 @@ const Header = ({ data, refs }: IProps) => {
                   key={"homepageLink"}
                 >
                   <img
-                    src={`${process.env.PUBLIC_URL}/assets/icons/evopack-logo--blue.svg`}
+                    src={`${process.env.PUBLIC_URL}/assets/icons/Evopack_GreenLogoWhiteWritingHorizontal--white.svg`}
                     alt=""
                   />
                 </NavLink>
@@ -176,7 +161,7 @@ const Header = ({ data, refs }: IProps) => {
                     </Text>
                   </div>
 
-                  {data.map((link) => {
+                  {globalRoutes[language].map((link: any) => {
                     return (
                       <li
                         className="navlink__container align-center justify-center"
@@ -251,7 +236,7 @@ const Header = ({ data, refs }: IProps) => {
           </nav>
         ) : (
           <nav className="header__links">
-            {activeLanguageNavigation.map((link: any) => {
+            {globalRoutes[language].map((link: any) => {
               return (
                 <>
                   <NavLink

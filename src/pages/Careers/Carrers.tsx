@@ -17,24 +17,26 @@ import Icon from "../../components/base/Icon/Icon";
 import HorizontalDivider from "../../components/base/HorizontalDivider/HorizontalDivider";
 
 const Careers = () => {
-  const websiteContent: any = require("./Careers.json");
+  const websiteContent: any = require("../EvopackContent.json");
 
   const { language } = useContext(VisitorContext);
 
   const numberOfJobs = [];
 
-  const languageSpecificContent = websiteContent[language];
+  const { heading, subheading, primaryButtonText, secondaryButtonText } =
+    websiteContent[language].careers;
   return (
     <PageContainer>
-      <Header data={languageSpecificContent.heroSection.navigationLinks} />
+      <Header />
+      <VerticalSpacing size={SpacingSizes.xxxl64px} />
       <div className="row">
         <section className="careers__heroSection col-xs-12 center-xs">
           <div className="col width-100 center-xs middle-xs padding-horizontal-4 careers__heroContent">
-            <div className="col center-xs  careers__heroSectionHeading">
+            <div className="col center-xs  careers__heroSectionHeading center-text">
               <VerticalSpacing size={SpacingSizes.md24px} />
               <VerticalSpacing size={SpacingSizes.md24px} />
               <Heading
-                text="Let's work together"
+                text={heading}
                 level="h1"
                 size={HeadingSizes.xl}
                 theme="light"
@@ -43,12 +45,16 @@ const Careers = () => {
               />
               <VerticalSpacing size={SpacingSizes.xs16px} />
               <Text theme="light">
-                We currently have&nbsp;
+                {subheading.split(" ").slice(0, 3).join(" ")}
+                &nbsp;
                 <strong style={{ color: "var(--primary-green)" }}>
                   {numberOfJobs.length}
                 </strong>
-                &nbsp;open positions available. If you’re interested in working
-                with us, please get in touch via our contact methods.
+                &nbsp;
+                {subheading
+                  .split(" ")
+                  .slice(4, subheading.length + 1)
+                  .join(" ")}
               </Text>
             </div>
 
@@ -80,20 +86,20 @@ const Careers = () => {
               buttonStyle
               href="mailto:info@evopack.tech"
             >
-              Email Us
+              {primaryButtonText}
             </Link>
             <Link
               level={ButtonLevel.secondaryBlue}
               buttonStyle
               href="tel:+41767463355"
             >
-              Call Up
+              {secondaryButtonText}
             </Link>
           </div>
           <VerticalSpacing size={SpacingSizes.md24px} />
         </section>
       </div>
-      <Footer data={languageSpecificContent.footer} />
+      <Footer />
     </PageContainer>
   );
 };

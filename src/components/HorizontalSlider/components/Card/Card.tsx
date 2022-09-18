@@ -10,11 +10,11 @@ import "./Card.css";
 interface IProps {
   text: string;
   theme?: string;
-  title?: string;
+  heading?: string;
   background?: string;
 }
 
-const Card = ({ title, text, background, theme }: IProps) => {
+const Card = ({ heading, text, background, theme }: IProps) => {
   const isMobile = useViewportSize(768);
   return (
     <div
@@ -24,8 +24,8 @@ const Card = ({ title, text, background, theme }: IProps) => {
       }}
     >
       {/* <VerticalSpacing size={SpacingSizes.lg32px} /> */}
-      {title ? (
-        <Heading text={title} level="h3" size={HeadingSizes.lg} />
+      {heading ? (
+        <Heading text={heading} level="h3" size={HeadingSizes.lg} />
       ) : null}
       <VerticalSpacing size={SpacingSizes.md24px} />
       <Text

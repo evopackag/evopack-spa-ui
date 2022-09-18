@@ -32,8 +32,6 @@ const TabsGallery = ({
     setFilter(data[0]);
   }, [language]);
 
-  console.log(filter);
-
   if (showBackgroundImage) {
     return (
       <div className="width-100 col center-xs middle-xs tabsGallery">

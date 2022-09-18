@@ -14,16 +14,22 @@ import VisitorContext from "../../contexts/VisitorContext/VisitorContext";
 import useViewportSize from "../../hooks/useViewportSize/useViewportSize";
 import ContactForm from "./components/ContactForm/ContactForm";
 import HeroSection from "./components/HeroSection/HeroSection";
-import ServicesSection from "./components/ServicesSection/ServicesSection";
-import MediumCarousel from "./components/ValuesSection/MediumCarousel";
-import ValuesSection from "./components/ValuesSection/ValuesSection";
+import ServicesSection from "./components/CardsGrid/CardsGrid";
+import Carousel from "./components/Carousel/Carousel";
+import CardsGrid from "./components/CardsGrid/CardsGrid";
 
 const Home = () => {
-  const websiteContent: any = require("./Home.json");
+  // const websiteContent: any = require("./Home.json");
+  const websiteContent: any = require("../EvopackContent.json");
 
   const { language } = useContext(VisitorContext);
 
-  const languageSpecificContent = websiteContent[language];
+  const languageSpecificContent = websiteContent[language].home;
+
+  const { hero, cardsGrid, quote, carousel, contactForm } =
+    languageSpecificContent;
+
+  console.log(languageSpecificContent);
 
   const contactRef = createRef<HTMLDivElement>();
   const servicesRef = createRef<HTMLDivElement>();
@@ -43,22 +49,21 @@ const Home = () => {
 
   return (
     <PageContainer>
-      <Header data={languageSpecificContent.heroSection.navigationLinks} />
+      <Header />
       <HeroSection
-        data={languageSpecificContent.heroSection}
-        // refs={ref}
+        data={hero}
         handleCTAClick={() => {
           handleBackClick(contactRef);
         }}
       />
-      <ServicesSection data={languageSpecificContent.servicesSection} />
+      <CardsGrid data={cardsGrid} />
       <QuoteBox
-        text={languageSpecificContent.quoteSection.quote}
-        author={languageSpecificContent.quoteSection.author}
-        authorTitle={languageSpecificContent.quoteSection.authorPosition}
+        text={quote.text}
+        author={quote.author}
+        authorTitle={quote.authorPosition}
       />
-      {/* <ValuesSection data={languageSpecificContent.valuesSection} /> */}
-      <MediumCarousel data={languageSpecificContent.valuesSection} />
+      {/* <ValuesSection data={valuesSection} /> */}
+      <Carousel data={carousel} />
       <VerticalSpacing size={SpacingSizes.xl40px} />
       {/* <div className="row width-100 align-center justify-center padding-horizontal-4">
         <ImageTile
@@ -82,11 +87,8 @@ const Home = () => {
       /> */}
       <VerticalSpacing size={SpacingSizes.xl40px} />
 
-      <ContactForm
-        data={languageSpecificContent.contactSection}
-        ref={contactRef}
-      />
-      <Footer data={languageSpecificContent.footer} />
+      <ContactForm ref={contactRef} />
+      <Footer />
     </PageContainer>
   );
 };

@@ -10,12 +10,12 @@ interface IProps {
   text: string;
   theme?: string;
   buttonTheme?: string;
-  title?: string;
+  heading?: string;
   background?: string;
 }
 
 const LearnMoreCard = ({
-  title,
+  heading,
   text,
   background,
   theme,
@@ -43,8 +43,8 @@ const LearnMoreCard = ({
       }}
       data-target="learnMoreCard"
     >
-      {title && !showDetails ? (
-        <Heading text={title} level="h3" size={HeadingSizes.lg} />
+      {heading && !showDetails ? (
+        <Heading text={heading} level="h3" size={HeadingSizes.lg} />
       ) : null}
       {showDetails ? <Text size={TextSize.xl}>{text}</Text> : null}
       <Button

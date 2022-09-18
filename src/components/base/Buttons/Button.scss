@@ -136,10 +136,12 @@
   color: white;
   border: 2px solid var(--primary-blue);
   max-width: min-content;
-  box-shadow: 0 0 0 0px var(--primary-blue-25perc-solid);
+  // box-shadow: 0 0 0 0px var(--primary-blue-25perc-solid);
 
   &:hover{
-    box-shadow: 0 0 0 6px var(--primary-blue-25perc-solid);
+    // box-shadow: 0 0 0 6px var(--primary-blue-25perc-solid);
+    // animation: infinite 100ms linear ButtonOrbe;
+    animation: ButtonOrbe 2500ms linear infinite;
   }
 }
 
@@ -147,8 +149,32 @@
   color: var(--off-white);
   background: var(--primary-blue);
   border: 2px solid var(--primary-blue);
-  box-shadow: 0 0 0 4px var(--primary-blue-25perc-solid);
+  // box-shadow: 0 0 0 4px var(--primary-blue-25perc-solid);
+  animation: infinite 10000ms linear ButtonOrbe;
+  animation-delay: 800ms;
 }
+
+@keyframes ButtonOrbe {
+  0% {
+    box-shadow: 0 0 0 0px var(--primary-blue-25perc-solid);
+  } 100% {
+    box-shadow: 0 0 0 12px rgba(27, 27, 45, 0);
+  }
+}
+
+// 0% {
+  //   box-shadow: 0 0 0 0px var(--primary-blue-25perc-solid);
+  // } 25% {
+  //   box-shadow: 0 0 0 4px var(--primary-blue-25perc-solid);
+  // } 50% {
+  //   box-shadow: 0 0 0 6px var(--primary-blue-25perc-solid);
+  // } 75% {
+  //   box-shadow: 0 0 0 2px var(--primary-blue-25perc-solid);
+  // } 85% {
+  //   box-shadow: 0 0 0 3px var(--primary-blue-25perc-solid);
+  // } 100% {
+  //     box-shadow: 0 0 0 0px var(--primary-blue-25perc-solid);
+  // }
 
 .button--secondary-green-fill {
   /* background: var(--primary-green); */
