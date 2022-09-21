@@ -208,7 +208,7 @@
         "heroImage": "applicationsImages__dispersions.jpg",
         "overview": {
           "component": "TextBox",
-            "heading": "Applications of Binder dispersions",
+            "heading": "Applications of Binder Dispersions",
             "headingFontColour": "#075932",
             "text": "Binder dispersions can constitute up to 99 % of clear coats, up to 10 % of concrete for high-rise buildings close to 100 % of adhesive formulations. In most cases, binder dispersions are further processed in the industry into other products before they reach the end consumer.",
             "icon": "leaf",
@@ -262,7 +262,7 @@
         "heroImage": "applicationsImages__household.jpg",
         "overview": {
           "component": "TextBox",
-            "heading": "Biocides in Household products",
+            "heading": "Biocides in Household Products",
             "headingFontColour": "#075932",
             "text": "In the past, effective biocides such as MIT or CMIT were used to keep detergents and cleaning agents contamination-free until they reached the end consumer and beyond.",
             "icon": "leaf",
