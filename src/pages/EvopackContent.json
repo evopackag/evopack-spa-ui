@@ -2,8 +2,8 @@
   "english": {
     "home": {
       "hero": {
-        "heading": "Perfect Product Performance. Every time.",
-      "subheading": "Reduce your costs and impact on the planet with more efficient packaging - helping you eliminate waste and save money.",
+        "heading": "Ensuring Product Integrity.",
+      "subheading": "Reduce your costs and your impact on the planet with more efficient packaging solutions",
       "buttonText": "Talk to an expert"
       },
       "cardsGrid": {
@@ -31,8 +31,8 @@
       },
       "quote": {
         "text": "At Evopack, we have made it our mission to identify and optimise outdated packaging concepts. We believe in an evolution of packaging towards more sustainable and less impactful packaging. Our mission is to drive this evolution. We develop packaging for a better future.",
-        "author": "Ankith Subramanian",
-        "authorPosition": "Head of Engineering"
+        "author": "Florian Ebinger",
+        "authorPosition": "Manufacturing and Design"
       },
       "carousel": {
         "heading": "Sustainablility",
@@ -49,7 +49,7 @@
           },
           {
             "heading": "Developing resource efficient packaging solutions",
-            "text": "Save money and the planet by minimising the use of materials in your packaging without compromising product integrity.",
+            "text": "Save money and the planet by minimising the use of materials in your packaging while ensuring product integrity.",
             "buttonText": "Learn More",
             "icon": "trees",
             "theme": "blue",
@@ -73,7 +73,7 @@
           },
           {
             "heading": "Recycled materials",
-            "text": "We constantly look to use recycled materials in ways that is truly more sustainble, not just to write it on the tin.",
+            "text": "We constantly look to use recycled materials in ways that are truly more sustainble, not just to write it on the tin.",
             "buttonText": "Learn More",
             "icon": "leaf--light-grey",
             "theme": "white",
@@ -95,13 +95,13 @@
     "applications": [
       {
         "heading": "Paints and Coatings",
-        "subheading": "At Evopack, we understand paint.",
+        "subheading": "At Evopack, we strive to make paints sustainable.",
         "heroImage": "applicationsImages__paints.jpg",
         "overview": {
           "component": "TextBox",
-            "heading": "Biocides in paints",
+            "heading": "Application of paints",
             "headingFontColour": "#075932",
-            "text": "In the 21st century, coatings mainly fulfill functional properties for products in addition to pure coloring. Coatings protect computer chips from short circuits, ensure hygiene on surfaces in the medical sector, or increase the service life of objects through corrosion protection.",
+            "text": "Coatings make things colourful, protect computer chips from short circuits, ensure hygiene on surfaces in the medical sector, or increase the service life of objects through corrosion protection.",
             "icon": "leaf",
             "iconColour": "--sustain-green"
         },
@@ -109,7 +109,7 @@
           "component": "TextBox",
             "heading": "Sustainability in the paints industry",
             "headingFontColour": "#075932",
-            "text": "The sustainability trend is demanding many new requirements in the paint industry as well, especially in the area of interior wall dispersion paints and paints for children's toys. Directives and legal regulations are increasingly limiting or eliminating raw materials. This affects so-called VOC (organic solvents) contents, preservatives and substances such as isocyanates, which are used to harden some paints.",
+            "text": "Directives, legal regulations driven by sustainability targets are increasingly limiting or eliminating raw materials in the paint industry, especially in the areas of interior paints and paints for children's toys. This affects so-called VOC (organic solvents) contents, preservatives, and substances such as isocyanates, which are critical for paint performance.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -123,7 +123,7 @@
           "backgroundColour": "#FFF7EF"
         },
         "featuresList": {
-          "heading": "Ensure full product performance from manufacture to the very last drop on the wall",
+          "heading": "Ensure product integrity from manufacture to the very last drop on the wall",
           "subheading": "We support you extensively to",
           "listItems": [
           {
@@ -140,7 +140,7 @@
           },
           {
             "heading": "With our innovative Packaging solutions",
-            "text": "Protect your product through its lifecycle while conserving cost and resources during transport.",
+            "text": "Protect your product through its lifecycle while saving cost and resources during transport.",
             "icon": "3d",
             "publish": true
           }
@@ -154,7 +154,7 @@
         "heroImage": "applicationsImages__adhesives.jpg",
         "overview": {
           "component": "TextBox",
-            "heading": "Biocides in paints",
+            "heading": "Application of adhesives",
             "headingFontColour": "#075932",
             "text": "In the automotive industry, adhesives replace screwed joints in safety-relevant parts; in the construction industry, they create fast and inexpensive solutions; and in the medical sector, they can even contribute to wound healing.",
             "icon": "leaf",
@@ -178,7 +178,7 @@
           "backgroundColour": "#FFF7EF"
         },
         "featuresList": {
-          "heading": "Ensure full product performance from manufacture to the very last squeeze of the tube.",
+          "heading": "Ensure full product integrity from manufacture to the very last squeeze of the tube.",
           "subheading": "We support you extensively to",
           "listItems": [
             {
@@ -195,7 +195,7 @@
             },
             {
               "heading": "With our innovative Packaging solutions",
-              "text": "Protect your product through its lifecycle while conserving cost and resources during transport.",
+              "text": "Protect your product through its lifecycle while saving cost and resources during transport.",
               "icon": "3d",
               "publish": true
             }
@@ -208,9 +208,9 @@
         "heroImage": "applicationsImages__dispersions.jpg",
         "overview": {
           "component": "TextBox",
-            "heading": "Use of Binder dispersions",
+            "heading": "Application of Binder dispersions",
             "headingFontColour": "#075932",
-            "text": "They form the basis of many formulations and are used in high volumes. A clear coat consists of up to 99 %, concrete for high-rise buildings of up to 10 % and adhesives of almost 100 % binder dispersions. In most cases, binder dispersions are further processed in the industry into other products before they reach the end consumer. This demands maximum performance: reliable and long-term.",
+            "text": "Binder dispersions can constitute up to 99 % of clear coats, up to 10 % of concrete for high-rise buildings close to 100 % of adhesive formulations. In most cases, binder dispersions are further processed in the industry into other products before they reach the end consumer.",
             "icon": "leaf",
             "iconColour": "--sustain-green"
         },
@@ -218,7 +218,7 @@
           "component": "TextBox",
             "heading": "Sustainability in the binder industry",
             "headingFontColour": "#075932",
-            "text": "In recent years, more and more precursors and end products have been subject to stringent regulations regarding human safety and ecological impact. This primarily concerns preservatives, such as biocides. In some cases, the EU is enforcing the use of lower quantities or the elimination of biocides by regulatory means. The binder industry is usually the first link in the chain and can strongly influence the quantities of preservatives used. As a binder manufacturer, you should use as few preservatives as possible to allow maximum leeway for your customers.",
+            "text": "In recent years, more and more precursors and end products have been subject to stringent regulations regarding human safety and ecological impact. The binder industry is usually the first link in the chain and can strongly influence the quantities of preservatives used downstream. ",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -232,7 +232,7 @@
           "backgroundColour": "#FFF7EF"
         },
         "featuresList": {
-          "heading": "Ensure full product performance from manufacture to the very last drop",
+          "heading": "Ensure full product integrity from manufacture to the very last drop",
           "subheading": "We support you extensively to",
           "listItems": [
             {
@@ -249,7 +249,7 @@
             },
             {
               "heading": "With our innovative packaging solutions",
-              "text": "Protect your product through its lifecycle while conserving cost and resources during transport.",
+              "text": "Protect your product through its lifecycle while saving cost and resources during transport.",
               "icon": "3d",
               "publish": true
             }
@@ -258,7 +258,7 @@
       },
       {
         "heading": "Household products",
-        "subheading": "Detergents, household chemicals and other household products are mainly water-based and therefore susceptible to contamination.",
+        "subheading": "Detergents, household chemicals and other household products are mainly water-based and are susceptible to contamination.",
         "heroImage": "applicationsImages__household.jpg",
         "overview": {
           "component": "TextBox",
@@ -272,7 +272,7 @@
           "component": "TextBox",
             "heading": "Sustainability in the detergent industry",
             "headingFontColour": "#075932",
-            "text": "The new requirements for preservation in terms of consumer safety and environmental friendliness leave little room for reliable preservation. Particularly when it is not possible to control the application of the final product. New ways must be found to keep products safe down to the last drop, despite the increased regulatory requirements.",
+            "text": "The current and upcoming requirements for preservation in terms of consumer safety and environmental friendliness leave little room for reliable preservation. New compliant ways are required to protect product performance.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -286,7 +286,7 @@
           "backgroundColour": "#FFF7EF"
         },
         "featuresList": {
-          "heading": "Ensure full product performance from manufacture to the very last drop of detergent",
+          "heading": "Ensure full product integrity from manufacture to the very last drop of detergent",
           "subheading": "We support you extensively to",
           "listItems": [
             {
@@ -297,7 +297,7 @@
             },
             {
               "heading": "With our innovative Packaging solutions",
-              "text": "Protect your product through its lifecycle while conserving cost and resources during transport.",
+              "text": "Protect your product through its lifecycle while saving cost and resources during transport.",
               "icon": "3d",
               "publish": true
             }
@@ -313,7 +313,7 @@
     },
     "about": {
       "heading": "About Evopack",
-      "subheading": "We’re a group of engineers and chemists looking to move packaging into the 21st centry."
+      "subheading": "We’re a team of engineers, chemists and optimists looking to move packaging into the 21st centry."
     }
   },
   "german": {

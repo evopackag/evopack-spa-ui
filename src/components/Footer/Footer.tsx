@@ -76,7 +76,7 @@ const Footer = () => {
               <Text size={TextSize.md}>+41 7674 63355</Text>
               <Text size={TextSize.md}>info@evopack.tech</Text>
               <Text size={TextSize.md}>In der Ey 37, 4612 Wangen b. Olten</Text>
-              <Text size={TextSize.md}>Schweiz</Text>
+              <Text size={TextSize.md}>Switzerland</Text>
             </div>
             <div className="footer__address col-xs-6">
               <Text size={TextSize.md} bold>
@@ -87,7 +87,7 @@ const Footer = () => {
               <Text size={TextSize.md}>
                 Friedrichstraße 15, 70174 Stuttgart
               </Text>
-              <Text size={TextSize.md}>Deutschland</Text>
+              <Text size={TextSize.md}>Germany</Text>
             </div>
           </div>
         </div>
