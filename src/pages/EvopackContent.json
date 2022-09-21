@@ -3,7 +3,7 @@
     "home": {
       "hero": {
         "heading": "Ensuring Product Integrity.",
-      "subheading": "Reduce your costs and your impact on the planet with more efficient packaging solutions",
+      "subheading": "Reduce your costs and impact on the planet with more efficient packaging solutions",
       "buttonText": "Talk to an Expert"
       },
       "cardsGrid": {
@@ -95,7 +95,7 @@
     "applications": [
       {
         "heading": "Paints and Coatings",
-        "subheading": "The Paints Industry is large, heavily regulated and caters to a plethora of applications, special demands and regulations. ",
+        "subheading": "The Paints Industry is large, heavily regulated and caters to a plethora of applications, special demands. ",
         "heroImage": "applicationsImages__paints.jpg",
         "overview": {
           "component": "TextBox",
@@ -109,7 +109,7 @@
           "component": "TextBox",
             "heading": "Sustainability in the Paints Industry",
             "headingFontColour": "#075932",
-            "text": "Directives, legal regulations driven by sustainability targets are increasingly limiting or eliminating toxic raw materials in the paint industry, especially in the areas of interior paints and paints for children's toys. This influences the VOC content, and performance critical substances such as isocyanates.",
+            "text": "Directives, legal regulations driven by sustainability targets are increasingly limiting or eliminating toxic raw materials in the paint industry, especially in the areas of interior paints and paints for children's toys. This influences the VOC content, and further performance critical substances.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -123,7 +123,7 @@
           "backgroundColour": "#FFF7EF"
         },
         "featuresList": {
-          "heading": "Ensure product integrity from manufacture to the very last drop on the wall",
+          "heading": "Ensure product integrity from manufacturing to the very last drop",
           "subheading": "We support you extensively to",
           "listItems": [
           {
@@ -150,13 +150,13 @@
       },
       {
         "heading": "Adhesives",
-        "subheading": "Adhesives today are real high-performance athletes.",
+        "subheading": "Adhesives today are real high-performance athletes and water-based systems are in the lead.",
         "heroImage": "applicationsImages__adhesives.jpg",
         "overview": {
           "component": "TextBox",
             "heading": "Applications of Adhesives",
             "headingFontColour": "#075932",
-            "text": "In the automotive industry, adhesives replace screwed joints in safety-relevant parts; in the construction industry, they create fast and inexpensive solutions; and in the medical sector, they can even contribute to wound healing.",
+            "text": "In the automotive industry, adhesives replace screwed joints in safety-related parts; in the construction industry, they create fast and inexpensive solutions; and in the medical sector, they can even contribute to wound healing.",
             "icon": "leaf",
             "iconColour": "--sustain-green"
         },
@@ -164,7 +164,7 @@
           "component": "TextBox",
             "heading": "Sustainability in the Adhesives Industry",
             "headingFontColour": "#075932",
-            "text": "Biocides prevent contamination in newly developed environmentally friendlier water-based and biodegradable adhesivesystems. It is essential to use the least possible amount of biocide to protect the product throughout its entire life cycle.",
+            "text": "Biocides prevent contamination in newly developed environmentally friendlier water-based and biodegradable adhesive systems. It is essential to use the least possible amount of biocide to protect the product throughout its entire life cycle.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -178,7 +178,7 @@
           "backgroundColour": "#FFF7EF"
         },
         "featuresList": {
-          "heading": "Ensure full product integrity from manufacture to the very last squeeze of the tube.",
+          "heading": "Ensure full product integrity from manufacturing to the very last drop.",
           "subheading": "We support you extensively to",
           "listItems": [
             {
@@ -210,7 +210,7 @@
           "component": "TextBox",
             "heading": "Applications of Binder Dispersions",
             "headingFontColour": "#075932",
-            "text": "Binder dispersions can constitute up to 99 % of clear coats, up to 10 % of concrete for high-rise buildings close to 100 % of adhesive formulations. In most cases, binder dispersions are further processed in the industry into other products before they reach the end consumer.",
+            "text": "Binder dispersions can constitute up to 99 % of clear coats, up to 10 % of concrete for high-rise buildings, and close to 100 % of adhesive formulations. In most cases, binder dispersions are further processed in the industry into other products before they reach the end consumer.",
             "icon": "leaf",
             "iconColour": "--sustain-green"
         },
@@ -232,7 +232,7 @@
           "backgroundColour": "#FFF7EF"
         },
         "featuresList": {
-          "heading": "Ensure full product integrity from manufacture to the very last drop",
+          "heading": "Ensure full product integrity from manufacturing to the very last drop",
           "subheading": "We support you extensively to",
           "listItems": [
             {
@@ -286,7 +286,7 @@
           "backgroundColour": "#FFF7EF"
         },
         "featuresList": {
-          "heading": "Ensure full product integrity from manufacture to the very last drop of detergent",
+          "heading": "Ensure full product integrity from manufacturing to the very last drop",
           "subheading": "We support you extensively to",
           "listItems": [
             {
@@ -313,7 +313,7 @@
     },
     "about": {
       "heading": "About EVOPACK",
-      "subheading": "We’re a team of engineers, chemists and optimists looking to move packaging into the 21st centry."
+      "subheading": "We’re a team of engineers, chemists and optimists looking to advance packaging into the 21st centry."
     }
   },
   "german": {
@@ -411,13 +411,13 @@
     "applications": [
       {
         "heading": "Farben und Beschichtungen",
-        "subheading": "Wir von Evopack verstehen Farbe.",
+        "subheading": "Die Farbenindustrie ist breit aufgestellt, stark reguliert und deckt eine Vielzahl von Anwendungen und speziellen Anforderungen ab.",
         "heroImage": "applicationsImages__paints.jpg",
         "overview": {
           "component": "TextBox",
             "heading": "Funktionen von Farben",
             "headingFontColour": "#075932",
-            "text": "Im 21. Jahrhundert erfüllen Beschichtungen neben der reinen Farbgebung hauptsächlich funktionale Eigenschaften für Produkte. Beschichtungen schützen Computer Chips vor Kurzschlüssen, sorgen für Hygiene auf Oberflächen im Medizin-Bereich oder erhöhen die Lebensdauer von Objekten durch Korrosionsschutz.",
+            "text": "Beschichtungen machen Dinge bunt, schützen Computerchips vor Kurzschlüssen, sorgen für Hygiene auf Oberflächen im medizinischen Bereich oder verlängern die Lebensdauer von Gegenständen durch Korrosionsschutz.",
             "icon": "leaf",
             "iconColour": "--sustain-green"
         },
@@ -425,7 +425,7 @@
           "component": "TextBox",
             "heading": "Nachhaltigkeit in der Farbindustrie",
             "headingFontColour": "#075932",
-            "text": "Die Nachhaltigkeitsbewegung fordert auch in der Farbbranche viele neue Auflagen, speziell im Bereich von Innenwanddispersionsfarben und Farben für Kinderspielzeug. Richtlinien und gesetzliche Vorschriften limitieren oder eliminieren zunehmend Rohstoffe. Dies betrifft so genannte VOC-Gehälter (Organische Lösemittel), Konservierungsmittel und Stoffe wie z. B. Isocyanate, die zur Härtung von manchen Farben verwendet werden.",
+            "text": "Richtlinien und gesetzliche Vorschriften, die von Nachhaltigkeitszielen angetrieben werden, begrenzen oder eliminieren zunehmend toxische Rohstoffe in der Farbenindustrie, insbesondere in den Bereichen Innenfarben und Farben für Kinderspielzeug. Dies wirkt sich auf den VOC-Gehalt und weitere performancekritische Stoffe aus.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -439,7 +439,7 @@
           "backgroundColour": "#FFF7EF"
         },
         "featuresList": {
-          "heading": "Sicherstellung Ihrer Produktintegrität vom Rohstoff, bis zum letzten Topfen an der Wand",
+          "heading": "Sicherstellung Ihrer Produktintegrität von der Herstellung, bis zur Anwendung des letzten Tropfens.",
           "subheading": "Wir unterstützen Sie vollumfänglich bei der",
           "listItems": [
           {
@@ -494,7 +494,7 @@
           "backgroundColour": "#FFF7EF"
         },
         "featuresList": {
-          "heading": "Sicherstellung Ihrer Produktintegrität vom Rohstoff, bis zum letzten Tropfen Klebstoff in der Tube",
+          "heading": "Sicherstellung Ihrer Produktintegrität von der Herstellung, bis zur Anwendung des letzten Tropfens.",
           "subheading": "Wir unterstützen Sie vollumfänglich bei der",
           "listItems": [
             {
@@ -548,7 +548,7 @@
           "backgroundColour": "#FFF7EF"
         },
         "featuresList": {
-          "heading": "Sicherstellung Ihrer Produktintegrität vom Rohstoff, bis zur Anwendung des letzten Tropfens.",
+          "heading": "Sicherstellung Ihrer Produktintegrität von der Herstellung, bis zur Anwendung des letzten Tropfens.",
           "subheading": "Wir unterstützen Sie vollumfänglich bei der",
           "listItems": [
             {
@@ -602,7 +602,7 @@
           "backgroundColour": "#FFF7EF"
         },
         "featuresList": {
-          "heading": "Sicherstellung Ihrer Produktintegrität vom Rohstoff, bis zum letzten Tropfen Reinigungsmittel.",
+          "heading": "Sicherstellung Ihrer Produktintegrität von der Herstellung, bis zur Anwendung des letzten Tropfens.",
           "subheading": "Wir unterstützen Sie vollumfänglich bei der",
           "listItems": [
             {
