@@ -21,7 +21,7 @@ export const globalRoutes: any = {
   english: [
     { label: "Applications", urlPath: "/applications" },
     { label: "Careers", urlPath: "/careers" },
-    { label: "About Us", urlPath: "/about" },
+    { label: "About EVOPACK", urlPath: "/about" },
   ],
   german: [
     { label: "Anwendungen", urlPath: "/applications" },

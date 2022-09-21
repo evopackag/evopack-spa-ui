@@ -95,11 +95,11 @@
     "applications": [
       {
         "heading": "Paints and Coatings",
-        "subheading": "At EVOPACK, we strive to make paints sustainable.",
+        "subheading": "The paints industry is a large and heavily regulated industry with a plethora of applications, special demands and regulations. ",
         "heroImage": "applicationsImages__paints.jpg",
         "overview": {
           "component": "TextBox",
-            "heading": "Application of Paints",
+            "heading": "Applications of Paints",
             "headingFontColour": "#075932",
             "text": "Coatings make things colourful, protect computer chips from short circuits, ensure hygiene on surfaces in the medical sector, or increase the service life of objects through corrosion protection.",
             "icon": "leaf",
@@ -107,9 +107,9 @@
         },
         "sustainability": {
           "component": "TextBox",
-            "heading": "Sustainability in the Paints industry",
+            "heading": "Sustainability in the Paints Industry",
             "headingFontColour": "#075932",
-            "text": "Directives, legal regulations driven by sustainability targets are increasingly limiting or eliminating raw materials in the paint industry, especially in the areas of interior paints and paints for children's toys. This influences the VOC content, preservatives, and substances such as isocyanates, which are critical for paint performance.",
+            "text": "Directives, legal regulations driven by sustainability targets are increasingly limiting or eliminating toxic raw materials in the paint industry, especially in the areas of interior paints and paints for children's toys. This influences the VOC content, and substances such as isocyanates, which are critical for paint performance.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -154,7 +154,7 @@
         "heroImage": "applicationsImages__adhesives.jpg",
         "overview": {
           "component": "TextBox",
-            "heading": "Application of Adhesives",
+            "heading": "Applications of Adhesives",
             "headingFontColour": "#075932",
             "text": "In the automotive industry, adhesives replace screwed joints in safety-relevant parts; in the construction industry, they create fast and inexpensive solutions; and in the medical sector, they can even contribute to wound healing.",
             "icon": "leaf",
@@ -162,9 +162,9 @@
         },
         "sustainability": {
           "component": "TextBox",
-            "heading": "Sustainability in the adhesives industry",
+            "heading": "Sustainability in the Adhesives Industry",
             "headingFontColour": "#075932",
-            "text": "Biocides prevent contamination in newly developed environmentally friendlier water-based and biodegradable systems. It is essential to use the least possible amount of biocide to protect the product throughout its entire life cycle.",
+            "text": "Biocides prevent contamination in newly developed environmentally friendlier water-based and biodegradable adhesivesystems. It is essential to use the least possible amount of biocide to protect the product throughout its entire life cycle.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -203,12 +203,12 @@
         }  
       },
       {
-        "heading": "Binder dispersions",
+        "heading": "Binder Dispersions",
         "subheading": "Binder dispersions are the base materials for paints, adhesives, construction chemicals and much more.",
         "heroImage": "applicationsImages__dispersions.jpg",
         "overview": {
           "component": "TextBox",
-            "heading": "Application of Binder dispersions",
+            "heading": "Applications of Binder dispersions",
             "headingFontColour": "#075932",
             "text": "Binder dispersions can constitute up to 99 % of clear coats, up to 10 % of concrete for high-rise buildings close to 100 % of adhesive formulations. In most cases, binder dispersions are further processed in the industry into other products before they reach the end consumer.",
             "icon": "leaf",
@@ -257,7 +257,7 @@
         }
       },
       {
-        "heading": "Household products",
+        "heading": "Household Products",
         "subheading": "Detergents, household chemicals and other household products are mainly water-based and are susceptible to contamination.",
         "heroImage": "applicationsImages__household.jpg",
         "overview": {
@@ -270,7 +270,7 @@
         },
         "sustainability": {
           "component": "TextBox",
-            "heading": "Sustainability in the detergent industry",
+            "heading": "Sustainability in the Detergent industry",
             "headingFontColour": "#075932",
             "text": "The current and upcoming requirements for preservation in terms of consumer safety and environmental friendliness leave little room for reliable preservation. New compliant ways are required to ensure product performance.",
             "icon": "leaf",

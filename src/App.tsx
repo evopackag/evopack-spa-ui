@@ -30,7 +30,7 @@ function App() {
   const navigationLinks = [
     { label: "Applications", urlPath: "/applications" },
     { label: "Careers", urlPath: "/careers" },
-    { label: "About Us", urlPath: "/about" },
+    { label: "About EVOPACK", urlPath: "/about" },
   ];
 
   let windowInnerWidth = 0;
