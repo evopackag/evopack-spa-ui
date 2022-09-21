@@ -30,14 +30,14 @@
         ]
       },
       "quote": {
-        "text": "At Evopack, we have made it our mission to identify and optimise outdated packaging concepts. We believe in an evolution of packaging towards more sustainable and less impactful packaging. Our mission is to drive this evolution. We develop packaging for a better future.",
+        "text": "At Evopack, we have made it our mission to identify and optimise outdated packaging concepts. We believe in an evolution of packaging towards more sustainable and less impactful products. Our mission is to drive this evolution. We develop packaging for a better future.",
         "author": "Florian Ebinger",
         "authorPosition": "Manufacturing and Design"
       },
       "carousel": {
         "heading": "Sustainablility",
         "underlinedHeading": "throughout",
-        "subheading": "Only by living a sustainable philosophy can you develop sustainable products.",
+        "subheading": "Only by living a sustainable philosophy can sustainable products be developed.",
         "cards": [
           {
             "heading": "Reduction of transport emissions",
@@ -101,7 +101,7 @@
           "component": "TextBox",
             "heading": "Applications of Paints",
             "headingFontColour": "#075932",
-            "text": "Coatings make things colourful, protect computer chips from short circuits, ensure hygiene on surfaces in the medical sector, or increase the service life of objects through corrosion protection.",
+            "text": "Coatings make things colourful, protect computer chips from short circuits, ensure hygiene on surfaces in the medical sector, and increase the service life of objects through corrosion protection.",
             "icon": "leaf",
             "iconColour": "--sustain-green"
         },
@@ -139,7 +139,7 @@
             "publish": false
           },
           {
-            "heading": "With our innovative Packaging solutions",
+            "heading": "With our innovative Packaging Solutions",
             "text": "Protect your product through its lifecycle while saving cost and resources during transport.",
             "icon": "3d",
             "publish": true
@@ -194,7 +194,7 @@
               "publish": false
             },
             {
-              "heading": "With our innovative Packaging solutions",
+              "heading": "With our innovative Packaging Solutions",
               "text": "Protect your product through its lifecycle while saving cost and resources during transport.",
               "icon": "3d",
               "publish": true
@@ -242,13 +242,13 @@
               "publish": false
             },
             {
-              "heading": "With our sustainability consulting",
+              "heading": "With our Sustainability Consulting",
               "text": "Helping you meet your sustainability targets while saving costs and resources.",
               "icon": "team",
               "publish": true
             },
             {
-              "heading": "With our innovative packaging solutions",
+              "heading": "With our innovative Packaging Solutions",
               "text": "Protect your product through its lifecycle while saving cost and resources during transport.",
               "icon": "3d",
               "publish": true
@@ -296,7 +296,7 @@
               "publish": false
             },
             {
-              "heading": "With our innovative Packaging solutions",
+              "heading": "With our innovative Packaging Solutions",
               "text": "Protect your product through its lifecycle while saving cost and resources during transport.",
               "icon": "3d",
               "publish": true
@@ -328,7 +328,7 @@
         "cards": [
           {
             "heading": "Verpackungs-lösungen",
-            "text": "Unsere Lösungen beschützen Ihr Produkt nachhaltig während des gesamten Produkt-lebenszykluses und gewährleisten langfristige Produktintegrität.",
+            "text": "Unsere Lösungen schützen Ihr Produkt während des gesamten Produkt-lebenszykluses nachhaltig und gewährleisten langfristige Produktintegrität.",
             "icon": "packaging--medium-blue",
             "theme": "blue"
           },
@@ -347,7 +347,7 @@
         ]
       },
       "quote": {
-        "text": "Wir bei EVOPACK haben es uns zur Aufgabe gemacht, veraltete Verpackungskonzepte zu identifizieren und zu optimieren. Wir glauben an eine Evolution der Verpackung hin zu nachhaltigeren und weniger belastenden Verpackungen. Unsere Aufgabe ist es, diese Entwicklung voranzutreiben. Wir entwickeln Verpackungen für eine bessere Zukunft.",
+        "text": "Wir bei Evopack haben es uns zur Aufgabe gemacht, veraltete Verpackungskonzepte zu identifizieren und zu optimieren. Wir glauben an eine Evolution der Verpackung hin zu nachhaltigeren und weniger belastenden Produkten. Unsere Mission ist es, diese Entwicklung voranzutreiben. Wir entwickeln Verpackungen für eine bessere Zukunft.",
         "author": "Florian Ebinger",
         "authorPosition": "Manufacturing and Design"
       },
@@ -415,7 +415,7 @@
         "heroImage": "applicationsImages__paints.jpg",
         "overview": {
           "component": "TextBox",
-            "heading": "Funktionen von Farben",
+            "heading": "Funktionen von Farbe",
             "headingFontColour": "#075932",
             "text": "Beschichtungen machen Dinge bunt, schützen Computerchips vor Kurzschlüssen, sorgen für Hygiene auf Oberflächen im medizinischen Bereich oder verlängern die Lebensdauer von Gegenständen durch Korrosionsschutz.",
             "icon": "leaf",
@@ -466,7 +466,7 @@
       },
       {
         "heading": "Klebstoffe",
-        "subheading": "Klebstoffe sind heute wahre Hochleistungssportler, und wasserbasierte Systeme sind führend.",
+        "subheading": "Klebstoffe sind heute wahre Hochleistungssportler, und wasserbasierte Systeme sind dabei führend.",
         "heroImage": "applicationsImages__adhesives.jpg",
         "overview": {
           "component": "TextBox",
@@ -574,7 +574,7 @@
       },
       {
         "heading": "Haushaltsprodukte",
-        "subheading": "Wasch- und Reinigungsmittel, Haushalts-chemikalien und weitere Haushaltsprodukte basieren hauptsächlich auf Wasser und sind daher anfällig für Verkeimungen.",
+        "subheading": "Wasch- und Reinigungsmittel, Haushaltschemikalien und weitere Haushaltsprodukte basieren hauptsächlich auf Wasser und sind daher anfällig für Verkeimungen.",
         "heroImage": "applicationsImages__household.jpg",
         "overview": {
           "component": "TextBox",
