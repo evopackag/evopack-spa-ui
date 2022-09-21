@@ -164,7 +164,7 @@
           "component": "TextBox",
             "heading": "Sustainability in the adhesives industry",
             "headingFontColour": "#075932",
-            "text": "The impact of adhesives on the environment and the effects on humans are becoming massively more important. In most cases, adhesives are water-based systems. Such systems are particularly susceptible to germs. To prevent germ growth, additives such as biocides are used. In some areas, biocides can be used indefinitely without hesitation; in others, the legally permitted maximum values are used and it is hoped that the product will be safe throughout its entire life cycle.",
+            "text": "Biocides prevent contamination in newly developed environmentally friendlier water-based and biodegradable systems. It is essential to use the least possible amount of biocide to protect the product throughout its entire life cycle.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
