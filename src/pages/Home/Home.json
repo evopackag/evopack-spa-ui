@@ -65,7 +65,7 @@
           "buttonTheme": "blue"
         },
         {
-          "title": "Circular design",
+          "title": "Design for a circular economy",
           "text": "Our ultimate goal is creating packaging that can be completely reused or repurposed with minimal required effort.",
           "buttonText": "Learn More",
           "icon": "cycle--light-grey",
@@ -105,7 +105,7 @@
       "title": "Optimale Produktleistung. Jedes Mal.",
       "subTitle": "Guarantieren Sie optimale Produktleistung mit effizienten Verpackungslösungen, während Sie gleichzeitig Kosten und Abfall reduzieren.",
       "CTA": "Produktexperten kontaktieren",
-      "navigationLinks": [{"label": "Anwendungen", "urlPath": "/applications"}, {"label": "Jobs & Karriere", "urlPath": "/careers"}, {"label": "Über Uns", "urlPath": "/about"}],
+      "navigationLinks": [{"label": "Anwendungen", "urlPath": "/applications"}, {"label": "Jobs & Karriere", "urlPath": "/careers"}, {"label": "Über EVOPACK", "urlPath": "/about"}],
       "productAreas": ["Farben und Beschichtungen", "Klebstoffe", "Polymer-Dispersionen", "Haushaltspflege"]
     },
     "servicesSection": {

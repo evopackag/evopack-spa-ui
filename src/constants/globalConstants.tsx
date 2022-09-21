@@ -26,7 +26,7 @@ export const globalRoutes: any = {
   german: [
     { label: "Anwendungen", urlPath: "/applications" },
     { label: "Jobs & Karriere", urlPath: "/careers" },
-    { label: "Über Uns", urlPath: "/about" },
+    { label: "Über EVOPACK", urlPath: "/about" },
   ],
 };
 

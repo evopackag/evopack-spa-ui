@@ -592,7 +592,7 @@
       "title": "Optimale Produktleistung. Jedes Mal.",
       "subTitle": "Reduzieren Sie Ihre Kosten und Einfluss aufs Klima mit effizienten Verpackungslösungen.",
       "CTA": "Kontakt",
-      "navigationLinks": [{"label": "Applications", "urlPath": "/applications"}, {"label": "Jobs & Karriere", "urlPath": "/careers"}, {"label": "Über Uns", "urlPath": "/about"}],
+      "navigationLinks": [{"label": "Applications", "urlPath": "/applications"}, {"label": "Jobs & Karriere", "urlPath": "/careers"}, {"label": "Über EVOPACK", "urlPath": "/about"}],
       "productAreas": ["Farben und Beschichtungen", "Klebstoffe", "Polymer-Dispersionen", "Haushaltspflege"]
     },
     "servicesSection": {

@@ -164,7 +164,7 @@
           "component": "TextBox",
             "heading": "Sustainability in the Adhesives Industry",
             "headingFontColour": "#075932",
-            "text": "Biocides prevent contamination in newly developed environmentally friendlier water-based and biodegradable adhesive systems. It is essential to use the least possible amount of biocide to protect the product throughout its entire life cycle.",
+            "text": "Biocides prevent contamination in newly developed environmentally friendlier water-based and biodegradable adhesive systems. It is essential to use the least possible amount of biocide and still protect the product throughout its entire life cycle.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -272,7 +272,7 @@
           "component": "TextBox",
             "heading": "Sustainability in the Detergent Industry",
             "headingFontColour": "#075932",
-            "text": "The current and upcoming requirements for preservation in terms of consumer safety and environmental friendliness leave little room for reliable preservation. New compliant ways are required to ensure product performance.",
+            "text": "The current and upcoming requirements for preservation in terms of consumer safety and environmental friendliness leave little room for reliable solutions. New compliant ways are required to ensure product performance.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -319,22 +319,22 @@
   "german": {
     "home": {
       "hero": {
-        "heading": "Optimale Produktleistung. Jedes Mal.",
-      "subheading": "Guarantieren Sie optimale Produktleistung mit effizienten Verpackungslösungen, während Sie gleichzeitig Kosten und Abfall reduzieren.",
-      "buttonText": "Produktexperten kontaktieren"
+        "heading": "Sicherstellung der Produktintegrität.",
+      "subheading": "Reduzieren Sie Ihre Kosten und die Auswirkungen auf die Umwelt mit effizienteren Verpackungslösungen.",
+      "buttonText": "Kontaktiere uns"
       },
       "cardsGrid": {
         "heading": "Was wir für Sie tun können",
         "cards": [
           {
             "heading": "Verpackungs-lösungen",
-            "text": "OUnsere Lösungen beschützen Ihr Produkt nachhaltig während des gesamten Produkt-lebenszykluses und gewährleisten langfristige Produktintegrit.",
+            "text": "Unsere Lösungen beschützen Ihr Produkt nachhaltig während des gesamten Produkt-lebenszykluses und gewährleisten langfristige Produktintegrität.",
             "icon": "packaging--medium-blue",
             "theme": "blue"
           },
           {
             "heading": "Nachhaltigkeits-beratung",
-            "text": "Sparen Sie Geld und retten Sie den Planeten, indem Sie mit uns Ihre spezifischen Verpackungslösungen entwickeln und optimieren.",
+            "text": "Sparen Sie Geld und schonen Sie die Umwelt, indem Sie den Bedarf an Bioziden in Ihren Produkten reduzieren.",
             "icon": "question",
             "theme": "green"
           },
@@ -348,8 +348,8 @@
       },
       "quote": {
         "text": "Wir bei EVOPACK haben es uns zur Aufgabe gemacht, veraltete Verpackungskonzepte zu identifizieren und zu optimieren. Wir glauben an eine Evolution der Verpackung hin zu nachhaltigeren und weniger belastenden Verpackungen. Unsere Aufgabe ist es, diese Entwicklung voranzutreiben. Wir entwickeln Verpackungen für eine bessere Zukunft.",
-        "author": "Ankith Subramanian",
-        "authorPosition": "Leitung Konstruktion"
+        "author": "Florian Ebinger",
+        "authorPosition": "Manufacturing and Design"
       },
       "carousel": {
         "heading": "Nachhaltigkeit",
@@ -380,7 +380,7 @@
             "buttonTheme": "blue"
           },
           {
-            "heading": "Design für Recycling oder Wieder-verwendung",
+            "heading": "Design für eine Kreislaufwirtschaft",
             "text": "Verpackungen sollten immer so gestaltet sein, dass sie effektiv zurückgewonnen und in biologischen und/oder industriellen Kreisläufen verwertet werden können.",
             "buttonText": "Mehr erfahren",
             "icon": "cycle--light-grey",
@@ -466,13 +466,13 @@
       },
       {
         "heading": "Klebstoffe",
-        "subheading": "Klebstoffe sind heutzutage richtige Hochleistungssportler.",
+        "subheading": "Klebstoffe sind heute wahre Hochleistungssportler, und wasserbasierte Systeme sind führend.",
         "heroImage": "applicationsImages__adhesives.jpg",
         "overview": {
           "component": "TextBox",
             "heading": "Einsatz von Klebstoffen",
             "headingFontColour": "#075932",
-            "text": "In der Automobilindustrie ersetzen sie Schraub-verbindungen in sicherheitsrelevanten Teilen, in der Bauindustrie schaffen sie schnelle und preiswerte Lösungen und im medizinischen Bereich können sie sogar zur Wundheilung beitragen.",
+            "text": "In der Automobilindustrie ersetzen Klebstoffe Schraubverbindungen in sicherheitsrelevanten Teilen, in der Bauindustrie schaffen sie schnelle und kostengünstige Lösungen, und im medizinischen Bereich können sie sogar zur Wundheilung beitragen.",
             "icon": "leaf",
             "iconColour": "--sustain-green"
         },
@@ -480,7 +480,7 @@
           "component": "TextBox",
             "heading": "Nachhaltigkeit in der Klebstoffindustrie",
             "headingFontColour": "#075932",
-            "text": "Die Einflüsse von Klebstoffen auf die Umwelt und die Auswirkungen auf den Menschen gewinnen massiv an Bedeutung. In den meisten Fällen handelt es sich bei Klebstoffen um wasserbasierte Systeme. Diese sind besonders anfällig für Keime. Um Keimwachstum zu verhindern werden Zusatzstoffe wie z. B. Biozide eingesetzt. In einigen Bereichen können Biozide unbegrenzt ohne Bedenken eingesetzt werden, in anderen verwendet man die rechtmäßig zugelassenen Maximalwerte und erhofft sich eine Sicherstellung des Produktes über den gesamten Produktlebenszyklus.",
+            "text": "Biozide verhindern die Kontamination neu entwickelter umweltfreundlicherer wasserbasierter und biologisch abbaubarer Klebstoffsysteme. Es ist wichtig, die geringstmögliche Menge an Bioziden zu verwenden und das Produkt dennoch während seines gesamten Lebenszyklus zu schützen.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -526,7 +526,7 @@
           "component": "TextBox",
             "heading": "Einsatz von Bindemittel-dispersionen",
             "headingFontColour": "#075932",
-            "text": "Sie stellen die Basis vieler Formulierungen dar und werden in großen Mengen eingesetzt. Ein Klarlack besteht aus bis zu 99 %, Beton für Hochhäuser aus bis zu 10 % und Klebstoffe aus beihnahe 100 % Bindemitteldispersion. In den meisten Fällen werden Bindemitteldispersionen in der Industrie zu anderen Produkten weiter-verarbeitet, bevor sie an den Endkonsumenten gelangen. Dies erfordert maximale Performance: zuverlässig und langfristig.",
+            "text": "Bindemitteldispersionen können bis zu 99 % der Klarlacke, bis zu 10 % des Betons für Hochhäuser und nahezu 100 % der Klebstoffformulierungen ausmachen. In den meisten Fällen werden Bindemitteldispersionen in der Industrie zu anderen Produkten weiterverarbeitet, bevor sie den Endverbraucher erreichen.",
             "icon": "leaf",
             "iconColour": "--sustain-green"
         },
@@ -534,7 +534,7 @@
           "component": "TextBox",
             "heading": "Nachhaltigkeit in der Bindemittelindustrie",
             "headingFontColour": "#075932",
-            "text": "Seit den letzten Jahren unterliegen immer mehr Zwischen- und Endprodukte starken Regulierungen bezüglich der Sicherheit für den Menschen und der Umweltverträglichkeit. Dies betrifft in erster Linie Konservierungsmittel, wie Biozide. Von der EU werden teilweise geringere Mengen oder der Verzicht an Bioziden regulatorisch erzwungen.Die Bindemittelindustrie ist in der Regel das erste Glied in der Kette und kann die eingesetzten Mengen an Konservierungsmittel stark beeinflussen. Als Bindemittelhersteller sollten Sie möglichst wenig Konservierungsmittel einsetzen, um maximalen Spielraum für Ihre Kunden zu ermöglichen.",
+            "text": "In den letzten Jahren wurden für immer mehr Vorprodukte und Endprodukte strenge Vorschriften hinsichtlich der menschlichen Sicherheit und der ökologischen Auswirkungen erlassen. Die Bindemittelindustrie ist in der Regel das erste Glied in der Kette und kann die Menge der nachgelagerten Konservierungsmittel stark beeinflussen.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -558,8 +558,8 @@
               "publish": false
             },
             {
-              "heading": "With our sustainability consulting",
-              "text": "Helping you meet your sustainability targets while saving costs and resources.",
+              "heading": "Mit unserer Nachhaltigkeitsberatung",
+              "text": "Wir helfen Ihnen, Ihre Nachhaltigkeitsziele zu erreichen und gleichzeitig Kosten und Ressourcen zu sparen.",
               "icon": "team",
               "publish": true
             },
@@ -580,7 +580,7 @@
           "component": "TextBox",
             "heading": "Biozide in Haushalts-produkten",
             "headingFontColour": "#075932",
-            "text": "In der Vergangenheit wurden effektive Biozide wie MIT oder CMIT eingesetzt, um Wasch- und Reinigungsmittel bis zum Endkonsumenten kontaminationsfrei zu halten. Die Produkte waren damit bis zum vollständigen Verbrauch sicher.",
+            "text": "In der Vergangenheit wurden wirksame Biozide wie MIT oder CMIT eingesetzt, um Wasch- und Reinigungsmittel bis zum Endverbraucher und darüber hinaus kontaminationsfrei zu halten.",
             "icon": "leaf",
             "iconColour": "--sustain-green"
         },
@@ -588,7 +588,7 @@
           "component": "TextBox",
             "heading": "Nachhaltigkeit in der Reinigungsmittel-industrie",
             "headingFontColour": "#075932",
-            "text": "Die neuen Anforderungen an die Konservierung bezüglich der Verbrauchersicherheit und der Umweltfreundlichkeit lassen wenig Spielraum für eine zuverlässige Konservierung. Vor allem dann, wenn man die Anwendung des Endproduktes nicht kontrollieren kann. Es müssen neue Wege gefunden werden, wie trotz der gestiegenen Anforderungen, Produkte bis zum letzten Tropfen sicher bleiben.",
+            "text": "Die aktuellen und künftigen Anforderungen an die Konservierung in Bezug auf Verbrauchersicherheit und Umweltfreundlichkeit lassen wenig Raum für zuverlässige Lösungen. Es sind neue, konforme Wege erforderlich, um die Produktperformance zu gewährleisten.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -622,14 +622,14 @@
       }
     ],
     "careers": {
-      "heading": "Arbeiten Sie mit uns",
+      "heading": "Arbeite mit uns",
       "subheading": "Wir haben derzeitig 0 offene Stellen. Falls Sie Interesse an Zusammenarbeit haben, kontaktieren Sie uns mit unseren Kontaktoptionen.",
       "primaryButtonText": "E-Mail schreiben",
       "secondaryButtonText": "Anrufen"
     },
     "about": {
       "heading": "Über Evopack",
-      "subheading": "Wir sind ein Team, bestehend aus Ingenieuren und Chemikern, mit dem Ziel Verpankungen in das einundzwanzigstes Jahrhundert zu befördern."
+      "subheading": "Wir sind ein Team von Ingenieuren, Chemikern und Optimisten, die das Ziel verfolgen, Verpackungen für das 21. Jahrhundert zu entwickeln."
     }
   }
 }
