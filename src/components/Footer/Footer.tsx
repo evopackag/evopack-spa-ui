@@ -71,7 +71,7 @@ const Footer = () => {
           <div className="row">
             <div className="footer__address col-xs-6">
               <Text size={TextSize.md} bold>
-                Evopack AG
+                EVOPACK AG
               </Text>
               <Text size={TextSize.md}>+41 7674 63355</Text>
               <Text size={TextSize.md}>info@evopack.tech</Text>
@@ -81,7 +81,7 @@ const Footer = () => {
             </div>
             <div className="footer__address col-xs-6">
               <Text size={TextSize.md} bold>
-                Evopack GmbH
+                EVOPACK GmbH
               </Text>
               <Text size={TextSize.md}>+49 1578 7898842</Text>
               <Text size={TextSize.md}>info@evopack.tech</Text>
@@ -106,7 +106,7 @@ const Footer = () => {
       </footer>
       <HorizontalDivider />
       <div className="row align-center justify-between footer__legals">
-        <h6>©Evopack 2022</h6>
+        <h6>©EVOPACK 2022</h6>
         <div className="row footer__legalsButtons">
           {/* <Link
             label={imprintLinkLabel}
