@@ -95,7 +95,7 @@
     "applications": [
       {
         "heading": "Paints and Coatings",
-        "subheading": "The paints industry is a large and heavily regulated industry with a plethora of applications, special demands and regulations. ",
+        "subheading": "The Paints Industry is large, heavily regulated and caters to a plethora of applications, special demands and regulations. ",
         "heroImage": "applicationsImages__paints.jpg",
         "overview": {
           "component": "TextBox",
@@ -216,7 +216,7 @@
         },
         "sustainability": {
           "component": "TextBox",
-            "heading": "Sustainability in the Binder industry",
+            "heading": "Sustainability in the Binder Industry",
             "headingFontColour": "#075932",
             "text": "In recent years, more and more precursors and end products have been subject to stringent regulations regarding human safety and ecological impact. The binder industry is usually the first link in the chain and can strongly influence the quantities of preservatives used downstream. ",
             "icon": "leaf",
@@ -270,7 +270,7 @@
         },
         "sustainability": {
           "component": "TextBox",
-            "heading": "Sustainability in the Detergent industry",
+            "heading": "Sustainability in the Detergent Industry",
             "headingFontColour": "#075932",
             "text": "The current and upcoming requirements for preservation in terms of consumer safety and environmental friendliness leave little room for reliable preservation. New compliant ways are required to ensure product performance.",
             "icon": "leaf",
