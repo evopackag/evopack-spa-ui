@@ -109,7 +109,7 @@
           "component": "TextBox",
             "heading": "Sustainability in the Paints Industry",
             "headingFontColour": "#075932",
-            "text": "Directives, legal regulations driven by sustainability targets are increasingly limiting or eliminating toxic raw materials in the paint industry, especially in the areas of interior paints and paints for children's toys. This influences the VOC content, and substances such as isocyanates, which are critical for paint performance.",
+            "text": "Directives, legal regulations driven by sustainability targets are increasingly limiting or eliminating toxic raw materials in the paint industry, especially in the areas of interior paints and paints for children's toys. This influences the VOC content, and performance critical substances such as isocyanates.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
