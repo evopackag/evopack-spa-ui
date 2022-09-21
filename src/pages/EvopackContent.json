@@ -4,7 +4,7 @@
       "hero": {
         "heading": "Ensuring Product Integrity.",
       "subheading": "Reduce your costs and your impact on the planet with more efficient packaging solutions",
-      "buttonText": "Talk to an expert"
+      "buttonText": "Talk to an Expert"
       },
       "cardsGrid": {
         "heading": "What we can do for you",
@@ -64,15 +64,15 @@
             "buttonTheme": "blue"
           },
           {
-            "heading": "Circular design",
-            "text": "Our ultimate goal is creating packaging that can be completely reused or repurposed with minimal required effort.",
+            "heading": "Circular Design",
+            "text": "Our ultimate goal is creating packaging that can be completely reused or repurposed with minimal effort.",
             "buttonText": "Learn More",
             "icon": "cycle--light-grey",
             "theme": "blue",
             "buttonTheme": "white"
           },
           {
-            "heading": "Recycled materials",
+            "heading": "Recycled Materials",
             "text": "We constantly look to use recycled materials in ways that are truly more sustainble, not just to write it on the tin.",
             "buttonText": "Learn More",
             "icon": "leaf--light-grey",
@@ -95,11 +95,11 @@
     "applications": [
       {
         "heading": "Paints and Coatings",
-        "subheading": "At Evopack, we strive to make paints sustainable.",
+        "subheading": "At EVOPACK, we strive to make paints sustainable.",
         "heroImage": "applicationsImages__paints.jpg",
         "overview": {
           "component": "TextBox",
-            "heading": "Application of paints",
+            "heading": "Application of Paints",
             "headingFontColour": "#075932",
             "text": "Coatings make things colourful, protect computer chips from short circuits, ensure hygiene on surfaces in the medical sector, or increase the service life of objects through corrosion protection.",
             "icon": "leaf",
@@ -107,9 +107,9 @@
         },
         "sustainability": {
           "component": "TextBox",
-            "heading": "Sustainability in the paints industry",
+            "heading": "Sustainability in the Paints industry",
             "headingFontColour": "#075932",
-            "text": "Directives, legal regulations driven by sustainability targets are increasingly limiting or eliminating raw materials in the paint industry, especially in the areas of interior paints and paints for children's toys. This affects so-called VOC (organic solvents) contents, preservatives, and substances such as isocyanates, which are critical for paint performance.",
+            "text": "Directives, legal regulations driven by sustainability targets are increasingly limiting or eliminating raw materials in the paint industry, especially in the areas of interior paints and paints for children's toys. This influences the VOC content, preservatives, and substances such as isocyanates, which are critical for paint performance.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -117,7 +117,7 @@
         "solution": {
           "component": "TextBox",
           "heading": "It's time to rethink",
-          "text": "At Evopack, we offer solutions for the paint and coatings industry that help ensure product integrity down to the last drop. This means that none or the least possible amount of toxic substances are used in the production process.",
+          "text": "At EVOPACK, we offer solutions for the paint and coatings industry that help ensure product integrity down to the last drop. This means that none or the least possible amount of toxic substances are used in the production process.",
           "icon": "leaf",
           "iconColour": "--sustain-green",
           "backgroundColour": "#FFF7EF"
@@ -154,7 +154,7 @@
         "heroImage": "applicationsImages__adhesives.jpg",
         "overview": {
           "component": "TextBox",
-            "heading": "Application of adhesives",
+            "heading": "Application of Adhesives",
             "headingFontColour": "#075932",
             "text": "In the automotive industry, adhesives replace screwed joints in safety-relevant parts; in the construction industry, they create fast and inexpensive solutions; and in the medical sector, they can even contribute to wound healing.",
             "icon": "leaf",
@@ -172,7 +172,7 @@
         "solution": {
           "component": "TextBox",
           "heading": "It's time to rethink",
-          "text": "At Evopack, we offer solutions for the adhesives industry that help ensure product integrity down to the last drop. This means that none or the least possible amount of toxic substances are used in the production process.",
+          "text": "At EVOPACK, we offer solutions for the adhesives industry that help ensure product integrity down to the last drop. This means that none or the least possible amount of toxic substances are used in the production process.",
           "icon": "leaf",
           "iconColour": "--sustain-green",
           "backgroundColour": "#FFF7EF"
@@ -216,7 +216,7 @@
         },
         "sustainability": {
           "component": "TextBox",
-            "heading": "Sustainability in the binder industry",
+            "heading": "Sustainability in the Binder industry",
             "headingFontColour": "#075932",
             "text": "In recent years, more and more precursors and end products have been subject to stringent regulations regarding human safety and ecological impact. The binder industry is usually the first link in the chain and can strongly influence the quantities of preservatives used downstream. ",
             "icon": "leaf",
@@ -226,7 +226,7 @@
         "solution": {
           "component": "TextBox",
           "heading": "It's time to rethink",
-          "text": "At Evopack, we offer solutions for the binder industry that help ensure product integrity down to the last drop. This means that none or the least possible amount of toxic substances are used in the production process.",
+          "text": "At EVOPACK, we offer solutions for the binder industry that help ensure product integrity down to the last drop. This means that none or the least possible amount of toxic substances are used in the production process.",
           "icon": "leaf",
           "iconColour": "--sustain-green",
           "backgroundColour": "#FFF7EF"
@@ -262,9 +262,9 @@
         "heroImage": "applicationsImages__household.jpg",
         "overview": {
           "component": "TextBox",
-            "heading": "Biocides in household products",
+            "heading": "Biocides in Household products",
             "headingFontColour": "#075932",
-            "text": "In the past, effective biocides such as MIT or CMIT were used to keep detergents and cleaning agents contamination-free until they reached the end consumer. The products were thus safe until they were completely consumed.",
+            "text": "In the past, effective biocides such as MIT or CMIT were used to keep detergents and cleaning agents contamination-free until they reached the end consumer and beyond.",
             "icon": "leaf",
             "iconColour": "--sustain-green"
         },
@@ -272,7 +272,7 @@
           "component": "TextBox",
             "heading": "Sustainability in the detergent industry",
             "headingFontColour": "#075932",
-            "text": "The current and upcoming requirements for preservation in terms of consumer safety and environmental friendliness leave little room for reliable preservation. New compliant ways are required to protect product performance.",
+            "text": "The current and upcoming requirements for preservation in terms of consumer safety and environmental friendliness leave little room for reliable preservation. New compliant ways are required to ensure product performance.",
             "icon": "leaf",
             "iconColour": "--sustain-green",
             "backgroundColour": "#FFF7EF"
@@ -280,7 +280,7 @@
         "solution": {
           "component": "TextBox",
           "heading": "It's time to rethink",
-          "text": "At Evopack, we offer solutions for the detergent industry that help ensure product integrity down to the last drop. This means that none or the least possible amount of toxic substances are used in the production process.",
+          "text": "At EVOPACK, we offer solutions for the detergent industry that help ensure product integrity down to the last drop. This means that none or the least possible amount of toxic substances are used in the production process.",
           "icon": "leaf",
           "iconColour": "--sustain-green",
           "backgroundColour": "#FFF7EF"
@@ -308,11 +308,11 @@
     "careers": {
       "heading": "Let's work together",
       "subheading": "We currently have 0 open positions available. If you’re interested in working with us, please get in touch via our contact methods.",
-      "primaryButtonText": "Email Us",
-      "secondaryButtonText": "Call Up"
+      "primaryButtonText": "Email us",
+      "secondaryButtonText": "Call up"
     },
     "about": {
-      "heading": "About Evopack",
+      "heading": "About EVOPACK",
       "subheading": "We’re a team of engineers, chemists and optimists looking to move packaging into the 21st centry."
     }
   },
@@ -347,7 +347,7 @@
         ]
       },
       "quote": {
-        "text": "Wir bei Evopack haben es uns zur Aufgabe gemacht, veraltete Verpackungskonzepte zu identifizieren und zu optimieren. Wir glauben an eine Evolution der Verpackung hin zu nachhaltigeren und weniger belastenden Verpackungen. Unsere Aufgabe ist es, diese Entwicklung voranzutreiben. Wir entwickeln Verpackungen für eine bessere Zukunft.",
+        "text": "Wir bei EVOPACK haben es uns zur Aufgabe gemacht, veraltete Verpackungskonzepte zu identifizieren und zu optimieren. Wir glauben an eine Evolution der Verpackung hin zu nachhaltigeren und weniger belastenden Verpackungen. Unsere Aufgabe ist es, diese Entwicklung voranzutreiben. Wir entwickeln Verpackungen für eine bessere Zukunft.",
         "author": "Ankith Subramanian",
         "authorPosition": "Leitung Konstruktion"
       },
